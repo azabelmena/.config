@@ -1,8 +1,4 @@
 {
-    # System
-    suspend="systemctl suspend";
-    hibernate="systemctl hibernate";
-
     # Listing
     clear="clear && fastfetch"; # continue to flex.
     ls="exa";
@@ -12,7 +8,6 @@
 
     vi = "nvim";
     vim = "nvim";
-    vifmrc="vim ~/.config/vifm/vifmrc";
 
     ## ZSH
     history="history | less";
@@ -21,19 +16,4 @@
 
     ## Kitty terminal
     icat="kitty +kitten icat";
-
-    ##
-    scriptrc="vim ~/scripts/";
-
-    ##zathura
-    zathurarc="vim ~/.config/zathura/zathurarc";
-
-    #nixos
-    nixrc="vim ~/.config/nix/";
-    homerc="vim ~/.config/home-manager/";
-    flakerc="vim ~/.config/flake.nix";
-    nix-shell="nix-shell --command 'zsh'";
-
-    #ssh
-    sshrc="vim ~/.ssh/config";
 }
