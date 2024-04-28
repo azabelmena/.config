@@ -1,6 +1,4 @@
 {
-    dot="/run/current-system/sw/bin/git --git-dir=$HOME/ --work-tree=$HOME/";
-
     # System
     suspend="systemctl suspend";
     hibernate="systemctl hibernate";
