@@ -1,4 +1,12 @@
 { pkgs, config, ... }:
+let
+  imgLink = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox-mountain-village.png?raw=true";
+
+  image = pkgs.fetchurl {
+    url = imgLink;
+    sha256 = "1ynhki0x8zb75vq9l21cbx9ccgmn7g784a82gsl689bsh77cip14";
+  };
+in
 {
 
   package = pkgs.swaylock-effects;
@@ -11,7 +19,7 @@
     font-size = 24;
     ignore-empty-password = true;
 
-    image = "~/Pictures/Wallpapers/gruvbox-mountain-village.png";
+    image = "${image}";
 
     indicator-radius = 150;
     indicator-caps-lock = false;

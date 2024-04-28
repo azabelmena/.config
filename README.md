@@ -100,11 +100,7 @@ given machine. This system should be:
             - `flake.lock` (which you can update at your own risk)
             - `.config/home-manager/`
             - `.config/nix/`
-        - Technically, the `swaylock.nix` and `hyprland.nix` files introduce
-          state through the user's `Pictures` directory, however I don't think
-          it is too big of an issue and I should be able to rememdy it when I
-          have the time.
-        - There are other configuration files that may introduce state, and I
+        - There may be some configuration files that introduce state, and I
         plan on fixing them as I stumble upon them.
 
 # A note for People Who Wish to Steal from This Repository.
