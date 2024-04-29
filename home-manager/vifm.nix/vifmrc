@@ -1,0 +1,114 @@
+set vicmd=vi
+set syscalls
+set notrash
+set history=100
+set nofollowlinks
+set sortnumbers
+set relativenumber
+set undolevels=100
+set vimhelp
+set timefmt=%H.%M%.%s:%d.%m.%y
+set wildmenu
+set wildstyle=popup
+set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
+set ignorecase
+set smartcase
+set nohlsearch
+set incsearch
+set scrolloff=4
+
+if !has('win')
+    set slowfs=curlftpfs
+endif
+
+set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+
+mark b ~/bin/
+mark h ~/
+
+command! df df -h %m 2> /dev/null
+command! diff vim -d %f %F
+command! zip zip -r %c.zip %f
+command! run !! ./%f
+command! make !!make %a
+command! mkcd :mkdir %a | cd %a
+command! vgrep vim "+grep %a"
+command! reload :write | restart full
+
+filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
+fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
+
+filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
+        \ {View in zathura}
+        \ zathura %f,
+        \ {View in gv}
+        \ gv %c %i &,
+
+filextype {*.djvu},<image/vnd.djvu>
+        \ {View in zathura}
+        \ zathura %f,
+        \ {View in apvlv}
+        \ apvlv %f,
+
+filextype {*.html,*.htm},<text/html>
+        \ {Open with dwb}
+        \ dwb %f %i &,
+        \ {Open with firefox}
+        \ qutebrowser %f &,
+        \ {Open with uzbl}
+        \ uzbl-browser %f %i &,
+filetype {*.html,*.htm},<text/html> links, lynx
+
+filetype {*.o},<application/x-object> objdump | less
+
+filetype {*.[1-8]},<text/troff> man ./%c
+fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
+
+filextype {*.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx,*.ppt},
+         \<application/vnd.openxmlformats-officedocument.*,
+          \application/msword,
+          \application/vnd.ms-excel>
+        \ libreoffice %f &
+fileviewer {*.doc},<application/msword> catdoc %c
+fileviewer {*.docx},
+          \<application/
+           \vnd.openxmlformats-officedocument.wordprocessingml.document>
+         \ docx2txt.pl %f -
+
+nnoremap s :shell<cr>
+nnoremap S :sort<cr>
+nnoremap w :view<cr>
+vnoremap w :view<cr>gv
+nnoremap o :!vim
+nnoremap gb :file &<cr>l
+
+if has('win')
+    nnoremap yp :!echo %"d:gs!\!/! %i | clip<cr>
+    nnoremap yf :!echo %"c:gs!\!/! %i | clip<cr>
+elseif executable('xclip')
+    nnoremap yd :!echo %d | xclip %i<cr>
+    nnoremap yf :!echo %c:p | xclip %i<cr>
+elseif executable('xsel')
+    nnoremap yd :!echo -n %d | xsel --input --primary %i &&
+                \ echo -n %d | xsel --clipboard --input %i<cr>
+    nnoremap yf :!echo -n %c:p | xsel --input --primary %i &&
+                \ echo -n %c:p | xsel --clipboard --input %i<cr>
+endif
+
+nnoremap I cw<c-a>
+nnoremap cc cw<c-u>
+nnoremap A cw
+
+nnoremap ,t :!xterm &<cr>
+nnoremap ,c :write | edit $MYVIFMRC | restart full<cr>
+nnoremap ,C :!gvim --remote-tab-silent $MYVIFMRC &<cr>
+nnoremap ,w :set wrap!<cr>
+nnoremap <f3> :!less %f<cr>
+nnoremap <f4> :edit<cr>
+nnoremap <f5> :copy<cr>
+nnoremap <f6> :move<cr>
+nnoremap <f7> :mkdir<space>
+nnoremap <f8> :delete<cr>
+nnoremap <a-i> :sync<cr>
+nnoremap <a-o> :sync %c<cr>
+nnoremap <c-u> <c-w>x
