@@ -72,9 +72,9 @@
   services = {
     nix-daemon.enable = true;
 
-    skhd = ( import ../../home-manager/skhd.nix { inherit pkgs; } );
-    spacebar = ( import ../../home-manager/spacebar.nix { inherit pkgs; } );
-    yabai = ( import ../../home-manager/yabai.nix { inherit pkgs; } );
+    skhd = ( import ./services/skhd.nix { inherit pkgs; } );
+    spacebar = ( import ./services/spacebar.nix { inherit pkgs; } );
+    yabai = ( import ./services/yabai.nix { inherit pkgs; } );
   };
 
  security.pam.enableSudoTouchIdAuth = true;
