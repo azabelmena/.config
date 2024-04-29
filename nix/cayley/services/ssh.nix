@@ -5,7 +5,7 @@
     UseDns = true;
 
     PubKeyAuthentication = true;
-    PasswordAuthentication = false;
+    PasswordAuthentication = true;
     KbdInteractiveAuthentication = false;
     PermitRootLogin = "no";
 
