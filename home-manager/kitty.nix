@@ -23,7 +23,7 @@
       enable_audio_bell = "no";
       remember_window_size = "yes";
       confirm_os_window_close = "0";
-      hide_window_decorations = "yes";
+      hide_window_decorations = "no";
       cursor_blink_interval = 0;
 
       macos_hide_from_tasks = "yes";
