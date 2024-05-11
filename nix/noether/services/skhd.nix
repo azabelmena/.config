@@ -5,7 +5,6 @@
   enable = true;
   skhdConfig = ''
     cmd - return      : kitty
-    cmd - b           : qutebrowser
     ctrl + cmd - z    : zathura
 
     cmd - t           : yabai --message window --toggle float && yabai --message window --grid 4:4:1:1:2:2
