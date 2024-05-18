@@ -4,12 +4,12 @@
   enable = true;
 
   mappings = {
-    "[normal] u"      = "scroll half-up";
-    "[normal] d"      = "scroll half-down";
-    "[normal] r"      = "reload";
-    "[normal] i"      = "recolor";
-    "[normal] p"      = "print";
-    "[normal] Space"  = "navigate next";
+    "[normal] d"        = "scroll half-down";
+    "[normal] D"        = "scroll half-up";
+    "[normal] r"        = "reload";
+    "[normal] i"        = "recolor";
+    "[normal] p"        = "print";
+    "[normal] Space"    = "navigate next";
   };
  options = {
     guioptions = "none";
