@@ -81,6 +81,8 @@
         modules = [
           ./nix/noether/configuration.nix
 
+          inputs.stylix.darwinModules.stylix
+
           home-manager.darwinModules.home-manager{
             home-manager.extraSpecialArgs = { inherit inputs system-aarch64-darwin; };
             home-manager.useGlobalPkgs = true;

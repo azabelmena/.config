@@ -114,6 +114,4 @@
       };
     };
   };
-
-  #style = ( import ./style.nix { inherit config; });
 }

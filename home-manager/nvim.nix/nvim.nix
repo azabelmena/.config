@@ -17,8 +17,6 @@
 
   keymaps = ( import ./keymaps.nix );
 
-  #colorschemes = ( import ./colors.nix );
-
   plugins = ( import ./plugins.nix );
   extraPlugins = with pkgs.vimPlugins; [
     nerdcommenter

@@ -9,7 +9,6 @@
     inputs.nix-colors.homeManagerModules.default
     inputs.stylix.nixosModules.stylix
   ];
-  #colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-soft;
 
 
   nixpkgs = {
@@ -66,7 +65,6 @@
   environment = ( import ./environment.nix { inherit pkgs; } );
 
   i18n.defaultLocale = "en_US.UTF-8";
-  #console = lib.mkDefault ( import ./console.nix { inherit config; });
 
   hardware = ( import ./hardware.nix { inherit pkgs config lib; });
 
