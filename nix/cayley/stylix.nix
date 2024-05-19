@@ -38,4 +38,9 @@ in
     };
   };
 
+  cursor = with pkgs; {
+    package = google-cursor;
+    name = "GoogleDot-Black";
+  };
+
 }
