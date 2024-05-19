@@ -45,8 +45,8 @@ in
       border_size = 0;
       layout = "dwindle";
       cursor_inactive_timeout = 1;
-      "col.active_border" = "0xff${config.colorScheme.palette.base08}";
-      "col.inactive_border" = "0xff${config.colorScheme.palette.base00}";
+      #"col.active_border" = "0xff${config.colorScheme.palette.base08}";
+      #"col.inactive_border" = "0xff${config.colorScheme.palette.base00}";
     };
 
     decoration = {

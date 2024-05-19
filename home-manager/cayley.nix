@@ -47,8 +47,8 @@
       zsh = (import ./zsh.nix { inherit pkgs; });
   };
 
-  gtk = ( import ./gtk.nix { inherit pkgs; });
-  qt = ( import ./qt.nix { inherit pkgs; });
+  #gtk = ( import ./gtk.nix { inherit pkgs; });
+  #qt = ( import ./qt.nix { inherit pkgs; });
 
   xdg = ( import ./xdg.nix { inherit pkgs config; });
 

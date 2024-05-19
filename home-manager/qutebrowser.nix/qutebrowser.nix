@@ -23,15 +23,15 @@
       last_close = "startpage";
     };
 
-    fonts = {
-      tabs.selected = "BlexMono Nerd Font";
-      tabs.unselected = "BlexMono Nerd Font";
-      hints = "BlexMono Nerd Font";
-      statusbar = "BlexMono Nerd Font";
-      web.family.fantasy = "BlexMono Nerd Font";
-    };
+    #fonts = {
+      #tabs.selected = "BlexMono Nerd Font";
+      #tabs.unselected = "BlexMono Nerd Font";
+      #hints = "BlexMono Nerd Font";
+      #statusbar = "BlexMono Nerd Font";
+      #web.family.fantasy = "BlexMono Nerd Font";
+    #};
 
-    colors = (import ./colors.nix { inherit pkgs config; });
+    #colors = (import ./colors.nix { inherit pkgs config; });
 
   };
 

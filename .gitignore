@@ -1,6 +1,10 @@
+'Unknown Organization'
 .zcompdump
 .zshenv
 .zshrc
+GIMP
+Proton
+QtProject.conf
 btop
 cef_user_data
 dconf
@@ -8,7 +12,6 @@ discord
 environment.d
 fastfetch
 fontconfig
-GIMP
 git
 glib-2.0
 gtk-2.0
@@ -24,17 +27,15 @@ mako
 mimeapps.list
 nvim
 pavucontrol.ini
-Proton
 protonvpn
 pulse
-QtProject.conf
 qutebrowser
 rofi
 starship.toml
+stylix
 swaylock
 systemd
 tmux
-'Unknown Organization'
 user-dirs.conf
 user-dirs.dirs
 vifm

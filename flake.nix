@@ -25,6 +25,8 @@
       url = "github:nix-community/nixvim/";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = {self, nixos, nixos-stable, nixpkgs, nixpkgs-stable, darwin, home-manager, ...}@inputs:
