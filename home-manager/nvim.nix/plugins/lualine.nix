@@ -6,8 +6,6 @@
   globalstatus = true;
   iconsEnabled = true;
 
-  theme = "auto";
-
   componentSeparators = {
     left = "";
     right = "";

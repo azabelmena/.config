@@ -25,6 +25,8 @@
       url = "github:nix-community/nixvim/";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = {self, nixos, nixos-stable, nixpkgs, nixpkgs-stable, darwin, home-manager, ...}@inputs:
@@ -78,6 +80,8 @@
       noether = darwin.lib.darwinSystem{
         modules = [
           ./nix/noether/configuration.nix
+
+          inputs.stylix.darwinModules.stylix
 
           home-manager.darwinModules.home-manager{
             home-manager.extraSpecialArgs = { inherit inputs system-aarch64-darwin; };

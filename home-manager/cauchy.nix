@@ -46,7 +46,4 @@
       zathura = (import ./zathura.nix { inherit pkgs config; });
       zsh = (import ./zsh.nix { inherit pkgs; });
   };
-
-  gtk = ( import ./gtk.nix { inherit pkgs; });
-  qt = ( import ./qt.nix { inherit pkgs; });
 }
