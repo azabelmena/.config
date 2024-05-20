@@ -29,7 +29,7 @@
     mpv
     obs-studio
     papirus-icon-theme
-    pass
+    passage
     pavucontrol
     protontricks
     protonup-ng
