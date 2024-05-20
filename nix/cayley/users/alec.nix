@@ -10,6 +10,7 @@
   ];
   shell = pkgs.zsh;
   packages = with pkgs; [
+    age
     bat
     blueberry
     discord
@@ -28,11 +29,12 @@
     mpv
     obs-studio
     papirus-icon-theme
+    pass
     pavucontrol
     protontricks
     protonup-ng
-    qutebrowser
     qbittorrent
+    qutebrowser
     ripgrep
     rofi-wayland
     starship
@@ -43,6 +45,7 @@
     tmux
     vifm
     waybar
+    wl-clipboard
     wlsunset
     xdg-desktop-portal-gtk
     zathura
