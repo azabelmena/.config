@@ -34,11 +34,19 @@ in
       package = noto-fonts-emoji;
       name = "Noto Color Emoji";
     };
+
+    sizes = {
+      applications = 12;
+      desktop = 12;
+      popups = 10;
+      terminal = 12;
+    };
   };
 
   cursor = with pkgs; {
     package = google-cursor;
     name = "GoogleDot-Black";
+    size = 32;
   };
 
 }
