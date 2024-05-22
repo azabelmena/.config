@@ -45,6 +45,7 @@
   nixvim = "https://github.com/nix-community/nixvim";
   nlab = "https://ncatlab.org/nlab/show/HomePage";
   noip = "https://www.noip.com/login";
+  nts="https://www.nts.live/";
   osdev = "https://wiki.osdev.org/Main_Page";
   outlook = "https://outlook.office.com/mail/";
   overleaf = "https://www.overleaf.com/";
