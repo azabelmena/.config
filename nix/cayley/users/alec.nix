@@ -38,6 +38,7 @@
     qutebrowser
     ripgrep
     rofi-wayland
+    sops
     starship
     swaylock-effects
     system76-keyboard-configurator

@@ -27,6 +27,11 @@
     };
 
     stylix.url = "github:danth/stylix";
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {self, nixos, nixos-stable, nixpkgs, nixpkgs-stable, darwin, home-manager, ...}@inputs:
