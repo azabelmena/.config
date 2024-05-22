@@ -22,6 +22,7 @@
     hyprland
     hyprpaper
     inkscape-with-extensions
+    just
     kitty
     libnotify
     localsend
