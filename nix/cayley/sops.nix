@@ -13,4 +13,10 @@
     generateKey = true;
   };
 
+  secrets = {
+    alec-password = {
+      neededForUsers = true;
+    };
+  };
+
 }

@@ -1,4 +1,4 @@
-# Cayley NIX!
+# Cayley NIX!configu
 
 {inputs, config, pkgs, lib, ... }:
 
@@ -80,7 +80,7 @@
 
   security = ( import ./security.nix { inherit pkgs; } );
 
-  users = ( import ./users.nix { inherit pkgs; } );
+  users = ( import ./users.nix { inherit pkgs config; } );
 
   programs = ( import ./programs.nix { inherit pkgs; } );
 
