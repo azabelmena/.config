@@ -39,6 +39,7 @@ systemd
 tmux
 user-dirs.conf
 user-dirs.dirs
+vesktop/
 vifm
 waybar
 zathura
