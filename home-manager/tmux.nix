@@ -25,8 +25,6 @@
     bind -n M-8 select-window -t 8
     bind -n M-9 select-window -t 9
 
-    set -g status-style bg=$thm_magenta,fg=$thm_bg
-
     # Widgets
     prfx="#{?client_prefix,<prefix>,}"
     time="%I:%M %p"
