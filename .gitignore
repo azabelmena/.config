@@ -31,7 +31,7 @@ protonvpn
 pulse
 qutebrowser
 rofi
-sops/
+sops
 starship.toml
 stylix
 swaylock
@@ -39,7 +39,7 @@ systemd
 tmux
 user-dirs.conf
 user-dirs.dirs
-vesktop/
+vesktop
 vifm
 waybar
 zathura
