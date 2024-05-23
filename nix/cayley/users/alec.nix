@@ -1,14 +1,19 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
 
   isNormalUser = true;
+
   extraGroups = [
     "libvirtd"
     "networkmanager"
     "wheel"
     "ssh-users"
   ];
+
+  hashedPasswordFile = config.sops.secrets.alec-password.path;
+
   shell = pkgs.zsh;
+
   packages = with pkgs; [
     age
     bat
@@ -38,6 +43,7 @@
     qutebrowser
     ripgrep
     rofi-wayland
+    sops
     starship
     swaylock-effects
     system76-keyboard-configurator

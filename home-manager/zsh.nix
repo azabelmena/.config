@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-let shellAliases = import ./aliasrc.nix;
+let shellAliases = ( import ./aliases.nix);
 in
   {
 

@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
 
   isNormalUser = true;
@@ -7,6 +7,8 @@
     "networkmanager"
     #"ssh-users"
   ];
+
+  hashedPasswordFile = config.sops.secrets.eletrico-password.path;
 
   shell = pkgs.zsh;
 

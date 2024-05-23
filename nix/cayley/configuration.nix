@@ -1,4 +1,4 @@
-# Cayley NIX!
+# Cayley NIX!configu
 
 {inputs, config, pkgs, lib, ... }:
 
@@ -8,6 +8,7 @@
     inputs.home-manager.nixosModules.home-manager
     inputs.nix-colors.homeManagerModules.default
     inputs.stylix.nixosModules.stylix
+    inputs.sops-nix.nixosModules.sops
   ];
 
 
@@ -79,7 +80,7 @@
 
   security = ( import ./security.nix { inherit pkgs; } );
 
-  users = ( import ./users.nix { inherit pkgs; } );
+  users = ( import ./users.nix { inherit pkgs config; } );
 
   programs = ( import ./programs.nix { inherit pkgs; } );
 
@@ -92,5 +93,7 @@
   system.stateVersion = "unstable";
 
   stylix = ( import ./stylix.nix { inherit pkgs; } );
+
+  sops = ( import ./sops.nix );
 
 }
