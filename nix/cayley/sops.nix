@@ -17,6 +17,10 @@
     alec-password = {
       neededForUsers = true;
     };
+
+    eletrico-password = {
+      neededForUsers = true;
+    };
   };
 
 }
