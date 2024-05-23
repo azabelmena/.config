@@ -1,11 +1,11 @@
 keys:
   - &users:
-    - &ta age1d4wjzrr7rkw2nlllezslj57ht4ns2fltlrm2mesp3lunr74dh53qwde3mp
+    - &alec age1d4wjzrr7rkw2nlllezslj57ht4ns2fltlrm2mesp3lunr74dh53qwde3mp
   - &hosts:
-    - &guppy age1ejf4y50ccls8ulspz9t5cqz8mjm600f50q3kx4e7tj5kw33a65aq4m2znj
+    - &cayley age1ejf4y50ccls8ulspz9t5cqz8mjm600f50q3kx4e7tj5kw33a65aq4m2znj
 creation_rules:
   - path_regex: secrets.yaml$
     key_groups:
       - age:
-        - *ta
-        - *guppy
+        - *alec
+        - *cayley
