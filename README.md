@@ -59,9 +59,6 @@ flake.lock files used to build them on different machines.
     - Nix-Darwin for Apple hardware and have a reproducible system on OSX.
         - i.e. `noether`.
         - Reproducibility here is limited given how locked down OSX is.
-    - `sops-nix` files
-        - For managing secrets (such as passwords and ssh keys) in a declarative
-          way.
 - Various home-manager `.nix` files for programs which include:
     - Vim
     - Neovim
