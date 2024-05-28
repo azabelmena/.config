@@ -22,9 +22,11 @@
     git
     inkscape-with-extensions
     jq
+    just
     kitty
     mpv
     qbittorrent
+    ripgrep
     skhd
     spacebar
     starship
@@ -87,4 +89,7 @@
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 4;
+
+
+  stylix = ( import ./stylix.nix { inherit pkgs; } );
 }
