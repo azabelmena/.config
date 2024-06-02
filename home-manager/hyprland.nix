@@ -24,7 +24,6 @@ in
       "swayidle -w timeout 300 'swaylock' before-sleep 'swaylock"
       "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-      "hyprctl setcursor GoogleDot-Black 16"
     ];
 
     env = [
@@ -44,10 +43,6 @@ in
       gaps_out = 10;
       border_size = 0;
       layout = "dwindle";
-    };
-
-    cursor = {
-      inactive_timeout = 1;
     };
 
     decoration = {
