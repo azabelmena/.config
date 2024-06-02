@@ -43,6 +43,7 @@ in
       gaps_out = 10;
       border_size = 0;
       layout = "dwindle";
+      cursor_inactive_timeout = 1;
     };
 
     decoration = {
