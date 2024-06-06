@@ -38,10 +38,6 @@
   let
     system-x86_64-linux = "x86_64-linux";
     system-aarch64-darwin = "aarch64-darwin";
-
-    pkgs-nixos = import nixos { inherit system-x86_64-linux; };
-    pkgs-darwin = import nixpkgs { inherit system-aarch64-darwin; };
-
   in{
     nixosConfigurations = {
 
