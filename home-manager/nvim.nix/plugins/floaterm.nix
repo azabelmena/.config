@@ -15,14 +15,14 @@
   shell = "zsh";
 
   keymaps = {
-    toggle = "<localleader>tt";
-    new = "<localleader>tn";
-    kill = "<localleader>tk";
+    toggle = "<leader>tt";
+    new = "<leader>tn";
+    kill = "<leader>tk";
 
-    prev = "<localleader>th";
-    last = "<localleader>tj";
-    first = "<localleader>tk";
-    next = "<localleader>tl";
+    prev = "<leader>th";
+    last = "<leader>tj";
+    first = "<leader>tk";
+    next = "<leader>tl";
   };
 
 }
