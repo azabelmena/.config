@@ -4,6 +4,15 @@
 
   enable = true;
 
+  mime.enable = true;
+  mimeApps = {
+    enable = true;
+
+    defaultApplications = {
+      "application/pdf" = "org.pwmt.zathura.desktop";
+    };
+  };
+
   cacheHome = "${config.home.homeDirectory}/.cache/";
   configHome = "${config.home.homeDirectory}/.config/";
   dataHome = "${config.home.homeDirectory}/.local/share/";
