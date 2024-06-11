@@ -156,5 +156,10 @@
     action = "<Nop>";
     mode = [ "n" "i" "v" ];
   }
+  {
+    key = "ZZ";
+    action = "<Nop>";
+    mode = [ "n" "v" ];
+  }
 
 ]
