@@ -29,6 +29,7 @@
     inkscape-with-extensions
     just
     kitty
+    lf
     libnotify
     localsend
     mako
@@ -50,7 +51,6 @@
     tailscale
     texlive.combined.scheme-full
     tmux
-    vifm
     waybar
     wl-clipboard
     wlsunset
