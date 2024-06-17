@@ -36,10 +36,11 @@
       btop = (import ./btop.nix { inherit pkgs; });
       git = ( import ./git.nix { inherit pkgs; } );
       kitty = (import ./kitty.nix { inherit pkgs config; });
+      lf = ( import ./lf.nix );
+      nixvim = ( import ./nvim.nix/nvim.nix { inherit pkgs config; } );
       qutebrowser = (import ./qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
       rofi = (import ./rofi.nix { inherit pkgs config lib; });
       starship = ( import ./starship.nix { inherit pkgs config; });
-      nixvim = ( import ./nvim.nix/nvim.nix { inherit pkgs config; } );
       swaylock = ( import ./swaylock.nix { inherit pkgs config; });
       tmux = (import ./tmux.nix { inherit pkgs; });
       waybar = (import ./waybar.nix { inherit pkgs config; });
