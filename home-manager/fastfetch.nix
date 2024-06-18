@@ -2,7 +2,6 @@
   enable = true;
   settings = {
     logo = {
-      source = "nix";
       padding = {
         top = 0;
         right = 0;
