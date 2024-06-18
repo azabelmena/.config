@@ -1,12 +1,34 @@
+{ pkgs, ... }:
 {
   enable = true;
 
   settings = {
     column_ratios = "1,1";
     confirm_on_delete = "always";
-    confirm_on_delete_multiple = "always";
     scroll_offset = 8;
     unicode_ellipsis = true;
     show_hidden = true;
+    line_numbers="relative";
+
+    use_preview_script = true;
+    preview_script = "${pkgs.ranger}/config/scope.sh";
+    preview_images_method = "w3m";
+    w3m_delay = 0.1;
+
+    bidi_support = true;
+
+    draw_borders = "both";
+    draw_progress_bar_in_status_bar = true;
+
+    mouse_enabled = true;
+  };
+
+  mappings = {
+    rr = "rename_append";
+    yy = "copy";
+    xx = "cut";
+    pp = "paste";
+    dd = "console delete";
+    nf = "shell vi";
   };
 }

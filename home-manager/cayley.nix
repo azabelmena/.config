@@ -37,9 +37,9 @@
       fastfetch = ( import ./fastfetch.nix );
       git = ( import ./git.nix { inherit pkgs; } );
       kitty = (import ./kitty.nix { inherit pkgs config; });
-      ranger = ( import ./ranger.nix );
       nixvim = ( import ./nvim.nix/nvim.nix { inherit pkgs config; } );
       qutebrowser = (import ./qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
+      ranger = ( import ./ranger.nix { inherit pkgs; } );
       rofi = (import ./rofi.nix { inherit pkgs config lib; });
       starship = ( import ./starship.nix { inherit pkgs config; });
       swaylock = ( import ./swaylock.nix { inherit pkgs config; });
