@@ -29,7 +29,6 @@
     inkscape-with-extensions
     just
     kitty
-    lf
     libnotify
     localsend
     mako
@@ -42,6 +41,7 @@
     protonup-ng
     qbittorrent
     qutebrowser
+    ranger
     ripgrep
     rofi-wayland
     sops
