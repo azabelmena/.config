@@ -2,6 +2,7 @@
   # Listing
   clear="clear && fastfetch"; # continue to flex.
   ls="exa";
+  lf="ranger";
   bat="bat --theme gruvbox-dark";    # Add bat alternative to less.
 
   vi = "nvim";
