@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   enable = true;
 
@@ -17,12 +18,15 @@
 
   };
 
-
   keybindings = {
     U = "!du -sh";
     cd = "cd";
     d = null;
     dd = "delete";
     i = "$less $f";
+  };
+
+  previewer = {
+    source = "${pkgs.pistol}/bin/pistol";
   };
 }

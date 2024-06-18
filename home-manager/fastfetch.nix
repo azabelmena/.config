@@ -97,7 +97,7 @@
       }
       {
         type = "player";
-        key = "│ └";
+        key = "│ ├";
         keyColor = "cyan";
       }
       {
