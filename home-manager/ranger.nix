@@ -3,6 +3,7 @@
   enable = true;
 
   settings = {
+    viewmode = "miller";
     column_ratios = "1,1";
     confirm_on_delete = "always";
     scroll_offset = 8;
@@ -11,9 +12,9 @@
     line_numbers="relative";
 
     use_preview_script = true;
-    preview_script = "${pkgs.ranger}/config/scope.sh";
-    preview_images_method = "w3m";
-    w3m_delay = 0.1;
+    preview_script = "${pkgs.ranger}/share/doc/ranger/config/scope.sh";
+    preview_images_method = "kitty";
+    open_all_imager = true;
 
     bidi_support = true;
 
