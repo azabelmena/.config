@@ -16,13 +16,13 @@ in
   fonts = with pkgs; {
 
     serif = {
-      package = dejavu_fonts;
-      name = "DejaVu Serif";
+      package = ibm-plex;
+      name = "IBMPlexMono-Regular";
     };
 
     sansSerif = {
-      package = dejavu_fonts;
-      name = "DejaVu Sans";
+      package = ibm-plex;
+      name = "IBMPlexMono-Regular";
     };
 
     monospace = {
