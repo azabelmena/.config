@@ -81,6 +81,7 @@
       "bluetooth"= {
         format-disabled= " 󰂲 ";
         format-on= "  ";
+        format-connected = " 󰂰 ";
       };
 
       "disk"= {
