@@ -80,6 +80,7 @@
 
       "bluetooth"= {
         format-disabled= " 󰂲 ";
+        format-off= " 󰂲 ";
         format-on= "  ";
         format-connected = " 󰂰 ";
       };
