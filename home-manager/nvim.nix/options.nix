@@ -1,25 +1,26 @@
 { config, ... }:
 {
+  autochdir = true;
+  expandtab = true;
   nu = false;
   relativenumber = true;
-  showmode = false;
-  tabstop = 2;
-  softtabstop = 2;
   shiftwidth = 2;
-  expandtab = true;
+  showmode = false;
   smartindent = true;
+  softtabstop = 2;
+  tabstop = 2;
 
-  cursorline = true;
-  cursorcolumn = true;
   colorcolumn = "81";
+  cursorcolumn = true;
+  cursorline = true;
 
   conceallevel = 1;
 
-  wrap = false;
-  textwidth = 80;
   backup = false;
+  textwidth = 80;
   undodir = "${config.home.homeDirectory}/.vim/undodir";
   undofile = true;
+  wrap = false;
 
   completeopt = "menuone,noselect";
 
