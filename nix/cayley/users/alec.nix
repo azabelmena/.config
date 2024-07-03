@@ -53,7 +53,6 @@
     tmux
     waybar
     wl-clipboard
-    wlsunset
     xdg-desktop-portal-gtk
     zathura
     zsh
