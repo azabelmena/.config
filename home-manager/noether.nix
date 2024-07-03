@@ -24,13 +24,9 @@
     ];
 
     programs = {
-      git = {
-        enable = true;
-        userName = "Alec S. Zabel-Mena";
-        userEmail = "alec.zabel@upr.edu";
-      };
-
       bash = (import ./bash.nix { inherit pkgs; });
+      git = ( import ./git.nix { inherit pkgs; } );
+      fastfetch = ( import ./fastfetch.nix );
       kitty = (import ./kitty.nix { inherit pkgs config; });
       nixvim = ( import ./nvim.nix/nvim.nix { inherit pkgs config; } );
       starship = ( import ./starship.nix { inherit pkgs config; });
