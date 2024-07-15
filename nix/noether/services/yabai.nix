@@ -19,13 +19,7 @@
     window_gap = "10";
   };
   extraConfig=''
-    sudo yabai --load-sa
-    echo "yabai configuration loaded..."
-
-    yabai -m rule --add title='Preferences' manage=off layer=above
-    yabai -m rule --add app='^System Preferences$' manage=off layer=above
-    yabai -m rule --add app='Activity Monitor' manage=off layer=above
-    yabai -m rule --add app='Finder' manage=off layer=above
-    yabai -m rule --add app='^System Information$' manage=off layer=above
+    yabai -m rule --add app="^kitty$" title="^kitty$"  manage=on
+    yabai -m rule --add app="Preferences" manage=off layer=above
   '';
 }
