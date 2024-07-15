@@ -19,7 +19,6 @@ in
 
     exec-once = [
       "waybar &  mako"
-      "wlsunset -S 06:30 -s 18:30"
       "${pkgs.swaybg}/bin/swaybg -i ${image}"
       "swayidle -w timeout 300 'swaylock' before-sleep 'swaylock"
       "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"

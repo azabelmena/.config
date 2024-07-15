@@ -1,6 +1,7 @@
 {
   # Listing
-  clear="clear && fastfetch"; # continue to flex.
+  #clear="clear && fastfetch"; # continue to flex.
+  clear = "(clear) && (fortune | cowsay --random)";
   ls="exa";
   lf="ranger";
   bat="bat --theme gruvbox-dark";    # Add bat alternative to less.

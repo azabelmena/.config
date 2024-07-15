@@ -30,5 +30,7 @@
     time="%I:%M %p"
     date="%d-%b-%Y"
     set -g status-right "''${prfx} ''${time} ''${date} "
+    set -gq allow-passthrough on
+    set -g visual-activity off
   '';
 }

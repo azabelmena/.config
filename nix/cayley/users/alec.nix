@@ -21,6 +21,7 @@
     discord
     eza
     fastfetch
+    fortune
     gamemode
     grimblast
     home-manager
@@ -33,6 +34,7 @@
     localsend
     mako
     mpv
+    neo-cowsay
     obs-studio
     papirus-icon-theme
     passage
@@ -53,7 +55,6 @@
     tmux
     waybar
     wl-clipboard
-    wlsunset
     xdg-desktop-portal-gtk
     zathura
     zsh

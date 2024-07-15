@@ -17,7 +17,7 @@ in
     initExtra = ''
         cd ~
         sleep 0.1
-        fastfetch
+        fortune | cowsay --random
 
         bindkey -v
 
