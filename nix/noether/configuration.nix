@@ -18,6 +18,7 @@
     coreutils
     eza
     fastfetch
+    fortune
     gcc
     git
     inkscape-with-extensions
@@ -25,6 +26,7 @@
     just
     kitty
     mpv
+    neo-cowsay
     qbittorrent
     ripgrep
     skhd
@@ -33,7 +35,6 @@
     texlive.combined.scheme-full
     vifm
     vim-full
-    yabai
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -73,9 +74,7 @@
 
   services = {
     nix-daemon.enable = true;
-
     skhd = ( import ./services/skhd.nix { inherit pkgs; } );
-    yabai = ( import ./services/yabai.nix { inherit pkgs; } );
   };
 
  security.pam.enableSudoTouchIdAuth = true;
