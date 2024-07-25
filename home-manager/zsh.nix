@@ -42,7 +42,7 @@ in
         eval "$(ssh-agent -s)" &>/dev/null # dump output.
         ssh-add $HOME/.ssh/id_cayley 2> /dev/null
         ssh-add $HOME/.ssh/id_github 2> /dev/null
-        ssh-add /Users/alec/.ssh/sig_github 2> /dev/null
+        ssh-add $HOME/.ssh/sig_github 2> /dev/null
     '';
 
     inherit shellAliases;
