@@ -7,6 +7,7 @@
 imports = [
   inputs.nix-colors.homeManagerModules.default
   inputs.nixvim-stable.nixosModules.nixvim
+  inputs.stylix.nixosModules.stylix
 ];
 colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-soft;
 
@@ -55,6 +56,8 @@ nixpkgs = {
   #users = ( import ./users.nix { inherit pkgs lib; } );
 
   programs = ( import ./programs.nix { inherit pkgs config; } );
+
+  stylix = ( import ./stylix.nix { inherit pkgs; } );
 
   documentation.dev.enable = true;
 
