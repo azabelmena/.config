@@ -7,6 +7,10 @@
 imports = [
   inputs.nix-colors.homeManagerModules.default
   inputs.nixvim-stable.nixosModules.nixvim
+<<<<<<< HEAD
+=======
+  inputs.stylix.nixosModules.stylix
+>>>>>>> parent of eca0d85 (Fixed bug)
 ];
 colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-soft;
 
@@ -56,6 +60,11 @@ nixpkgs = {
 
   programs = ( import ./programs.nix { inherit pkgs config; } );
 
+<<<<<<< HEAD
+=======
+  stylix = ( import ./stylix.nix { inherit pkgs; } );
+
+>>>>>>> parent of eca0d85 (Fixed bug)
   documentation.dev.enable = true;
 
   system.stateVersion = "23.11";

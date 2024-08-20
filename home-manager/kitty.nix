@@ -18,7 +18,10 @@
       enable_audio_bell = "no";
       remember_window_size = "yes";
       confirm_os_window_close = "0";
+<<<<<<< HEAD
       hide_window_decorations = "titlebar-only";
+=======
+>>>>>>> parent of eca0d85 (Fixed bug)
       cursor_blink_interval = 0;
 
       macos_hide_from_tasks = "yes";

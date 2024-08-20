@@ -1,0 +1,146 @@
+snippet section "section{}" b
+\section{$0}
+endsnippet
+
+snippet *section "section{}" b
+\section*{$0}
+endsnippet
+
+snippet begin "begin{} / end{}" b
+\begin{$1}
+\end{$1}
+endsnippet
+
+snippet figure "begin{} / end{}" b
+\begin{figure}[h]
+	\centering
+	\includegraphics[$0]{}
+	\caption{}
+	\label{}
+\end{figure}
+endsnippet
+
+snippet $ "Math" wA
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet \bold "Math" wA
+\textbf{$0}
+endsnippet
+
+snippet \italic "Math" wA
+\textit{$0}
+endsnippet
+
+snippet \text "Math" wA
+\text{$0}
+endsnippet
+
+snippet -> "Math" wA
+\xrightarrow{}
+endsnippet
+
+snippet <- "Math" wA
+\xleftarrow{}
+endsnippet
+
+snippet ( "Math" iA
+($0)
+endsnippet
+
+snippet { "Math" iA
+{$0}
+endsnippet
+
+snippet [ "Math" iA
+[$0]
+endsnippet
+
+snippet '' "Quote" iA
+``$0''
+endsnippet
+
+snippet \< "Math" iA
+\langle
+endsnippet
+
+snippet \> "Math" iA
+\rangle
+endsnippet
+
+snippet '([A-Za-z])(\d)' "auto subscript" wrA
+`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+endsnippet
+
+snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
+`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+endsnippet
+
+snippet \sqrt "Fraction" iA
+\sqrt{$1}$0
+endsnippet
+
+snippet \factor "Factor sets." iA
+\faktor{$1}{$2}$0
+endsnippet
+
+snippet \frac "Fraction" iA
+\frac{$1}{$2}$0
+endsnippet
+
+snippet \com "Fraction" iA
+\com{$1}{$2}$0
+endsnippet
+
+snippet CC "Subseteq" A
+\subseteq
+endsnippet
+
+snippet INN "Inclusion of an Element" A
+\in
+endsnippet
+
+snippet OOO "\infty" A
+\infty
+endsnippet
+
+snippet ... "\dots" A
+\dots
+endsnippet
+
+snippet == "Equals" A
+&= $1 \\\\
+endsnippet
+
+snippet != "Not Equal" A
+\neq
+endsnippet
+
+snippet <= "leq" A
+\leq
+endsnippet
+
+snippet >= "geq" A
+\geq
+endsnippet
+
+snippet <! "normal" A
+\unlhd
+endsnippet
+
+snippet xx "cross" A
+\times
+endsnippet
+
+snippet ceil "Ceil" wi
+\left\lceil $1 \right\rceil $0
+endsnippet
+
+snippet floor "Floor" wi
+\left\lfloor $1 \right\rfloor$0
+endsnippet

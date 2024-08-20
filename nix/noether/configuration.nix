@@ -18,6 +18,10 @@
     coreutils
     eza
     fastfetch
+<<<<<<< HEAD
+=======
+    fortune
+>>>>>>> parent of eca0d85 (Fixed bug)
     gcc
     git
     inkscape-with-extensions
@@ -25,6 +29,10 @@
     just
     kitty
     mpv
+<<<<<<< HEAD
+=======
+    neo-cowsay
+>>>>>>> parent of eca0d85 (Fixed bug)
     qbittorrent
     ripgrep
     skhd
@@ -33,7 +41,10 @@
     texlive.combined.scheme-full
     vifm
     vim-full
+<<<<<<< HEAD
     yabai
+=======
+>>>>>>> parent of eca0d85 (Fixed bug)
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -73,9 +84,13 @@
 
   services = {
     nix-daemon.enable = true;
+<<<<<<< HEAD
 
     skhd = ( import ./services/skhd.nix { inherit pkgs; } );
     yabai = ( import ./services/yabai.nix { inherit pkgs; } );
+=======
+    skhd = ( import ./services/skhd.nix { inherit pkgs; } );
+>>>>>>> parent of eca0d85 (Fixed bug)
   };
 
  security.pam.enableSudoTouchIdAuth = true;
