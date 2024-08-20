@@ -1,8 +1,0 @@
-{ pkgs, ... }:
-{
-  kernelPackages = pkgs.linuxPackages_hardened;
-  loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
-  };
-}
