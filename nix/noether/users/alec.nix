@@ -1,8 +1,4 @@
 {
-
-  alec = {
-    name = "alec";
-    home = "/Users/alec";
-  };
-
+  name = "alec";
+  home = "/Users/alec";
 }

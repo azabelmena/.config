@@ -22,6 +22,6 @@
     remapCapsLockToControl = true;
   };
 
-  system.stateVersion = 4;
+  stateVersion = 4;
 
 }

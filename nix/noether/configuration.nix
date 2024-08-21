@@ -18,9 +18,9 @@
 
   users = ( import ./users/users.nix );
 
-  environment = ( import ./environment { inherit pkgs; } );
+  environment = ( import ./environment.nix { inherit pkgs; } );
 
-  system = ( import ./system );
+  system = ( import ./system.nix );
 
   services = ( import ./services/services.nix { inherit pkgs; } );
 
