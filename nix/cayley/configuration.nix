@@ -48,16 +48,7 @@
   fileSystems = ( import ./filesystems.nix );
   swapDevices = ( import ./swap.nix );
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-
-    users = {
-      alec = ( import ../../home-manager/cayley.nix );
-    };
-
-    useGlobalPkgs = true;
-    useUserPackages = true;
-  };
+  home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
   networking = ( import ./network.nix { inherit pkgs lib; });
 
@@ -80,7 +71,7 @@
 
   security = ( import ./security.nix { inherit pkgs; } );
 
-  users = ( import ./users.nix { inherit pkgs config; } );
+  users = ( import ./users/users.nix { inherit pkgs config; } );
 
   programs = ( import ./programs.nix { inherit pkgs; } );
 

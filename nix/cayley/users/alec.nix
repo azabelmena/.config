@@ -25,6 +25,7 @@
     gamemode
     grimblast
     home-manager
+    htop-vim
     hyprland
     hyprpaper
     inkscape-with-extensions
