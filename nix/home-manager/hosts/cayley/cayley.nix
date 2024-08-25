@@ -7,21 +7,7 @@
   ];
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-soft;
 
-  home = {
-    username = "alec";
-    homeDirectory = "/home/alec";
-    stateVersion = "24.05";
-
-    sessionVariables = {
-        EDITOR = "nvim";
-    };
-
-    packages = [
-      (pkgs.nerdfonts.override { fonts = ["IBMPlexMono"]; })
-    ];
-
-    file = ( import ../../misc/files.nix { inherit pkgs config lib; });
-  };
+  home = ( import ./home.nix { inherit pkgs config lib; } );
 
   wayland.windowManager.hyprland = ( import ../../programs/hyprland.nix { inherit pkgs config;});
 
