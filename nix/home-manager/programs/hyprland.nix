@@ -6,6 +6,8 @@ let
     url = imgLink;
     sha256 = "1ynhki0x8zb75vq9l21cbx9ccgmn7g784a82gsl689bsh77cip14";
   };
+
+  conf = "${config.home.homeDirectory}/.config/swaylock/config";
 in
 {
 
@@ -20,7 +22,6 @@ in
     exec-once = [
       "waybar &  mako"
       "${pkgs.swaybg}/bin/swaybg -i ${image}"
-      "swayidle -w timeout 300 'swaylock' before-sleep 'swaylock"
       "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
     ];
@@ -37,7 +38,7 @@ in
       sensitivity = 0;
     };
 
-    general = {
+   general = {
       gaps_in = 5;
       gaps_out = 10;
       border_size = 0;
@@ -106,7 +107,7 @@ in
 
     bind = $mod_main, Q, killactive,
     bind = $mod_exit, DELETE, exit,
-    bind = $mod_main, ESCAPE, exec, swaylock --config ~/.config/swaylock/config
+    bind = $mod_main, ESCAPE, exec, ${pkgs.swaylock-effects}/bin/swaylock --config ${conf}
 
     bind = $mod_main, T, togglefloating,
     bind = $mod_main, P, pseudo, # dwindle
