@@ -20,7 +20,6 @@
     blueberry
     discord
     eza
-    fastfetch
     fortune
     gamemode
     grimblast
@@ -30,7 +29,6 @@
     hyprpaper
     inkscape-with-extensions
     just
-    kitty
     libnotify
     localsend
     mako
@@ -43,21 +41,12 @@
     protontricks
     protonup-ng
     qbittorrent
-    qutebrowser
-    ranger
     ripgrep
-    rofi-wayland
     sops
-    starship
-    swaylock-effects
     system76-keyboard-configurator
     tailscale
     texlive.combined.scheme-full
-    tmux
-    waybar
     wl-clipboard
     xdg-desktop-portal-gtk
-    zathura
-    zsh
   ];
 }

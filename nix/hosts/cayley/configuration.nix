@@ -54,37 +54,37 @@
 
   time.timeZone = "America/Puerto_Rico";
 
-  environment = ( import ../../modules/environment.nix { inherit pkgs; } );
+  environment = ( import ../../modules/nixos/environment.nix { inherit pkgs; } );
 
   i18n.defaultLocale = "en_US.UTF-8";
 
   hardware = ( import ./hardware/hardware.nix { inherit pkgs config lib; });
 
-  virtualisation = ( import ../../modules/virtualisation.nix { inherit pkgs; });
+  virtualisation = ( import ../../modules/nixos/virtualisation.nix { inherit pkgs; });
 
-  systemd = ( import ../../modules/systemd.nix { inherit pkgs; } );
-  services = ( import ../../modules/services.nix { inherit pkgs; } );
+  systemd = ( import ../../modules/nixos/systemd.nix { inherit pkgs; } );
+  services = ( import ../../modules/nixos/services.nix { inherit pkgs; } );
 
   sound.enable = true;
 
-  xdg = ( import ../../modules/xdg.nix { inherit pkgs; } );
+  xdg = ( import ../../modules/nixos/xdg.nix { inherit pkgs; } );
 
-  security = ( import ../../modules/security.nix { inherit pkgs; } );
+  security = ( import ../../modules/nixos/security.nix { inherit pkgs; } );
 
-  users = ( import ../../modules/users/users.nix { inherit pkgs config; } );
+  users = ( import ../../modules/nixos/users/users.nix { inherit pkgs config; } );
 
-  programs = ( import ../../modules/programs.nix { inherit pkgs; } );
+  programs = ( import ../../modules/nixos/programs.nix { inherit pkgs; } );
 
   fonts.packages = with pkgs; [
      (nerdfonts.override {fonts  = ["IBMPlexMono"];})
   ];
 
-  documentation = ( import ../../modules/documentation.nix  );
+  documentation = ( import ../../modules/nixos/documentation.nix  );
 
   system.stateVersion = "unstable";
 
-  stylix = ( import ../../modules/stylix.nix { inherit pkgs; } );
+  stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
 
-  sops = ( import ../../modules/sops.nix );
+  sops = ( import ../../modules/nixos/sops.nix );
 
 }
