@@ -32,8 +32,8 @@
   };
 
   programs = {
-      bash = (import ./bash.nix { inherit pkgs; });
-      btop = (import ./btop.nix { inherit pkgs; });
+      bash = ( import ./bash.nix { inherit pkgs; } );
+      btop = ( import ./btop.nix { inherit pkgs; } );
       fastfetch = ( import ./fastfetch.nix );
       git = ( import ./git.nix { inherit pkgs; } );
       kitty = (import ./kitty.nix { inherit pkgs config; });
