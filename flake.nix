@@ -41,59 +41,12 @@
   in{
     nixosConfigurations = {
 
-      fermat = nixos-stable.lib.nixosSystem {
-        specialArgs = { inherit inputs system-x86_64-linux; };
-
-        modules = [
-          "${nixos-stable}/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix"
-          ./nix/fermat/configuration.nix
-        ];
-      };
-
       cayley = nixos.lib.nixosSystem {
         specialArgs = { inherit inputs system-x86_64-linux; };
 
         modules = [
-          ./nix/cayley/configuration.nix
+          ./nix/hosts/cayley/configuration.nix
         ];
       };
-
-      cauchy = nixos.lib.nixosSystem {
-        specialArgs = { inherit inputs system-x86_64-linux; };
-
-        modules = [
-          ./nix/cauchy/configuration.nix
-        ];
-      };
-
-      lovelace = nixos-stable.lib.nixosSystem {
-        specialArgs = { inherit inputs system-x86_64-linux; };
-
-        modules = [
-          ./nix/lovelace/configuration.nix
-        ];
-      };
-
-    };
-
-    darwinConfigurations = {
-
-      noether = darwin.lib.darwinSystem{
-        modules = [
-          ./nix/noether/configuration.nix
-
-          inputs.stylix.darwinModules.stylix
-
-          home-manager.darwinModules.home-manager{
-            home-manager.extraSpecialArgs = { inherit inputs system-aarch64-darwin; };
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.alec = import ./home-manager/noether.nix;
-          }
-        ];
-      };
-
-    };
-
   };
 }

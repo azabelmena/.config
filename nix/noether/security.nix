@@ -1,5 +1,0 @@
-{
-
-  pam.enableSudoTouchIdAuth = true;
-
-}
