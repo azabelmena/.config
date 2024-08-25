@@ -50,7 +50,7 @@
 
   home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
-  networking = ( import ./network.nix { inherit pkgs lib; });
+  networking = ( import ./hardware/network.nix { inherit pkgs lib; });
 
   time.timeZone = "America/Puerto_Rico";
 
