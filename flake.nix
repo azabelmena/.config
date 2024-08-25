@@ -48,5 +48,6 @@
           ./nix/hosts/cayley/configuration.nix
         ];
       };
+    };
   };
 }
