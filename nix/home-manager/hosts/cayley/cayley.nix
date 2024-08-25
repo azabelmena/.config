@@ -9,11 +9,9 @@
 
   home = ( import ./home.nix { inherit pkgs config lib; } );
 
-  wayland.windowManager.hyprland = ( import ../../programs/hyprland.nix { inherit pkgs config;});
+  wayland = ( import ../../programs/wayland.nix { inherit pkgs config; } );
 
-  services = {
-    mako = ( import ../../programs/mako.nix { inherit pkgs config; } );
-  };
+  services = ( import ./services.nix { inherit pkgs config; } );
 
   programs = ( import ./programs.nix { inherit pkgs config lib; } );
 
