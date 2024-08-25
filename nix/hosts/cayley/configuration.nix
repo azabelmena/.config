@@ -43,10 +43,10 @@
       ];
   };
 
-  boot = ( import ./boot.nix { inherit pkgs; });
+  boot = ( import ./hardware/boot.nix { inherit pkgs; });
 
-  fileSystems = ( import ./filesystems.nix );
-  swapDevices = ( import ./swap.nix );
+  fileSystems = ( import ./hardware/filesystems.nix );
+  swapDevices = ( import ./hardware/swap.nix );
 
   home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
@@ -58,7 +58,7 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  hardware = ( import ./hardware.nix { inherit pkgs config lib; });
+  hardware = ( import ./hardware/hardware.nix { inherit pkgs config lib; });
 
   virtualisation = ( import ./virtualisation.nix { inherit pkgs; });
 
