@@ -39,11 +39,11 @@
 
     nixPath = [
         "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos/nixpkgs"
-        "nixos-config=/home/alec/.config/nixos/cayley/configuration.nix"
+        "nixos-config=/home/alec/.config/nix/hosts/cayley/configuration.nix"
       ];
   };
 
-  boot = ( import ./hardware/boot.nix { inherit pkgs; });
+  boot = ( import ./hardware/boot.nix { inherit pkgs; } );
 
   fileSystems = ( import ./hardware/filesystems.nix );
   swapDevices = ( import ./hardware/swap.nix );
@@ -54,37 +54,37 @@
 
   time.timeZone = "America/Puerto_Rico";
 
-  environment = ( import ./environment.nix { inherit pkgs; } );
+  environment = ( import ../../modules/environment.nix { inherit pkgs; } );
 
   i18n.defaultLocale = "en_US.UTF-8";
 
   hardware = ( import ./hardware/hardware.nix { inherit pkgs config lib; });
 
-  virtualisation = ( import ./virtualisation.nix { inherit pkgs; });
+  virtualisation = ( import ../../modules/virtualisation.nix { inherit pkgs; });
 
-  systemd = ( import ./systemd.nix { inherit pkgs; } );
-  services = ( import ./services.nix { inherit pkgs; } );
+  systemd = ( import ../../modules/systemd.nix { inherit pkgs; } );
+  services = ( import ../../modules/services.nix { inherit pkgs; } );
 
   sound.enable = true;
 
-  xdg = ( import ./xdg.nix { inherit pkgs; } );
+  xdg = ( import ../../modules/xdg.nix { inherit pkgs; } );
 
-  security = ( import ./security.nix { inherit pkgs; } );
+  security = ( import ../../modules/security.nix { inherit pkgs; } );
 
-  users = ( import ./users/users.nix { inherit pkgs config; } );
+  users = ( import ../../modules/users/users.nix { inherit pkgs config; } );
 
-  programs = ( import ./programs.nix { inherit pkgs; } );
+  programs = ( import ../../modules/programs.nix { inherit pkgs; } );
 
   fonts.packages = with pkgs; [
      (nerdfonts.override {fonts  = ["IBMPlexMono"];})
   ];
 
-  documentation = ( import ./documentation.nix  );
+  documentation = ( import ../../modules/documentation.nix  );
 
   system.stateVersion = "unstable";
 
-  stylix = ( import ./stylix.nix { inherit pkgs; } );
+  stylix = ( import ../../modules/stylix.nix { inherit pkgs; } );
 
-  sops = ( import ./sops.nix );
+  sops = ( import ../../modules/sops.nix );
 
 }
