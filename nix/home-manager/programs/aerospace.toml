@@ -60,9 +60,9 @@ cmd-shift-8 = 'move-node-to-workspace 8'
 cmd-shift-9 = 'move-node-to-workspace 9'
 
 cmd-enter = 'exec-and-forget /nix/store/6ygjccnkc18p26a0siygm0dgbdlv16fr-kitty-0.35.1/bin/kitty'
+cmd-b = 'exec-and-forget open -n /Applications/Safari.app'
 
-cmd-tab = 'workspace-back-and-forth'
-cmd-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+cmd-tab = 'focus-back-and-forth'
 
 alt-shift-semicolon = 'mode service'
 
