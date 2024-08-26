@@ -18,7 +18,7 @@ in
     initExtra = ''
         cd ~
         sleep 0.1
-        ${pkgs.fortune}/bin/fortune | ${pkgs.cowsay}/bin/cowsay --random
+        ${pkgs.fortune}/bin/fortune | ${pkgs.neo-cowsay}/bin/cowsay --random
 
         bindkey -v
 
