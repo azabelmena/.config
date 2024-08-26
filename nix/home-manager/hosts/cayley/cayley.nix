@@ -15,7 +15,7 @@
 
   programs = ( import ./programs.nix { inherit pkgs config lib; } );
 
-  xdg = ( import ../../misc/xdg.nix { inherit pkgs config; });
+  xdg = ( import ../../../modules/nixos/misc/xdg.nix { inherit pkgs config; });
 
-  dconf = ( import ../../misc/dconf.nix);
+  dconf = ( import ../../../modules/nixos/misc/dconf.nix );
 }

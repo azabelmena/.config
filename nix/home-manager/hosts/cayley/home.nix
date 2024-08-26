@@ -16,7 +16,7 @@
     (pkgs.nerdfonts.override { fonts = ["IBMPlexMono"]; })
   ];
 
-  file = ( import ../../misc/files.nix { inherit pkgs config lib; });
+  file = ( import ../../../modules/nixos/misc/files.nix { inherit pkgs config lib; });
 
   enableNixpkgsReleaseCheck = true;
   enableDebugInfo = true;
