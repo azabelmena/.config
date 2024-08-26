@@ -6,8 +6,8 @@
   lf="ranger";
   bat="bat --theme gruvbox-dark";    # Add bat alternative to less.
 
-  vi = "nvim";
-  vim = "nvim";
+  vi = "nvim -u ~/.config/nvim/init.lua ";
+  vim = "nvim -u ~/.config/nvim/init.lua ";
 
   ## ZSH
   history="history | less";
