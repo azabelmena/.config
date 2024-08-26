@@ -43,6 +43,8 @@
 
   home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
+  networking = ( import ./network.nix { inherit pkgs lib; } );
+
   system = ( import ../../modules/nix-darwin/system.nix );
 
   services = ( import ../../modules/nix-darwin/services.nix { inherit pkgs; } );
