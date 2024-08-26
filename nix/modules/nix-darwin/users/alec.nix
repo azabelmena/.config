@@ -2,6 +2,6 @@
 {
 
 name = "alec";
-home = "/Users/alec/";
+home = "/Users/alec";
 
 }

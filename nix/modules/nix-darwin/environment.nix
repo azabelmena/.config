@@ -17,20 +17,18 @@
     neo-cowsay
     qbittorrent
     ripgrep
-    skhd
     spacebar
     starship
     texlive.combined.scheme-full
     vifm
     vim-full
-    yabai
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-vi-mode
   ];
 
-  darwinConfig = "$HOME/.config/nix/noether/configuration.nix";
+  darwinConfig = "/Users/alec/.config/nix/noether/configuration.nix";
 
   loginShell = pkgs.zsh;
 
