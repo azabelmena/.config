@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
-let shellAliases = ( import ./aliases.nix);
+let
+    shellAliases = ( import ./aliases.nix { inherit pkgs; });
 in
   {
 
@@ -17,14 +18,14 @@ in
     initExtra = ''
         cd ~
         sleep 0.1
-        fortune | cowsay --random
+        ${pkgs.fortune}/bin/fortune | ${pkgs.cowsay}/bin/cowsay --random
 
         bindkey -v
 
         autoload -U colors && colors
         PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-        eval "$(starship init zsh)" 2> /dev/null # dump errors.
+        eval "$(${pkgs.starship}/bin/starship init zsh)" 2> /dev/null # dump errors.
 
         PATH=$PATH:$HOME/scripts/
 
