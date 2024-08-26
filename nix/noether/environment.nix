@@ -17,13 +17,11 @@
     neo-cowsay
     qbittorrent
     ripgrep
-    skhd
     spacebar
     starship
     texlive.combined.scheme-full
     vifm
     vim-full
-    yabai
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
