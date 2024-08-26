@@ -1,6 +1,6 @@
 { inputs, ... }:
 {
-  extraSpecialArgs = { inherit inputs; };
+  extraSpecialArgs = { inherit inputs ; };
 
   users = {
     alec = ( import ../../home-manager/hosts/noether/noether.nix );

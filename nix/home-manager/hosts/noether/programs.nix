@@ -1,5 +1,8 @@
 { pkgs, config, lib, ... }:
 {
+
+  home-manager.enable = true;
+
   bash = (import ../../programs/bash.nix { inherit pkgs; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
@@ -9,5 +12,6 @@
   tmux = ( import ../../programs/tmux.nix { inherit pkgs; } );
   zathura = ( import ../../programs/zathura.nix { inherit pkgs config; } );
   zsh = ( import ../../programs/zsh.nix { inherit pkgs; } );
+
 
 }

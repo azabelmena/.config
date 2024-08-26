@@ -50,15 +50,16 @@
       };
     };
 
-    darwinConfigurations = {
+  darwinConfigurations = {
 
-      noether = darwin.lib.darwinSystem {
-        specialArgs = { inherit inputs system-aarch64-linux; };
-
+      noether = darwin.lib.darwinSystem{
+        specialArgs = { inherit inputs system-aarch64-darwin; };
         modules = [
           ./nix/hosts/noether/configuration.nix
         ];
       };
+
     };
+
   };
 }
