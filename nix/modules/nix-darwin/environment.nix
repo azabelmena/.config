@@ -1,38 +1,37 @@
 { pkgs, ... }:
 {
 
-  sessionVariables = {
-      WLR_NO_HARDWARE_CURSORS = "1";
-      NIXOS_OZONE_WL = "1";
-  };
-
   systemPackages = with pkgs; [
-      OVMFFull
-      autoconf
-      automake
-      bc
-      btop
-      cmake
-      coreutils
-      file
-      gcc
-      git
-      gnumake
-      iptables-legacy
-      just
-      libsForQt5.qt5.qtgraphicaleffects
-      libsForQt5.qt5.qtquickcontrols2
-      libvirt
-      lshw
-      man-pages
-      man-pages-posix
-      openssh
-      openvpn
-      polkit_gnome
-      python3
-      qemu
-      vim-full
-      virt-manager
+    bat
+    coreutils
+    eza
+    fastfetch
+    fortune
+    gcc
+    git
+    inkscape-with-extensions
+    jq
+    just
+    kitty
+    mpv
+    neo-cowsay
+    qbittorrent
+    ripgrep
+    skhd
+    spacebar
+    starship
+    texlive.combined.scheme-full
+    vifm
+    vim-full
+    yabai
+    zsh
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-vi-mode
   ];
+
+  darwinConfig = "$HOME/.config/nix/noether/configuration.nix";
+
+  loginShell = pkgs.zsh;
 
 }

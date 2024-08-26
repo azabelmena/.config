@@ -1,11 +1,11 @@
 { pkgs, ... }:
 let
-  imgLink = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox-mountain-village.png?raw=true";
+imgLink = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox-mountain-village.png?raw=true";
 
-  wallpaper = pkgs.fetchurl {
-    url = imgLink;
-    sha256 = "1ynhki0x8zb75vq9l21cbx9ccgmn7g784a82gsl689bsh77cip14";
-  };
+wallpaper = pkgs.fetchurl {
+  url = imgLink;
+  sha256 = "1ynhki0x8zb75vq9l21cbx9ccgmn7g784a82gsl689bsh77cip14";
+};
 in
 {
 
@@ -16,13 +16,13 @@ in
   fonts = with pkgs; {
 
     serif = {
-      package = ibm-plex;
-      name = "IBMPlexMono-Regular";
+      package = dejavu_fonts;
+      name = "DejaVu Serif";
     };
 
     sansSerif = {
-      package = ibm-plex;
-      name = "IBMPlexMono-Regular";
+      package = dejavu_fonts;
+      name = "DejaVu Sans";
     };
 
     monospace = {
@@ -41,12 +41,6 @@ in
       popups = 10;
       terminal = 12;
     };
-  };
-
-  cursor = with pkgs; {
-    package = google-cursor;
-    name = "GoogleDot-Black";
-    size = 32;
   };
 
 }
