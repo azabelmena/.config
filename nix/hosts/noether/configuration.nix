@@ -4,6 +4,11 @@
 
 {
 
+  imports = [
+    inputs.home-manager.darwinModules.home-manager
+    inputs.stylix.darwinModules.stylix
+  ];
+
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -27,6 +32,8 @@
   users = ( import ../../modules/nix-darwin/users/users.nix );
 
   environment = ( import ../../modules/nix-darwin/environment.nix { inherit pkgs; } );
+
+  home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
   system = ( import ../../modules/nix-darwin/system.nix );
 
