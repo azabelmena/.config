@@ -28,7 +28,7 @@
     zsh-vi-mode
   ];
 
-  darwinConfig = "/Users/alec/.config/nix/noether/configuration.nix";
+  darwinConfig = "/Users/alec/.config/nix/hosts/noether/configuration.nix";
 
   loginShell = pkgs.zsh;
 

@@ -20,11 +20,19 @@
   nix = {
     package = pkgs.nixFlakes;
     settings = {
+      auto-optimise-store = false;
+      max-jobs = 8;
+      require-sigs = true;
       experimental-features = ["nix-command" "flakes"];
+
+      system-features = [
+      "big-parallel"
+      "benchmark"
+      ];
     };
 
     nixPath = [
-        #"darwin=/nix/var/nix/profiles/per-user/root/channels/nixos/nixpkgs"
+        "darwin=/Users/alec/.nix-defexpr/channels/darwin"
         "darwin-config=/Users/alec/.config/nix/hosts/noether/configuration.nix"
       ];
   };
