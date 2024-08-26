@@ -12,6 +12,7 @@
       "ctrl+shift+delete" = "clear_terminal reset active";
       "ctrl+shift+f" = "toggle_fullscreen";
       "ctrl+shift+t" = "no_op";
+      "hide_window_decorations" = "titlebar-only";
   };
 
   settings = {
