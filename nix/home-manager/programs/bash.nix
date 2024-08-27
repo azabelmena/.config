@@ -1,7 +1,7 @@
-{pkgs, ...}:
+{pkgs, config, ...}:
 
-let 
-    shellAliases = ( import ./aliases.nix { inherit pkgs; });
+let
+    shellAliases = ( import ./aliases.nix { inherit pkgs config; });
 in{
     enable = true;
 

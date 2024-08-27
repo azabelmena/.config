@@ -3,7 +3,7 @@
 
   home-manager.enable = true;
 
-  bash = (import ../../programs/bash.nix { inherit pkgs; });
+  bash = (import ../../programs/bash.nix { inherit pkgs config; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
   kitty = (import ../../programs/kitty.nix { inherit pkgs config; });
@@ -11,7 +11,6 @@
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
   tmux = ( import ../../programs/tmux.nix { inherit pkgs; } );
   zathura = ( import ../../programs/zathura.nix { inherit pkgs config; } );
-  zsh = ( import ../../programs/zsh.nix { inherit pkgs; } );
-
+  zsh = ( import ../../programs/zsh.nix { inherit pkgs config; } );
 
 }
