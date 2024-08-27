@@ -11,6 +11,7 @@
 
   nixpkgs = {
     config = {
+      allowBroken = false;
       allowUnfree = true;
     };
 
@@ -37,23 +38,25 @@
       ];
   };
 
-  users = ( import ../../modules/nix-darwin/users/users.nix );
+  documentation = ( import ../../modules/nix-darwin/documentation.nix  );
 
   environment = ( import ../../modules/nix-darwin/environment.nix { inherit pkgs; } );
+
+  fonts.fontDir.enable = true;
 
   home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
   networking = ( import ./network.nix { inherit pkgs lib; } );
 
-  system = ( import ../../modules/nix-darwin/system.nix );
-
-  services = ( import ../../modules/nix-darwin/services.nix { inherit pkgs; } );
+  programs = ( import ../../modules/nix-darwin/programs.nix );
 
   security = ( import ../../modules/nix-darwin/security.nix);
 
-  programs = ( import ../../modules/nix-darwin/programs.nix );
+  services = ( import ../../modules/nix-darwin/services.nix { inherit pkgs; } );
 
   stylix = ( import ../../modules/nix-darwin/stylix.nix { inherit pkgs; } );
 
-  fonts.fontDir.enable = true;
+  system = ( import ../../modules/nix-darwin/system.nix );
+
+  users = ( import ../../modules/nix-darwin/users/users.nix );
 }
