@@ -1,7 +1,7 @@
 [
 
   {
-    key = "<C-n>";
+    key = "<Tab>";
     action = ":Ex!<CR>";
   }
   {
