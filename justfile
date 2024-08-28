@@ -8,7 +8,7 @@ rebuild-lovelace:
   sudo nixos-rebuild --upgrade --flake ~/.config/#lovelace --show-trace switch
 
 rebuild-noether:
-  darwin-rebuild --flake ~/.config/#noether --show-trace switch
+  nix run nix-darwin -- switch --flake ~/.config#noether switch --show-trace
 
 clean-nix:
   (sudo nix-collect-garbage -d) && (nix store optimise) && (clear) && (fastfetch)
