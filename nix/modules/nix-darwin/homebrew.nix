@@ -9,6 +9,7 @@ in
   casks = [
     "nikitabobko/tap/aerospace"
     "qutebrowser"
+    "tailscale"
   ];
 
   caskArgs = {
