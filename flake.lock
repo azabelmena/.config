@@ -436,14 +436,30 @@
         "type": "github"
       }
     },
+    "homebrew-bundle": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1724430000,
+        "narHash": "sha256-NkO/RPNAlAl4b8HiaIMJJLQRPIPKoN86jPwl283+whk=",
+        "owner": "homebrew",
+        "repo": "homebrew-bundle",
+        "rev": "88ecf2f0f8fe496c2f8994df4d820dd791aea69a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homebrew",
+        "repo": "homebrew-bundle",
+        "type": "github"
+      }
+    },
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1724860974,
-        "narHash": "sha256-Q9lmBr7vaPFiz1IAm6BJKV0Ra50kDMkkcSQ4p44H+2g=",
+        "lastModified": 1724870911,
+        "narHash": "sha256-yz6yUWVsFJUFuihaEyNZS7YD2e81JxSEl0wuHVS5qlY=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "a32eb59b3e61ee4c0424933a3f03301dbce03130",
+        "rev": "f17702badf29e23cca5ceb8956e8a3ebd879c907",
         "type": "github"
       },
       "original": {
@@ -455,16 +471,32 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1724864182,
-        "narHash": "sha256-A48Go919B4uaUnkWv/QgmHvGQot0WNsGPAHCiPOvQtY=",
+        "lastModified": 1724869797,
+        "narHash": "sha256-v4RmuqobW2m0muRahi33sFamMUUNB/0x6vXg7OJrYa4=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "947df0e76ba1753af1b1982690e7fc736e205f38",
+        "rev": "089c48da5bfba7407e5fdae909eb3ab8753d6105",
         "type": "github"
       },
       "original": {
         "owner": "homebrew",
         "repo": "homebrew-core",
+        "type": "github"
+      }
+    },
+    "nikitabobko-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723673678,
+        "narHash": "sha256-XxheP9OOWqe4uEXy2Qe7ovZjrYFTJ8odCu4zSiXGWyQ=",
+        "owner": "nikitabobko",
+        "repo": "homebrew-tap",
+        "rev": "f62ddf53bf5ccec0956a1539663148ad58d7068d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nikitabobko",
+        "repo": "homebrew-tap",
         "type": "github"
       }
     },
@@ -704,8 +736,10 @@
       "inputs": {
         "darwin": "darwin",
         "home-manager": "home-manager",
+        "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "nikitabobko-tap": "nikitabobko-tap",
         "nix-colors": "nix-colors",
         "nix-homebrew": "nix-homebrew",
         "nixos": "nixos",

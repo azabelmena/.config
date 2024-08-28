@@ -7,6 +7,7 @@
   imports = [
     inputs.home-manager.darwinModules.home-manager
     inputs.stylix.darwinModules.stylix
+    inputs.nix-homebrew.darwinModules.nix-homebrew
   ];
 
   nixpkgs = {
@@ -44,9 +45,13 @@
 
   fonts.fontDir.enable = true;
 
+  homebrew = ( import ../../modules/nix-darwin/homebrew.nix { inherit config; } );
+
   home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
   networking = ( import ./network.nix { inherit pkgs lib; } );
+
+  nix-homebrew = ( import ./homebrew.nix { inherit inputs config;} );
 
   programs = ( import ../../modules/nix-darwin/programs.nix );
 
