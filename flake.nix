@@ -9,6 +9,21 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/release-24.05";
 
+    nix-homebrew = {
+      url = "github:zhaofengli-wip/nix-homebrew";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    homebrew-cask = {
+      url = "github:homebrew/homebrew-cask";
+      flake = false;
+    };
+
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -34,7 +49,7 @@
     };
   };
 
-  outputs = {self, nixos, nixos-stable, nixpkgs, nixpkgs-stable, darwin, home-manager, ...}@inputs:
+  outputs = {self, nixos, nixpkgs, darwin, ...}@inputs:
   let
     system-x86_64-linux = "x86_64-linux";
     system-aarch64-darwin = "aarch64-darwin";
