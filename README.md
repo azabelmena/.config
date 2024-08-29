@@ -68,14 +68,49 @@ flake.lock files used to build them on different machines.
     - Waybar
     - Zathura
     - Rofi
-    - Yabai and `skhd` (a window manager and hotkey daemon for OSX, respectively)
-    - Many other programs (look through `config/home-manager/`)
-
-- A folder of pictures (these are for storing wallpapers) and should not really
-be considered as part of the configs.
+    - homebrew for MacOS as well as other MacOS specific software.
+    - Many other programs (look through `nix/home-manager/<nix-darwin/nixos>/programs`)
 - A .gitignore and this README.
     - These are just boilerplate and should also not be considered a part of the
     configs.
+
+# Flake structure
+I have set up the following structure for managing all my machine:
+
+```c
+/
+├── nix/
+│   ├── home-manager/
+│   │   ├── hosts/
+│   │   │   ├── machine 1
+│   │   │   │   └── machine specific home-manager files and directories.
+│   │   │   ├── machine 2
+│   │   │   .
+│   │   │   .
+│   │   │   .
+│   │   │   └── machine n
+│   │   │
+│   │   └── programs/
+│   │       └── home-manager program files and directories.
+│   ├── hosts/
+│   │   ├── machine 1
+│   │   │   └── machine specific files and directories.
+│   │   ├── machine 2
+│   │   .
+│   │   .
+│   │   .
+│   │   └── machine n
+│   │
+│   └── modules/
+│       ├── nix-darwin
+│       │   └── modules and directories specific to nix-darwin.
+│       └── nixos
+│           └── modules and directories specific to nixos.
+│
+├── flake files (flake.nix && flake.lock)
+├── Repository files (.gitignore, README.md, and LICENSE
+└── Extraneous files (not necessarily needed for the configs).
+```
 
 # What's The Goal?
 
@@ -98,10 +133,11 @@ given machine. This system should be:
         - It should only depend on the following:
             - `flake.nix`
             - `flake.lock` (which you can update at your own risk)
-            - `.config/home-manager/`
             - `.config/nix/`
-        - There may be some configuration files that introduce state, and I
-        plan on fixing them as I stumble upon them.
+            - `.sops.yaml` and `secrets.yaml` (these are only needed if you plan
+                on using secrets management).
+        - There is just file (for the `just` program), but this can be
+          disregarded if you don't plan on using `just`.
 
 # A note for People Who Wish to Steal from This Repository.
 
