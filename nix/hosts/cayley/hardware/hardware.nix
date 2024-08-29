@@ -11,8 +11,10 @@
 
   bluetooth.enable = true;
 
-  graphics= {
+  opengl = {
       enable = true;
+      driSupport = true;
+      driSupport32Bit = true;
   };
 
   nvidia = ( import ./nvidia.nix { inherit config; });
