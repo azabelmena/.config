@@ -58,7 +58,8 @@ flake.lock files used to build them on different machines.
         - i.e. `cayley`, `cauchy`, etc...
     - Nix-Darwin for Apple hardware and have a reproducible system on OSX.
         - i.e. `noether`.
-        - Reproducibility here is limited given how locked down OSX is.
+        - Given how locked down OSX is, reproducibility is limited, and you will
+          end up with at least _some_ state.
 - Various home-manager `.nix` files for programs which include:
     - Vim
     - Neovim
@@ -68,7 +69,7 @@ flake.lock files used to build them on different machines.
     - Waybar
     - Zathura
     - Rofi
-    - homebrew for MacOS as well as other MacOS specific software.
+    - homebrew for OSX as well as other OSX specific software.
     - Many other programs (look through `nix/home-manager/<nix-darwin/nixos>/programs`)
 - A .gitignore and this README.
     - These are just boilerplate and should also not be considered a part of the
@@ -119,7 +120,8 @@ given machine. This system should be:
 - Declaritive
     - Describe exactly what you want on the system, rather than telling the
       system what to do.
-    - Files, settings and various other things should be declared.
+    - Files, settings and various other things should be **declared**. Nothing
+      should be done imperatively if you can help it.
     - This is fundamentally how the `nix` language works.
 - Reproducible
     - It can be built on many different machines, and give the same programs and
@@ -145,7 +147,7 @@ The dotfiles here are primarly geared around `nix` and using `nix` to declare
 actual configuration files. The actual configuration files for programs
 here don't really exist (at least, they shouldn't), just the `nix` expressions
 declaring them. If you don't have a `nix` based system (i.e. NixOS,
-Nix-Darwnin, or just having the `nix` package manager installed), you could do
+Nix-Darwin, or just having the `nix` package manager installed), you could do
 one of the following:
 1. You could comb through the individual `.nix` files, and reverse enginner and
 retrofit the configs to your own configuration files (I do not recomend this).
