@@ -3,11 +3,11 @@
   for NixOS and Nix-Darwin.";
 
   inputs = {
-    nixos.url = "github:azabelmena/nixpkgs/nixos-unstable";
-    nixos-stable.url = "github:azabelmena/nixpkgs/nixos-24.05";
+    nixos.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixos-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
 
-    nixpkgs.url = "github:azabelmena/nixpkgs/nixpkgs-unstable";
-    nixpkgs-stable.url = "github:azabelmena/nixpkgs/release-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/release-24.05";
 
     nix-homebrew = {
       url = "github:zhaofengli-wip/nix-homebrew";
@@ -31,7 +31,7 @@
     };
 
     home-manager = {
-      url = "github:azabelmena/home-manager";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -48,7 +48,7 @@
     nix-colors.url = "github:misterio77/nix-colors";
 
     nixvim = {
-      url = "github:azabelmena/nixvim/";
+      url = "github:nix-community/nixvim/";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
