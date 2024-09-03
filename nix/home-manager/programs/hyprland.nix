@@ -26,11 +26,6 @@ in
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
     ];
 
-    env = [
-      "XCURSOR_SIZE,24"
-      "WLR_NO_HARDWARE_CURSORS,1"
-    ];
-
     input = {
       kb_layout = "us";
       follow_mouse = 1;

@@ -46,7 +46,7 @@ in
   cursor = with pkgs; {
     package = google-cursor;
     name = "GoogleDot-Black";
-    size = 32;
+    size = 24;
   };
 
 }
