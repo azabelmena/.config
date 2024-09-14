@@ -74,6 +74,15 @@
           ./nix/hosts/cayley/configuration.nix
         ];
       };
+
+      fermat = nixos.lib.nixosSystem {
+        specialArgs = { inherit inputs system-x86_64-linux; };
+
+        modules = [
+          "${nixos}/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix"
+          ./nix/hosts/fermat/configuration.nix
+        ];
+      };
     };
 
   darwinConfigurations = {
