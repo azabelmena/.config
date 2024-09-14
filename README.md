@@ -26,6 +26,10 @@ here are:
         - It is also nice to have (as much as I can have, at least) a
           declaritive set up for an apple device that I plan on using for work
           and recreation.
+- `fermat` ([Pierre de Fermat](https://www.britannica.com/biography/Pierre-de-Fermat))
+    - Configurations for building a NixOS bootable recovery and installation media.
+    - This is the most minimal configuration out of all of them; since it's only
+      meant to be used in a live-boot environment from usb.
 
 By the way, all my machines are named after mathematicians:
 - `cayley` is named specifically after my favorite theorem.
@@ -40,6 +44,12 @@ mathematician naming scheme; although it would be neat if you did.
 notable thing she is famous for, but I think more emphasis should be placed on
 her contributions to number theory; considering she made significant
 contributions to Fermat's last theorem.
+- Pierre de Fermat's claim to fame is in Fermat's Last
+Theorem[](https://www.britannica.com/science/Fermats-last-theorem). He
+specifically wrote, after stating the claim that "I have discovered a truly
+remarkable proof, but this margin is too small to contain it." This theorem had
+stumped mathematicians for almost 400 years until 1993, where [Andrew
+Wiles](https://www.britannica.com/biography/Andrew-Wiles) proved it.
 - The names here are not capitalized (even though they should be) to be in
 keeping with DNS hostname conventions
 [(RFC1178)](https://datatracker.ietf.org/doc/html/rfc1178).
