@@ -10,20 +10,9 @@ Welcome to my dotfiles repository. What we have here are NixOS and Nix-Darwin
 configuration files, and dotfiles that I have declared in the nix language for
 different machines. The machines included
 here are:
-- `cauchy` ([Augustin-Louis Cauchy](https://ncatlab.org/nlab/show/Augustin-Louis+Cauchy))
-    - An old Lenovo Ideapad I have lying around for tinkering and testing.
 - `cayley` ([Arthur Cayley](https://mathshistory.st-andrews.ac.uk/Biographies/Cayley/))
     - A system76 Thelio desktop. This is my main machine, and sees the most
     upates.
-- `fermat` ([Pierre de Fermat](https://www.britannica.com/biography/Pierre-de-Fermat))
-    - Configurations for building a NixOS bootable recovery and installation media.
-    - This is the most minimal configuration out of all of them.
-- `lovelace` ([Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace))
-    - This configuration is meant for KVM virtual machines using qemu.
-    - This is second most minimal config out of all of them. This configuration
-      is designed for the machine to be accessed through `ssh`.
-    - Side note: Known as the first computer programmer, Ada was also a
-      mathematician.
 - `noether` ([Emmy Noether](https://www.britannica.com/biography/Emmy-Noether))
     - An Apple M2 MacBook Pro.
     - This is my current work machine for on the go, and sees the second most
