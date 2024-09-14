@@ -29,7 +29,7 @@
       alternate-scroll-mode = "yes";
     };
 
-    scd = {
+    csd = {
       preferred = "none";
     };
   };
