@@ -13,10 +13,19 @@ here are:
 - `cayley` ([Arthur Cayley](https://mathshistory.st-andrews.ac.uk/Biographies/Cayley/))
     - A system76 Thelio desktop. This is my main machine, and sees the most
     upates.
+- `sophie` ([Sophie Germaine](https://www.britannica.com/biography/Sophie-Germain))
+    - A Framework laptop 16.
+    - This is my current work machine for on the go.
+        - Considering the configs for this machine shouldn't differ too much
+          from `cayley`'s, it's update cycles will (mostly) coincide with those
+          of `cayley`, despite being my main machine when on the go.
 - `noether` ([Emmy Noether](https://www.britannica.com/biography/Emmy-Noether))
     - An Apple M2 MacBook Pro.
-    - This is my current work machine for on the go, and sees the second most
-      updates.
+    - This machine is meant to supplement `sophie` when on the go. Mostly to use
+      `nix` for darwin specific tasks that I can't do with a linux machine.
+        - It is also nice to have (as much as I can have, at least) a
+          declaritive set up for an apple device that I plan on using for work
+          and recreation.
 
 By the way, all my machines are named after mathematicians:
 - `cayley` is named specifically after my favorite theorem.
@@ -26,13 +35,11 @@ By the way, all my machines are named after mathematicians:
 (Emmy's father); although I named my M2 MacBook specifically after Emmy.
 - If you copy my (nix) configs, you do not need to adhere to the
 mathematician naming scheme; although it would be neat if you did.
-- Hopefully down the line I will acquire a framework laptop and name it one
-of the following:
-    - `hilbert` ([David Hilbert](https://en.wikipedia.org/wiki/David_Hilbert))
-    - `sophie` ([Sophie Germaine](https://www.britannica.com/biography/Sophie-Germain))
-    - `hypatia` ([Hypatia of Alexandria](https://en.wikipedia.org/wiki/Hypatia))
-    - `agnesi` ([Maria Gaetana Agnesi](https://www.britannica.com/biography/Maria-Gaetana-Agnesi))
-    - `weyl` ([Hermann Weyl](https://plato.stanford.edu/entries/weyl/))
+- Sophie Germaine was a french mathematician who used a male pen name
+"Le Blanc" in her correspondences with Joseph-Louis Lagrange. This is the most
+notable thing she is famous for, but I think more emphasis should be placed on
+her contributions to number theory; considering she made significant
+contributions to Fermat's last theorem.
 - The names here are not capitalized (even though they should be) to be in
 keeping with DNS hostname conventions
 [(RFC1178)](https://datatracker.ietf.org/doc/html/rfc1178).
