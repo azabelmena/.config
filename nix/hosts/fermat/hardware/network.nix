@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   hostName = "fermat";
-  networkmanager.enable = false;
+  networkmanager.enable = true;
   firewall = {
     enable = true;
 
