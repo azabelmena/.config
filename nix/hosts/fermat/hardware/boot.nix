@@ -1,18 +1,9 @@
 { pkgs, ... }:
 {
-  kernelPackages = pkgs.linuxPackages_zen;
+  kernel.enable = true;
 
   loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
+    systemd-boot.enable = false;
+    efi.canTouchEfiVariables = false;
   };
-
-  initrd = {
-    availableKernelModules = [];
-    kernelModules = [];
-  };
-
-  kernelModules = [];
-  kernelParams = [];
-  extraModulePackages = [];
 }

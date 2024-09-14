@@ -1,26 +1,16 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
-
-  interfaces = {
-    enp3s0.useDHCP = true;
-    wlo1.useDHCP = false;
-  };
-
   hostName = "fermat";
-  networkmanager = {
-    enable = true;
-    dns = "default";
-    logLevel = "INFO";
-  };
+  networkmanager.enable = false;
   firewall = {
-    package = pkgs.iptables-legacy;
     enable = true;
-    allowPing = true;
-    pingLimit = "--limit 1/minute --limit-burst 5";
+
+    allowPing = false;
+    pingLimit = "--limit 0/minute --limit-burst 0";
 
     allowedTCPPorts = [
-    ];
-    allowedUDPPorts = [
+      80
+      443
     ];
   };
 }

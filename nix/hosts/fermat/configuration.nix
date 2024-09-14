@@ -3,10 +3,8 @@
 {
 
   imports = [
-    inputs.home-manager.nixosModules.home-manager
     inputs.nix-colors.homeManagerModules.default
     inputs.stylix.nixosModules.stylix
-    inputs.sops-nix.nixosModules.sops
   ];
 
 
@@ -42,47 +40,22 @@
 
   boot = ( import ./hardware/boot.nix { inherit pkgs; } );
 
-  fileSystems = ( import ./hardware/filesystems.nix );
-  swapDevices = ( import ./hardware/swap.nix );
-
-  home-manager = ( import ./home-manager.nix { inherit inputs; } );
-
   networking = ( import ./hardware/network.nix { inherit pkgs lib; });
 
   time.timeZone = "America/Puerto_Rico";
 
-  environment = ( import ../../modules/nixos/environment.nix { inherit pkgs; } );
+  environment = ( import ./environment.nix { inherit pkgs; } );
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  hardware = ( import ./hardware/hardware.nix { inherit pkgs config lib; });
+  security = ( import ./security.nix { inherit pkgs; } );
 
-  virtualisation = ( import ../../modules/nixos/virtualisation.nix { inherit pkgs; });
-
-  systemd = ( import ../../modules/nixos/systemd.nix { inherit pkgs; } );
-
-  services = ( import ../../modules/nixos/services.nix { inherit pkgs; } );
-
-  sound.enable = true;
-
-  xdg = ( import ../../modules/nixos/xdg.nix { inherit pkgs; } );
-
-  security = ( import ../../modules/nixos/security.nix { inherit pkgs; } );
-
-  users = ( import ../../modules/nixos/users/users.nix { inherit pkgs config; } );
-
-  programs = ( import ../../modules/nixos/programs.nix { inherit pkgs; } );
-
-  fonts.packages = with pkgs; [
-     (nerdfonts.override {fonts  = ["IBMPlexMono"];})
-  ];
+  programs = ( import ./programs.nix { inherit pkgs config; } );
 
   documentation = ( import ../../modules/nixos/documentation.nix  );
 
   system.stateVersion = "unstable";
 
   stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
-
-  sops = ( import ../../modules/nixos/sops.nix );
 
 }
