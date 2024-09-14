@@ -30,6 +30,9 @@ here are:
     - Configurations for building a NixOS bootable recovery and installation media.
     - This is the most minimal configuration out of all of them; since it's only
       meant to be used in a live-boot environment from usb.
+        - Being that this configuration is meant only for live-boot
+          environments, it is somewhat disconnected from the rest of the
+          modules.
 
 By the way, all my machines are named after mathematicians:
 - `cayley` is named specifically after my favorite theorem.
