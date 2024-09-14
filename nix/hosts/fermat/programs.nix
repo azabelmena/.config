@@ -5,4 +5,6 @@
     enable = true;
     enableSSHSupport = true;
   };
+
+  bash = ( import ./bash.nix { inherit pkgs config; } );
 }

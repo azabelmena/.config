@@ -12,8 +12,6 @@
     file
     gcc
     git
-    gmp
-    gnumake
     htop-vim
     lynx
     man-pages
