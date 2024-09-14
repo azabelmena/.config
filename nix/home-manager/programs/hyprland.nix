@@ -83,7 +83,7 @@ in
 
     misc = {
       enable_swallow = true;
-      swallow_regex="^(kitty)$";
+      swallow_regex="^(foot)$";
       no_direct_scanout = true;
     };
   };
@@ -93,7 +93,7 @@ in
     $mod_shift = SUPER SHIFT
     $mod_exit = CTRL_L ALT_L
 
-    bind = $mod_main, RETURN, exec, kitty
+    bind = $mod_main, RETURN, exec, foot
     bind = $mod_main, B, exec, qutebrowser
     bind = $mod_main, V, exec, vifm
     bind = $mod_main, Z, exec, zathura
