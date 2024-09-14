@@ -1,11 +1,8 @@
 rebuild-cayley:
   sudo nixos-rebuild --upgrade --flake ~/.config/#cayley switch --show-trace --option eval-cache false
 
-rebuild-cauchy:
-  sudo nixos-rebuild --upgrade --flake ~/.config/#cauchy switch --show-trace --option eval-cache false
-
-rebuild-lovelace:
-  sudo nixos-rebuild --upgrade --flake ~/.config/#lovelace switch --show-trace --option eval-cache false
+build-fermat:
+  nix build .#nixosConfigurations.fermat.config.system.build.isoImage --show-trace --option eval-cache false
 
 rebuild-noether:
   nix run nix-darwin -- switch --flake ~/.config#noether switch --show-trace --option eval-cache false
