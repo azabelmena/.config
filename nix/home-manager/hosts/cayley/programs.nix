@@ -7,7 +7,7 @@
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
   git = ( import ../../programs/git.nix { inherit pkgs; } );
-  kitty = (import ../../programs/kitty.nix { inherit pkgs config; });
+  foot = (import ../../programs/foot.nix { inherit pkgs; });
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
   ranger = ( import ../../programs/ranger.nix { inherit pkgs; } );
