@@ -4,10 +4,8 @@
 
   inputs = {
     nixos.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixos-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/release-24.05";
 
     nix-homebrew = {
       url = "github:zhaofengli-wip/nix-homebrew";
