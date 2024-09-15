@@ -64,8 +64,6 @@
 
   services = ( import ../../modules/nixos/services.nix { inherit pkgs; } );
 
-  sound.enable = true;
-
   xdg = ( import ../../modules/nixos/xdg.nix { inherit pkgs; } );
 
   security = ( import ../../modules/nixos/security.nix { inherit pkgs; } );
