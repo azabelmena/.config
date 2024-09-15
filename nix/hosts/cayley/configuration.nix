@@ -1,5 +1,3 @@
-# Cayley NIX!configu
-
 {inputs, config, pkgs, lib, ... }:
 
 {
@@ -63,9 +61,8 @@
   virtualisation = ( import ../../modules/nixos/virtualisation.nix { inherit pkgs; });
 
   systemd = ( import ../../modules/nixos/systemd.nix { inherit pkgs; } );
-  services = ( import ../../modules/nixos/services.nix { inherit pkgs; } );
 
-  sound.enable = true;
+  services = ( import ../../modules/nixos/services.nix { inherit pkgs; } );
 
   xdg = ( import ../../modules/nixos/xdg.nix { inherit pkgs; } );
 
