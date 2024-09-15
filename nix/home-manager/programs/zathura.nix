@@ -18,7 +18,7 @@
     recolor-reverse-video = true;
 
     page-padding = 1;
-    recolor = true;
+    recolor = false;
     selection-clipboard = "clipboard";
     selection-notification = false;
   };
