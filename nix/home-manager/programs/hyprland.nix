@@ -38,7 +38,14 @@ in
       gaps_out = 10;
       border_size = 0;
       layout = "dwindle";
-      cursor_inactive_timeout = 1;
+    };
+
+    render = {
+      direct_scanout = false;
+    };
+
+    cursor = {
+      inactive_timeout = 0;
     };
 
     decoration = {
@@ -84,7 +91,6 @@ in
     misc = {
       enable_swallow = true;
       swallow_regex="^(foot)$";
-      no_direct_scanout = true;
     };
   };
 
