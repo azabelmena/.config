@@ -5,7 +5,7 @@ let
 in{
     enable = true;
 
-    shellInit = ''
+    initExtra = ''
       set -o vi
       eval "$(${pkgs.starship}/bin/starship init bash)" 2>/dev/null
     '';
