@@ -4,7 +4,6 @@
   #clear="clear && fastfetch"; # continue to flex.
   clear = "(clear) && (${pkgs.fortune}/bin/fortune | ${pkgs.neo-cowsay}/bin/cowsay --random)";
   ls="${pkgs.eza}/bin/eza";
-  lf="${pkgs.ranger}/bin/ranger";
   bat="${pkgs.bat}/bin/bat --theme gruvbox-dark";    # Add bat alternative to less.
 
   vi = "nvim -u ${config.home.homeDirectory}/.config/nvim/init.lua";
