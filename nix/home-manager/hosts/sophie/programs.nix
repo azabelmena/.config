@@ -10,7 +10,6 @@
   foot = (import ../../programs/foot.nix { inherit pkgs; });
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
-  ranger = ( import ../../programs/ranger.nix { inherit pkgs; } );
   rofi = (import ../../programs/rofi.nix { inherit pkgs config lib; });
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
   swaylock = ( import ../../programs/swaylock.nix { inherit pkgs config; });
