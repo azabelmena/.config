@@ -71,7 +71,7 @@
 
   security = ( import ../../modules/nixos/security.nix { inherit pkgs; } );
 
-  users = ( import ../../modules/nixos/users/users.nix { inherit pkgs config; } );
+  users = ( import ./users/users.nix { inherit pkgs config; } );
 
   programs = ( import ../../modules/nixos/programs.nix { inherit pkgs; } );
 

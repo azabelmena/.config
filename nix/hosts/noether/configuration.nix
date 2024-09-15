@@ -63,5 +63,5 @@
 
   system = ( import ../../modules/nix-darwin/system.nix );
 
-  users = ( import ../../modules/nix-darwin/users/users.nix );
+  users = ( import ./users/users.nix );
 }
