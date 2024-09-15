@@ -1,23 +1,26 @@
 {
   enable = true;
 
-  alwaysShowBufferline = false;
-  hover.enabled = false;
+  settings = {
+    options = {
+      always_show_bufferline = false;
+      hover.enabled = false;
 
-  showBufferIcons = true;
-  showBufferCloseIcons = false;
+      show_buffer_icons = true;
+      show_buffer_close_icons = false;
 
-  colorIcons = true;
+      color_icons = true;
 
-  tabSize = 16;
+      tab_size = 16;
 
-  maxNameLength = 16;
-  maxPrefixLength = 8;
+      max_name_length = 16;
+      max_prefix_length = 8;
 
-  mode = "buffers";
+      persist_buffer_sort = true;
 
-  persistBufferSort = true;
+      separator_style = "thin";
 
-  separatorStyle = "thin";
-
+      mode = "buffers";
+    };
+  };
 }

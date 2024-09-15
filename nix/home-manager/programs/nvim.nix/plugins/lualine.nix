@@ -2,18 +2,21 @@
 
   enable = true;
 
-  alwaysDivideMiddle = true;
-  globalstatus = true;
-  iconsEnabled = true;
+  settings = {
+    options = {
+      always_divide_middle = true;
+      global_status = true;
+      icons_enabled = true;
 
-  componentSeparators = {
-    left = "";
-    right = "";
+      component_separators = {
+        left = "";
+        right = "";
+      };
+
+      section_separators = {
+        left = "";
+        right = "";
+      };
+    };
   };
-
-  sectionSeparators = {
-    left = "";
-    right = "";
-  };
-
 }
