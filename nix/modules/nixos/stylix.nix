@@ -9,6 +9,8 @@ let
 in
 {
 
+  enable = true;
+
   image = "${wallpaper}";
 
   base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
