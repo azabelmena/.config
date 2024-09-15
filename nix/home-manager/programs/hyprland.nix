@@ -45,7 +45,7 @@ in
     };
 
     cursor = {
-      inactive_timeout = 0;
+      inactive_timeout = 1;
     };
 
     decoration = {
