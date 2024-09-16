@@ -43,8 +43,6 @@
 
   environment = ( import ../../modules/nix-darwin/environment.nix { inherit pkgs; } );
 
-  fonts.fontDir.enable = true;
-
   homebrew = ( import ../../modules/nix-darwin/homebrew.nix { inherit config; } );
 
   home-manager = ( import ./home-manager.nix { inherit inputs; } );

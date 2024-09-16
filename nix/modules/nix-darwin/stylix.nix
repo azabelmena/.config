@@ -8,6 +8,7 @@ wallpaper = pkgs.fetchurl {
 };
 in
 {
+  enable = true;
 
   image = "${wallpaper}";
 
