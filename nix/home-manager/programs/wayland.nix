@@ -1,6 +1,6 @@
 { pkgs, config, ... }:
 {
   windowManager = {
-    hyprland = ( import ./hyprland.nix { inherit pkgs config;} );
+    hyprland = ( import ./hypr.nix/hyprland.nix { inherit pkgs; } );
   };
 }
