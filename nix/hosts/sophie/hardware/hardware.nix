@@ -1,11 +1,11 @@
 { pkgs, config, lib, ... }:
 {
-  enableRedistributableFirmware = false;
-  cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  enableRedistributableFirmware = true;
+  cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
-  bluetooth.enable = false;
+  bluetooth.enable = true;
 
   graphics = {
-      enable = false;
+      enable = true;
   };
 }

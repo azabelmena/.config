@@ -8,11 +8,11 @@
   };
 
   initrd = {
-    availableKernelModules = [  ];
-    kernelModules = [ ];
+    availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usb_storage" "usbhid" "uas" "sd_mod" ];
+    kernelModules = [  ];
   };
 
-  kernelModules = [  ];
   kernelParams = [  ];
+  kernelModules = [ "kvm-amd" ];
   extraModulePackages = [ ];
 }

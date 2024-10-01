@@ -2,6 +2,7 @@
 {
 
   interfaces = {
+    wlp1s0.useDHCP = lib.mkDefault true;
   };
 
   hostName = "sophie";
