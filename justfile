@@ -8,7 +8,7 @@ rebuild-noether:
   nix run nix-darwin -- switch --flake github:azabelmena/.config/main#noether switch --show-trace --option eval-cache false
 
 rebuild-sophie:
-  sudo nixos-rebuild --upgrade --flake ~/.config/#sophie switch --show-trace --option eval-cache false
+  sudo nixos-rebuild --upgrade --flake github:azabelmena/.config/sophie#sophie switch --show-trace --option eval-cache false
 
 clean-nix:
   (sudo nix-collect-garbage -d) && (nix store optimise) && (clear) && (fastfetch)
