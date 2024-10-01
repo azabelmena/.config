@@ -7,4 +7,6 @@
   treesitter = ( import ./plugins/treesitter.nix );
   typst-vim = ( import ./plugins/typst.nix );
 
+  web-devicons.enable = true;
+
 }
