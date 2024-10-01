@@ -81,6 +81,14 @@
           ./nix/hosts/fermat/configuration.nix
         ];
       };
+
+      sophie = nixos.lib.nixosSystem {
+        specialArgs = { inherit inputs system-x86_64-linux; };
+
+        modules = [
+          ./nix/hosts/sophie/configuration.nix
+        ];
+      };
     };
 
   darwinConfigurations = {
