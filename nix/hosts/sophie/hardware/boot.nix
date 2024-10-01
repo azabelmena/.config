@@ -8,7 +8,7 @@
   };
 
   initrd = {
-    availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usb_storage" "usbhid" "uas" "sd_mod" ];
+    availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "uas" "sd_mod" ];
     kernelModules = [  ];
   };
 
