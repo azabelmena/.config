@@ -3,8 +3,8 @@
   kernelPackages = pkgs.linuxPackages_zen;
 
   loader = {
-    systemd-boot.enable = false;
-    efi.canTouchEfiVariables = false;
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
   };
 
   initrd = {
