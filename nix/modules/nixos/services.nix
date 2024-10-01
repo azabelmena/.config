@@ -6,7 +6,7 @@
 
   acpid = ( import ./services/acpid.nix );
 
-  #xserver = ( import ./services/xserver.nix );
+  xserver = ( import ./services/xserver.nix );
 
   pipewire = ( import ./services/pipewire.nix );
 
