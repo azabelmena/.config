@@ -1,5 +1,10 @@
 {
   enable = true;
   xkb.layout = "us";
-  videoDrivers = ["nvidia"];
+  videoDrivers = [
+    "amdgpu"
+    "fbdev"
+    "modesetting"
+    "nvidia"
+  ];
 }
