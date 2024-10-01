@@ -3,16 +3,16 @@
   kernelPackages = pkgs.linuxPackages_zen;
 
   loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
+    systemd-boot.enable = false;
+    efi.canTouchEfiVariables = false;
   };
 
   initrd = {
-    availableKernelModules = [ ];
+    availableKernelModules = [  ];
     kernelModules = [ ];
   };
 
-  kernelModules = [ ];
-  kernelParams = [ ];
+  kernelModules = [  ];
+  kernelParams = [  ];
   extraModulePackages = [ ];
 }

@@ -1,2 +1,5 @@
 {
+  layout = "";
+  model = "";
+  variant = "";
 }

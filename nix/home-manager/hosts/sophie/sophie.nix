@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, lib, ... }:  # CAYLEY NIX!
+{ config, pkgs, inputs, lib, ... }:
 
 {
   imports = [
