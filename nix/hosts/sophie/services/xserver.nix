@@ -3,7 +3,5 @@
   xkb.layout = "us";
   videoDrivers = [
     "amdgpu"
-    "fbdev"
-    "modesetting"
   ];
 }

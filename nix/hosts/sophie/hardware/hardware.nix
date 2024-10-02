@@ -5,7 +5,23 @@
 
   bluetooth.enable = true;
 
-  graphics = {
+  keyboard.qmk.enable = true;
+
+  sensor = {
+    iio.enable = true;
+
+    hddtemp = {
       enable = true;
+      unit = "C";
+      drives = [
+        "/dev/nvme0n1"
+        "/dev/sda"
+      ];
+    };
+  };
+
+  graphics = {
+    enable = true;
+    enable32Bit = true;
   };
 }

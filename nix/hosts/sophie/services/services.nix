@@ -1,12 +1,16 @@
 { pkgs, ... }:
 {
-  openssh = ( import ./ssh.nix );
+  acpid = ( import ./acpid.nix );
 
   avahi = ( import ./avahi.nix );
 
-  acpid = ( import ./acpid.nix );
+  displayManager = ( import ./displayManager.nix { inherit pkgs; } );
 
-  xserver = ( import ./xserver.nix );
+  fprintd = ( import ./fprintd.nix { inherit pkgs; } );
+
+  fwupd = ( import ./fwupd.nix { inherit pkgs; } );
+
+  openssh = ( import ./ssh.nix );
 
   pipewire = ( import ./pipewire.nix );
 
@@ -14,5 +18,5 @@
 
   tailscale = ( import ./tailscale.nix { inherit pkgs; } );
 
-  displayManager = ( import ./displayManager.nix { inherit pkgs; } );
+  xserver = ( import ./xserver.nix );
 }
