@@ -35,7 +35,7 @@ in
 
     extraConfig = {
       XDG_DEVNIX_DIR = "${home}/devnix/";
-      XDG_GAMES_DIR = "${home}/storage/";
+      XDG_GAMES_DIR = "${home}/games/";
       XDG_MATHEMATICS_DIR = "${home}/mathematics/";
       XDG_MISC_DIR = "${home}/Misc/";
       XDG_MOUNT0_DIR = "${home}/mount/mount0/";
