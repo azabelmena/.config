@@ -19,6 +19,7 @@
     discord
     eza
     fortune
+    framework-tool
     gamemode
     grimblast
     home-manager
@@ -39,6 +40,7 @@
     protontricks
     protonup-ng
     qbittorrent
+    qmk
     ripgrep
     sops
     system76-keyboard-configurator
