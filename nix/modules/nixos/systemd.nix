@@ -1,6 +1,13 @@
 { pkgs, ... }:
 {
 
+  sleep.extraConfig = ''
+    AllowSuspend=yes
+    AllowHibernate=yes
+    AllowHybridSleep=no
+    AllowSuspendThenHibernate=yes
+  '';
+
   services.fprintd = {
     wantedBy = [ "multi-user.target" ];
     serviceConfig.Type = "simple";

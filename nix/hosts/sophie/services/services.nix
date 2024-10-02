@@ -10,6 +10,10 @@
 
   fwupd = ( import ./fwupd.nix { inherit pkgs; } );
 
+  tlp = ( import ../../../modules/nixos/services/tlp.nix );
+
+  logind = ( import ../../../modules/nixos/services/logind.nix );
+
   openssh = ( import ./ssh.nix );
 
   pipewire = ( import ./pipewire.nix );

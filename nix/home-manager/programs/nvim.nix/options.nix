@@ -1,6 +1,6 @@
 { config, ... }:
 {
-  autochdir = true;
+  autochdir = false;
   expandtab = true;
   nu = false;
   relativenumber = true;

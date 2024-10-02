@@ -67,6 +67,8 @@
 
   security = ( import ../../modules/nixos/security.nix { inherit pkgs; } );
 
+  powerManagement = ( import ./hardware/power-management.nix );
+
   users = ( import ./users/users.nix { inherit pkgs config; } );
 
   programs = ( import ../../modules/nixos/programs.nix { inherit pkgs; } );
