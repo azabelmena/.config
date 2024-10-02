@@ -15,8 +15,8 @@ in
 
   settings = {
     ipc = "on";
-    splash = true;
-    splash_offset = 2.0;
+    splash = false;
+    splash_offset = 0.0;
 
     preload = [
       "${image}"
