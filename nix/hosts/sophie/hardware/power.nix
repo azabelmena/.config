@@ -1,4 +1,4 @@
 { lib, ... }:
 {
-  cpuFreqGovernor = lib.mkDefault "";
+  cpuFreqGovernor = lib.mkDefault "powersave";
 }
