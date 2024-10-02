@@ -1,18 +1,18 @@
 { pkgs, ... }:
 {
-  openssh = ( import ./services/ssh.nix );
+  acpid = ( import ../../../modules/nixos/services/acpid.nix );
 
-  avahi = ( import ./services/avahi.nix );
+  avahi = ( import ../../../modules/nixos/services/avahi.nix );
 
-  acpid = ( import ./services/acpid.nix );
+  displayManager = ( import ../../../modules/nixos/services/displayManager.nix { inherit pkgs; } );
 
-  xserver = ( import ./services/xserver.nix );
+  openssh = ( import ./ssh.nix );
 
-  pipewire = ( import ./services/pipewire.nix );
+  pipewire = ( import ../../../modules/nixos/services/pipewire.nix );
 
-  printing = ( import ./services/printing.nix );
+  printing = ( import ../../../modules/nixos/services/printing.nix );
 
-  tailscale = ( import ./services/tailscale.nix { inherit pkgs; } );
+  tailscale = ( import ./tailscale.nix { inherit pkgs; } );
 
-  displayManager = ( import ./services/displayManager.nix { inherit pkgs; } );
+  xserver = ( import ./xserver.nix );
 }
