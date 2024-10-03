@@ -70,7 +70,7 @@
 
   users = ( import ./users/users.nix { inherit pkgs config; } );
 
-  programs = ( import ./programs.nix { inherit pkgs; } );
+  programs = ( import ./programs.nix { inherit pkgs lib; } );
 
   fonts.packages = with pkgs; [
      (nerdfonts.override {fonts  = ["IBMPlexMono"];})
