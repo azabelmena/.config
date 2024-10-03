@@ -6,15 +6,15 @@
 
   settings = {
     general = {
-      after_sleep_cmd = "pidof hyprlock || hyprlock --immediate";
+      before_sleep_cmd = "pidof hyprlock || hyprlock --immediate --immediate-render";
       ignore_dbus_inhibit = false;
-      lock_cmd = "pidof hyprlock || hyprlock --immediate";
+      lock_cmd = "pidof hyprlock || hyprlock --immediate --immediate-render";
     };
 
     listener = [
       {
         timeout = 256;
-        on-timeout = "pidof hyprlock || hyprlock --immediate";
+        on-timeout = "pidof hyprlock || hyprlock --immediate --immediate-render";
       }
       {
         timeout = 512;

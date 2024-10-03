@@ -19,7 +19,7 @@ in
       hide_cursor = true;
       no_fade_in = false;
       no_fade_out = false;
-      ignore_empty_input = true;
+      ignore_empty_input = false;
       pam_module = "hyprlock";
       fractional_scaling = 2;
     };
