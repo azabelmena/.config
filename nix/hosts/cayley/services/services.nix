@@ -6,6 +6,8 @@
 
   displayManager = ( import ../../../modules/nixos/services/displayManager.nix { inherit pkgs; } );
 
+  logind = ( import ../../../modules/nixos/services/logind.nix );
+
   openssh = ( import ./ssh.nix );
 
   pipewire = ( import ../../../modules/nixos/services/pipewire.nix );
