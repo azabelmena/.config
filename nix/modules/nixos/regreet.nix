@@ -9,4 +9,10 @@
     package = lib.mkForce pkgs.canta-theme;
   };
 
+  settings = {
+    background = {
+      fit = "Fill";
+    };
+  };
+
 }
