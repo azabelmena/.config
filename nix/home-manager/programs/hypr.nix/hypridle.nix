@@ -13,11 +13,11 @@
 
     listener = [
       {
-        timeout = 300;
+        timeout = 256;
         on-timeout = "pidof hyprlock || hyprlock --immediate";
       }
       {
-        timeout = 500;
+        timeout = 512;
         on-timeout = "systemctl suspend";
       }
     ];
