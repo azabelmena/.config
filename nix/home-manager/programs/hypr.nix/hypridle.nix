@@ -6,7 +6,7 @@
 
   settings = {
     general = {
-      after_sleep_command = "pidof hyprlock || hyprlock --immediate --immediate-render";
+      before_sleep_cmd = "pidof hyprlock || hyprlock --immediate --immediate-render";
       ignore_dbus_inhibit = false;
       lock_cmd = "pidof hyprlock || hyprlock --immediate --immediate-render";
     };
