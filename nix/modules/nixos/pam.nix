@@ -14,4 +14,11 @@
 
   };
 
+  services.hyprlock = {
+    fprintAuth = true;
+
+    logFailures = true;
+
+  };
+
 }
