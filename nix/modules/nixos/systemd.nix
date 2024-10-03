@@ -6,6 +6,9 @@
     AllowHibernate=yes
     AllowHybridSleep=no
     AllowSuspendThenHibernate=yes
+
+    HibernateDelaySec=60m
+    SuspendState=mem
   '';
 
   services.fprintd = {

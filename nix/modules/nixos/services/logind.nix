@@ -6,8 +6,4 @@
   lidSwitch = "suspend-then-hibernate";
   lidSwitchExternalPower = "lock";
 
-  extraConfig = ''
-    IdleAction=lock
-  '';
-
 }
