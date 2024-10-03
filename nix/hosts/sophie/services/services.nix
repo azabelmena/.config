@@ -4,8 +4,6 @@
 
   avahi = ( import ../../../modules/nixos/services/avahi.nix );
 
-  displayManager = ( import ../../../modules/nixos/services/displayManager.nix { inherit pkgs; } );
-
   fprintd = ( import ../../../modules/nixos/services/fprintd.nix { inherit pkgs; } );
 
   fwupd = ( import ../../../modules/nixos/services/fwupd.nix { inherit pkgs; } );

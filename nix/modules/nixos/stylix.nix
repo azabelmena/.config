@@ -10,6 +10,7 @@ in
 {
 
   enable = true;
+  autoEnable = true;
 
   image = "${wallpaper}";
 
