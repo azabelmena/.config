@@ -18,7 +18,7 @@
 
   tailscale = ( import ./tailscale.nix { inherit pkgs; } );
 
-  tlp = ( import ../../../modules/nixos/services/tlp.nix );
+  power-profiles-daemon = ( import ./power-profile.nix { inherit pkgs; } );
 
   xserver = ( import ./xserver.nix );
 }
