@@ -70,11 +70,11 @@
         "format"= "{ifname}";
         "format-wifi"= "󰤨  {essid}";
         "format-ethernet"= "󰈁 {ipaddr}/{cidr}";
-        "format-disconnected"= "󰤭";
+        "format-disconnected"= "󰤭   ";
         "tooltip-format"= "󰈁 {ifname} via {gwaddr}";
         "tooltip-format-wifi"= "󰤨 {essid}";
         "tooltip-format-ethernet"= "{ifname} ";
-        "tooltip-format-disconnected"= "󰤭";
+        "tooltip-format-disconnected"= "󰤭   ";
         "max-length"= 50;
       };
 
