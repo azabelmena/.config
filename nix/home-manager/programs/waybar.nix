@@ -23,7 +23,7 @@
 
       "backlight" = {
         tooltip = false;
-        format = "󰃞  {}%";
+        format = "󰃞 {}%";
         interval = 1;
       };
 
@@ -68,13 +68,13 @@
 
       "network"= {
         "format"= "{ifname}";
-        "format-wifi"= "   {essid} ({signalStrength}%)";
+        "format-wifi"= "󰤨  {essid}";
         "format-ethernet"= "󰈁 {ipaddr}/{cidr}";
-        "format-disconnected"= "";
+        "format-disconnected"= "󰤭";
         "tooltip-format"= "󰈁 {ifname} via {gwaddr}";
-        "tooltip-format-wifi"= "  {essid} ({signalStrength}%)";
+        "tooltip-format-wifi"= "󰤨 {essid}";
         "tooltip-format-ethernet"= "{ifname} ";
-        "tooltip-format-disconnected"= "";
+        "tooltip-format-disconnected"= "󰤭";
         "max-length"= 50;
       };
 
