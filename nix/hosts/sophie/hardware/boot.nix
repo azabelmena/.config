@@ -8,8 +8,6 @@
     timeout = 0;
   };
 
-  plymouth = ( import ../../../modules/nixos/plymouth.nix { inherit pkgs; } );
-
   initrd = {
     availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "uas" "sd_mod" ];
     kernelModules = [  ];

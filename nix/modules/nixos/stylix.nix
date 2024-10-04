@@ -52,4 +52,8 @@ in
     size = 24;
   };
 
+  targets = {
+    plymouth.enable = false;
+  };
+
 }
