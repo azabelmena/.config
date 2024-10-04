@@ -72,7 +72,6 @@
   twitter = "https://twitter.com/home";
   uprrp = "https://www.uprrp.edu/";
   uprrpcompsci = "https://natsci.uprrp.edu/ccom/";
-  uprrplogin = "https://ise.uprrp.edu:8443/portal/PortalSetup.action?portal=73cf43a2-5beb-11ef-8af2-cc167ee1bea4&sessionId=0ecdff0a004bf713823e0067&action=cwa";
   uprrpmath = "https://math.uprrp.edu/";
   whatsapp = "https://web.whatsapp.com/";
   wikipedia = "https://www.wikipedia.org/";
