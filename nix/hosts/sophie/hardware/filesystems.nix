@@ -11,9 +11,9 @@
     options = [ "fmask=0077" "dmask=0077" ];
   };
 
-  #"/home/alec/storage" = {
-    #device = "/dev/disk/by-uuid/1400b6d1-557e-4c86-845b-dfaf3703b7dc";
-    #fsType = "ext4";
-  #};
+  "/home/alec/storage" = {
+    device = "/dev/disk/by-uuid/1400b6d1-557e-4c86-845b-dfaf3703b7dc";
+    fsType = "ext4";
+  };
 
 }
