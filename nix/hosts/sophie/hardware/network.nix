@@ -5,7 +5,7 @@
     wlp1s0.useDHCP = lib.mkDefault true;
   };
 
-  hostName = "sophie";
+  hostName = "nixos";
   networkmanager = {
     enable = true;
     dns = "default";
