@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 {
 
-  mutableUsers = true;
+  mutableUsers = false;
 
   groups.ssh-users = {};
 

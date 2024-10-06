@@ -10,6 +10,8 @@
     "ssh-users"
   ];
 
+  hashedPasswordFile = config.sops.secrets.alec-password.path;
+
   shell = pkgs.zsh;
 
   packages = with pkgs; [
