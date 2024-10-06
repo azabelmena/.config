@@ -82,6 +82,6 @@
 
   stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
 
-  sops = ( import ../../modules/nixos/sops.nix { inherit config; } );
+  sops = ( import ../../modules/nixos/sops.nix );
 
 }
