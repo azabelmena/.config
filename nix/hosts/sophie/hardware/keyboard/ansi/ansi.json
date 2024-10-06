@@ -4,7 +4,7 @@
   "macros": [
     "{+KC_LSFT}{+KC_LCTL}c{-KC_LSFT}{-KC_LCTL}",
     "{+KC_LCTL}{+KC_LSFT}v{-KC_LCTL}{-KC_LSFT}",
-    "",
+    "{KC_LCTL,KC_LALT,KC_DEL}",
     "",
     "",
     "",
