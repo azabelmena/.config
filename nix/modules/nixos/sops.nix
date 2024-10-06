@@ -13,7 +13,7 @@ in
       /etc/ssh/ssh_host_ed25519_key
     ];
 
-    keyFile = "${user}/${host}keys.txt";
+    keyFile = "${user}/${host}/keys.txt";
 
     generateKey = true;
   };
