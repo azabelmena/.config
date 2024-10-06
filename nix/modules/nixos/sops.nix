@@ -1,8 +1,3 @@
-{ config, ... }:
-let
-  user = "~/.config/sops/age/";
-  host = "${config.networking.hostName}";
-in
 {
 
   defaultSopsFile = ../../../secrets.yaml;
@@ -13,7 +8,7 @@ in
       /etc/ssh/ssh_host_ed25519_key
     ];
 
-    keyFile = "${user}/${host}keys.txt";
+    keyFile = "~/.config/sops/age/keys.txt";
 
     generateKey = true;
   };
@@ -23,9 +18,6 @@ in
       neededForUsers = true;
     };
 
-    eletrico-password = {
-      neededForUsers = true;
-    };
   };
 
 }
