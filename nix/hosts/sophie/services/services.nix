@@ -20,5 +20,11 @@
 
   power-profiles-daemon = ( import ./power-profile.nix { inherit pkgs; } );
 
+  libinput = {
+    enable = true;
+
+    touchpad = ( import ../../../modules/nixos/touchpad.nix );
+  };
+
   xserver = ( import ./xserver.nix );
 }
