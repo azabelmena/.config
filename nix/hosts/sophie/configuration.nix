@@ -43,6 +43,7 @@
   boot = ( import ./hardware/boot.nix { inherit pkgs; } );
 
   fileSystems = ( import ./hardware/filesystems.nix );
+  swapDevices = ( import ./hardware/swap.nix );
 
   home-manager = ( import ./home-manager.nix { inherit inputs; } );
 
