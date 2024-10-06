@@ -1,6 +1,6 @@
 keys:
   - &hosts:
-    - &cayley age1ejf4y50ccls8ulspz9t5cqz8mjm600f50q3kx4e7tj5kw33a65aq4m2znj
+    - &cayley age1d4wjzrr7rkw2nlllezslj57ht4ns2fltlrm2mesp3lunr74dh53qwde3mp
 creation_rules:
   - path_regex: secrets.yaml$
     key_groups:
