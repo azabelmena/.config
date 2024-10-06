@@ -6,7 +6,6 @@
     inputs.home-manager.nixosModules.home-manager
     inputs.nix-colors.homeManagerModules.default
     inputs.stylix.nixosModules.stylix
-    inputs.sops-nix.nixosModules.sops
   ];
 
 
@@ -83,7 +82,5 @@
   system.stateVersion = "unstable";
 
   stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
-
-  sops = ( import ../../modules/nixos/sops.nix { inherit config; } );
 
 }
