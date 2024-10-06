@@ -1,3 +1,8 @@
+{ config, ... }:
+let
+  user = "~/.config/sops/age/";
+  host = "${config.networking.hostName}";
+in
 {
 
   defaultSopsFile = ../../../secrets.yaml;
@@ -8,7 +13,7 @@
       /etc/ssh/ssh_host_ed25519_key
     ];
 
-    keyFile = "/var/lib/sops-nix/keys.txt";
+    keyFile = "${user}/${host}keys.txt";
 
     generateKey = true;
   };
