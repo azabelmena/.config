@@ -37,6 +37,7 @@ pulse
 qutebrowser
 ranger
 rofi
+secrets
 sops
 starship.toml
 stylix
