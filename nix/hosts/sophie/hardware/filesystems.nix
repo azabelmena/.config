@@ -12,7 +12,7 @@
   };
 
   "/home/alec/storage" = {
-    device = "/dev/disk/by-uuid/b8c8d11f-7d98-4be9-8303-b4f15955ca92";
+    device = "/dev/disk/by-uuid/fd290d04-7308-4530-ae12-1c89493f153d";
     fsType = "ext4";
   };
 
