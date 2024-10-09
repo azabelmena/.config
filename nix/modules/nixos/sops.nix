@@ -6,7 +6,7 @@ in
 
   defaultSopsFile = "${secret}/secrets.yaml";
 
-  validateSopsFiles = false;
+  validateSopsFiles = true;
 
   age = {
     sshKeyPaths = [
