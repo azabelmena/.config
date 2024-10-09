@@ -695,8 +695,27 @@
         "nixos": "nixos",
         "nixpkgs": "nixpkgs_2",
         "nixvim": "nixvim",
+        "secrets": "secrets",
         "sops-nix": "sops-nix",
         "stylix": "stylix"
+      }
+    },
+    "secrets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728489575,
+        "narHash": "sha256-2eWpU8oXA9I6tDYAvqVQms2Wg5hLmrMq4uniWDL8ixE=",
+        "ref": "main",
+        "rev": "11b81b18d2df9111e3622c5a5bfad96b74be32a7",
+        "shallow": true,
+        "type": "git",
+        "url": "ssh://git@github.com/azabelmena/secrets.git"
+      },
+      "original": {
+        "ref": "main",
+        "shallow": true,
+        "type": "git",
+        "url": "ssh://git@github.com/azabelmena/secrets.git"
       }
     },
     "sops-nix": {

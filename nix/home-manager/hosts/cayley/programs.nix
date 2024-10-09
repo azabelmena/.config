@@ -13,6 +13,7 @@
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
   rofi = (import ../../programs/rofi.nix { inherit pkgs config lib; });
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
+  ssh = ( import ../../programs/ssh.nix { inherit config; } );
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });
   waybar = (import ../../programs/waybar.nix { inherit pkgs config; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });

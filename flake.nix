@@ -56,6 +56,11 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    secrets = {
+      url = "git+ssh://git@github.com/azabelmena/secrets.git?ref=main&shallow=1";
+      flake = false;
+    };
   };
 
   outputs = {self, nixos, nixpkgs, darwin, ...}@inputs:

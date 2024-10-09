@@ -1,20 +1,19 @@
-{ config, ... }:
+{ inputs, config, ... }:
 let
-  home = config.home-manager.users.alec.home.homeDirectory;
-  host = config.networking.hostName;
+  secret = builtins.toString inputs.secrets;
 in
 {
 
-  defaultSopsFile = /${home}/secrets/secrets.yaml;
-  validateSopsFiles = false;
+  defaultSopsFile = "${secret}/secrets.yaml";
+
+  validateSopsFiles = true;
 
   age = {
     sshKeyPaths = [
-      /${home}/secrets/sops/age/${host}/id_ed25519
+      /etc/ssh/ssh_host_ed25519_key
     ];
 
-    keyFile = "${home}/secrets/sops/age/${host}/keys.txt";
-
+    keyFile = "/var/lib/sops-nix/keys.txt";
     generateKey = true;
   };
 
