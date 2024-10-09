@@ -1,6 +1,7 @@
 { inputs, config, ... }:
 let
   secret = builtins.toString inputs.secrets;
+  home = config.home-manager.users.alec.home.homeDirectory;
 in
 {
 
@@ -13,7 +14,7 @@ in
       /etc/ssh/ssh_host_ed25519_key
     ];
 
-    keyFile = "/var/lib/sops-nix/keys.txt";
+    keyFile = "${home}/sops/age/keys.txt";
     generateKey = true;
   };
 
