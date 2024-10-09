@@ -13,7 +13,6 @@
     jq
     just
     kitty
-    mpv
     neo-cowsay
     qbittorrent
     ripgrep
