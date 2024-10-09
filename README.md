@@ -145,8 +145,6 @@ given machine. This system should be:
             - `flake.nix`
             - `flake.lock` (which you can update at your own risk)
             - `.config/nix/`
-            - `.sops.yaml` and `secrets.yaml` (these are only needed if you plan
-                on using secrets management).
         - There is just file (for the `just` program), but this can be
           disregarded if you don't plan on using `just`.
 
@@ -170,6 +168,26 @@ or you could just switch over completely to NixOS.
     - Switching to NixOS on Apple hardware is ill-advised; I recommend
     Nix-Darwin for this.
     - I highly recomend option 3 (I cannot guarantee your sanity).
+
+I also use [sops-nix](https://github.com/Mic92/sops-nix) to manage my secrets
+such as user passwords and the like. The secrets themselves are not part of the
+repository for obvious opsec reasons. Now, if you do not plan on using
+`sops-nix` for secrets management, you can disregard anything in the files
+mentioning sops, and replace it with what you see fit. If you do plan on using
+`sops-nix`, take note that the secrets declared in this repository depend on an
+outside directory, and you should follow suit. You should also read up on how to
+set up `sops` secret management. Emergent Mind has a good tutorial on setting up
+`sops` and `sops-nix` on NixOS
+[here](https://unmovedcentre.com/posts/secrets-management/), and it's worth a
+look if you plan on using it.
+    - You might be wondering whether or not depending on an outside directory
+      viaolates the goal of statelessness of the configs, and the answer is:
+      yes, it does. It is however justified, and a necessary evil in this case.
+    - The lesson here I guess is that if you're going to introduce state into
+      your configs, it should be for a good and justified purpose.
+    - Funny enough, I had an encrypted secrets file commmited to this repo, and
+      you can find it in the history, but there's nothing useful there since
+      I've already rotated the keys used to encrypt it.
 
 # Finally.
 Feel free to steal my dots, the repository is public for a reason.
