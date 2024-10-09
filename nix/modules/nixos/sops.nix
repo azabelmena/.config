@@ -1,14 +1,12 @@
 { inputs, config, ... }:
 let
-  secretsDir = builtins.toString inputs.secrets;
-  home = config.home-manager.users.alec.home.homeDirectory;
-  host = config.networking.hostName;
+  secret = builtins.toString inputs.secrets;
 in
 {
 
-  defaultSopsFile = "${secretsDir}/secrets.yaml";
+  defaultSopsFile = "${secret}/secrets.yaml";
 
-  validateSopsFiles = true;
+  validateSopsFiles = false;
 
   age = {
     sshKeyPaths = [
