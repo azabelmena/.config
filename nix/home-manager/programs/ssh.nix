@@ -5,6 +5,10 @@ in
 {
   enable = true;
 
+  addKeysToAgent = "yes";
+  hashKnownHosts = true;
+  serverAliveInterval = 512;
+
   matchBlocks = {
     "git" = {
       host = "github.com";
