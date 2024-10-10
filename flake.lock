@@ -703,10 +703,10 @@
     "secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1728512973,
-        "narHash": "sha256-iyso6llEAoCD1l/FgfZDweFOJNKphmz5NPwmzy0b7nQ=",
+        "lastModified": 1728528750,
+        "narHash": "sha256-fOY1+T/7PoMCEWAoaMq4GJZZe1U2vlz8NOqLOQqvhEE=",
         "ref": "main",
-        "rev": "315fb4672c276d16ad4b19e8e937b414975785f6",
+        "rev": "f61c5382803379d769086139bb936e1c6c4da6a3",
         "shallow": true,
         "type": "git",
         "url": "ssh://git@github.com/azabelmena/secrets.git"
