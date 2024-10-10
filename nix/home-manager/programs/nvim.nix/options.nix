@@ -10,7 +10,7 @@
   softtabstop = 2;
   tabstop = 2;
 
-  colorcolumn = "81";
+  colorcolumn = "78";
   cursorcolumn = true;
   cursorline = true;
 
