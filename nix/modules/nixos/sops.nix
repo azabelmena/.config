@@ -11,7 +11,7 @@ in
 
   age = {
     sshKeyPaths = [
-      /${home}/.ssh/id_sops
+      /etc/ssh/ssh_host_ed25519_key
     ];
 
     keyFile = "${home}/sops/age/keys.txt";
