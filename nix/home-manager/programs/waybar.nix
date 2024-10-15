@@ -23,7 +23,7 @@
 
       "backlight" = {
         tooltip = false;
-        format = "󰃞 {}%";
+        format = "󰃞  {}%";
         interval = 1;
       };
 
