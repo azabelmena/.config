@@ -30,6 +30,7 @@
   google = "https://www.google.com/";
   huhcat = "https://www.youtube.com/watch?v=igO9SmiY4hs";
   intercept = "https://theintercept.com/";
+  ise = "https://ise.uprrp.edu/";
   journalmathny = "http://nyjm.albany.edu/nyjm.html";
   libgen = "http://libgen.is/";
   lmfdb = "https://www.lmfdb.org/";
@@ -46,6 +47,7 @@
   nlab = "https://ncatlab.org/nlab/show/HomePage";
   noip = "https://www.noip.com/login";
   nts="https://www.nts.live/";
+  ogs = "https://online-go.com/";
   osdev = "https://wiki.osdev.org/Main_Page";
   outlook = "https://outlook.office.com/mail/";
   overleaf = "https://www.overleaf.com/";
@@ -54,8 +56,8 @@
   piratebay = "https://thepiratebay.org/index.html";
   portal = "https://portal.upr.edu/uprrp/portal.php?a=rea_login";
   projecteuclid = "https://projecteuclid.org/";
-  protondb = "https://www.protondb.com/";
   proton = "https://account.proton.me/login";
+  protondb = "https://www.protondb.com/";
   quiver = "https://q.uiver.app/";
   radicaldefenc = "https://radicaldefence.keybase.pub/";
   reddit = "https://www.reddit.com/";
