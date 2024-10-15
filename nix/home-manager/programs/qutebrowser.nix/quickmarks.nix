@@ -30,7 +30,7 @@
   google = "https://www.google.com/";
   huhcat = "https://www.youtube.com/watch?v=igO9SmiY4hs";
   intercept = "https://theintercept.com/";
-  ise = "https://ise.uprrp.edu/";
+  ise = "ise.uprrp.edu";
   journalmathny = "http://nyjm.albany.edu/nyjm.html";
   libgen = "http://libgen.is/";
   lmfdb = "https://www.lmfdb.org/";
