@@ -19,13 +19,6 @@ here are:
         - Considering the configs for this machine shouldn't differ too much
           from `cayley`'s, it's update cycles will (mostly) coincide with those
           of `cayley`, despite being my main machine when on the go.
-- `noether` ([Emmy Noether](https://www.britannica.com/biography/Emmy-Noether))
-    - An Apple M2 MacBook Pro.
-    - This machine is meant to supplement `sophie` when on the go. Mostly to use
-      `nix` for darwin specific tasks that I can't do with a linux machine.
-        - It is also nice to have (as much as I can have, at least) a
-          declaritive set up for an apple device that I plan on using for work
-          and recreation.
 - `fermat` ([Pierre de Fermat](https://www.britannica.com/biography/Pierre-de-Fermat))
     - Configurations for building a NixOS bootable recovery and installation media.
     - This is the most minimal configuration out of all of them; since it's only
@@ -38,8 +31,6 @@ By the way, all my machines are named after mathematicians:
 - `cayley` is named specifically after my favorite theorem.
     - Cayley's theorem: Every group is isomorphic to a subgroup of the symmetric
       group.
-- The, name `noether` can refer to either Emmy Noether, or Max Noether
-(Emmy's father); although I named my M2 MacBook specifically after Emmy.
 - If you copy my (nix) configs, you do not need to adhere to the
 mathematician naming scheme; although it would be neat if you did.
 - Sophie Germaine was a french mathematician who used a male pen name
@@ -65,10 +56,6 @@ Here you will find:
 flake.lock files used to build them on different machines.
     - NixOS for machines with generic hardware.
         - i.e. `cayley`, `cauchy`, etc...
-    - Nix-Darwin for Apple hardware and have a reproducible system on OSX.
-        - i.e. `noether`.
-        - Given how locked down OSX is, reproducibility is limited, and you will
-          end up with at least _some_ state.
 - Various home-manager `.nix` files for programs which include:
     - Vim
     - Neovim

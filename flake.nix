@@ -4,43 +4,11 @@
 
   inputs = {
     nixos.url = "github:NixOS/nixpkgs/nixos-unstable";
-
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-
-    nix-homebrew = {
-      url = "github:zhaofengli-wip/nix-homebrew";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    homebrew-bundle = {
-      url = "github:homebrew/homebrew-bundle";
-      flake = false;
-    };
-
-
-    homebrew-cask = {
-      url = "github:homebrew/homebrew-cask";
-      flake = false;
-    };
-
-    homebrew-core = {
-      url = "github:homebrew/homebrew-core";
-      flake = false;
-    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    darwin = {
-      url = "github:LnL7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nikitabobko-tap = {
-      url = "github:nikitabobko/homebrew-tap";
-      flake = false;
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
@@ -63,7 +31,7 @@
     };
   };
 
-  outputs = {self, nixos, nixpkgs, darwin, ...}@inputs:
+  outputs = {self, nixos, nixpkgs, ...}@inputs:
   let
     system-x86_64-linux = "x86_64-linux";
     system-aarch64-darwin = "aarch64-darwin";
@@ -94,17 +62,6 @@
           ./nix/hosts/sophie/configuration.nix
         ];
       };
-    };
-
-  darwinConfigurations = {
-
-      noether = darwin.lib.darwinSystem{
-        specialArgs = { inherit inputs system-aarch64-darwin; };
-        modules = [
-          ./nix/hosts/noether/configuration.nix
-        ];
-      };
-
     };
 
   };
