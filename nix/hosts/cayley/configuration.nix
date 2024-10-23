@@ -1,5 +1,4 @@
 {inputs, config, pkgs, lib, ... }:
-
 {
 
   imports = [
@@ -9,37 +8,9 @@
     inputs.sops-nix.nixosModules.sops
   ];
 
+  nix = ( import ../../modules/nixos/nix.nix { inherit pkgs config; } );
 
-  nixpkgs = {
-    config = {
-      allowBroken = false;
-      allowUnfree = true;
-    };
-    hostPlatform = lib.mkDefault "x86_64-linux";
-  };
-  nix = {
-    package = pkgs.nixFlakes;
-    settings = {
-      auto-optimise-store = false;
-      max-jobs = 8;
-      require-sigs = true;
-      sandbox = true;
-      experimental-features = ["nix-command" "flakes"];
-      allowed-users = [ "@wheel" ];
-
-      system-features = [
-      "kvm"
-      "big-parallel"
-      "benchmark"
-      "nixos-test"
-      ];
-    };
-
-    nixPath = [
-        "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos/nixpkgs"
-        "nixos-config=/home/alec/.config/nix/hosts/cayley/configuration.nix"
-      ];
-  };
+  nixpkgs = ( import ../../modules/nixos/nixpkgs.nix{ inherit pkgs lib; } );
 
   boot = ( import ./hardware/boot.nix { inherit pkgs; } );
 
