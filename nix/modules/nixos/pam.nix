@@ -3,22 +3,24 @@
 
   package = pkgs.pam;
 
-  services.login = {
-    fprintAuth = true;
+  services = {
+    login = {
+      fprintAuth = true;
 
-    text = ''
-      auth include login
-      '';
+      text = ''
+        auth include login
+        '';
 
-    logFailures = true;
+      logFailures = true;
+    };
 
-  };
+    hyprlock = {
+      fprintAuth = true;
 
-  services.hyprlock = {
-    fprintAuth = true;
+      logFailures = true;
 
-    logFailures = true;
 
+    };
   };
 
 }
