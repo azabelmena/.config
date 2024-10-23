@@ -6,7 +6,7 @@ in
 {
   package = pkgs.nixVersions.stable;
   settings = {
-    auto-optimise-store = false;
+    auto-optimise-store = true;
     cores = 8;
     max-jobs = 8;
     require-sigs = true;
