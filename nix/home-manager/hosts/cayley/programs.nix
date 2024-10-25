@@ -11,7 +11,7 @@
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
-  rofi = (import ../../programs/rofi.nix { inherit pkgs config lib; });
+  fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
   ssh = ( import ../../programs/ssh.nix { inherit config; } );
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });

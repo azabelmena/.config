@@ -92,8 +92,8 @@
     bind = $mod_main, B, exec, qutebrowser
     bind = $mod_main, V, exec, vifm
     bind = $mod_main, Z, exec, zathura
-    bind = $mod_main, SPACE, exec, rofi -show drun
-    bind = $mod_shift, SPACE, exec, rofi -show window
+    bind = $mod_main, SPACE, exec, fuzzel
+    bind = $mod_shift, SPACE, exec, fuzzel
 
     bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
