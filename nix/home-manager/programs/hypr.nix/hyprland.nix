@@ -95,6 +95,7 @@
     bind = $mod_main, SPACE, exec, rofi -show drun
     bind = $mod_shift, SPACE, exec, rofi -show window
 
+    bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
     bind = $mod_main, ESCAPE, exec, hyprlock --immediate --immediate-render
     bind = $mod_exit, DELETE, exit,

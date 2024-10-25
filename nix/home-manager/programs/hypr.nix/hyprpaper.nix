@@ -1,12 +1,12 @@
 { pkgs, ... }:
 
 let
-  imgLink = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox-mountain-village.png?raw=true";
 
   image = pkgs.fetchurl {
-    url = imgLink;
-    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/cat-10-e1573844975155.jpg?raw=true";
+    hash = "sha256-nXJSDjjKfcDNio8c/PB2767swiGHzK/mlurmr6J6tHI=";
   };
+
 in
 {
 
@@ -24,6 +24,7 @@ in
 
     wallpaper = [
       "HDMI-A-1,${image}"
+      "eDP-1,${image}"
     ];
 
   };
