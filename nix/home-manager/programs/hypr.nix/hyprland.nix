@@ -144,7 +144,7 @@
     bindm = $mod_main, mouse:272, movewindow
     bindm = $mod_main, mouse:273, resizewindow
 
-    monitor = eDP-1, 2560x1600@165, 0x0, 2
-    monitor = HDMI-A-1, 1920x1080@60, 0x0, 1
+    monitor = eDP-1, 2560x1600@165, 0x0, 1
+    monitor = HDMI-A-1, 1920x1080@74.97, 0x0, 1
   '';
 }
