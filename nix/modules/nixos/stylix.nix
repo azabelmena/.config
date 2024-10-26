@@ -39,10 +39,10 @@ in
     };
 
     sizes = {
-      applications = 18;
-      desktop = 18;
-      popups = 18;
-      terminal = 18;
+      applications = 12;
+      desktop = 12;
+      popups = 12;
+      terminal = 12;
     };
   };
 
@@ -50,6 +50,10 @@ in
     package = google-cursor;
     name = "GoogleDot-Black";
     size = 24;
+  };
+
+  targets = {
+    plymouth.enable = false;
   };
 
 }
