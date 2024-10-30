@@ -4,7 +4,7 @@ let
 
   wallpaper = pkgs.fetchurl {
     url = imgLink;
-    sha256 = "1ynhki0x8zb75vq9l21cbx9ccgmn7g784a82gsl689bsh77cip14";
+    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
   };
 in
 {
