@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  kernelPackages = pkgs.linuxPackages_zen;
+  kernelPackages = pkgs.linuxPackages;
 
   loader = {
     systemd-boot.enable = true;
