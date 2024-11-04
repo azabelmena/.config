@@ -11,7 +11,7 @@
   tabstop = 2;
 
   colorcolumn = "70";
-  cursorcolumn = true;
+  cursorcolumn = false;
   cursorline = true;
 
   conceallevel = 1;
