@@ -1,10 +1,9 @@
 { pkgs, ... }:
 let
-  imgLink = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox-mountain-village.png?raw=true";
 
   wallpaper = pkgs.fetchurl {
-    url = imgLink;
-    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/tokyo-night/tokyo-night1.jpg?raw=true";
+    hash = "sha256-oTOOQq3dzJwdKPIehJtCrDDqQFivyq/mVq70HU+Nnls=";
   };
 in
 {
@@ -14,7 +13,7 @@ in
 
   image = "${wallpaper}";
 
-  base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
+  base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-terminal-storm.yaml";
 
   fonts = with pkgs; {
 

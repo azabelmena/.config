@@ -3,8 +3,8 @@
 let
 
   image = pkgs.fetchurl {
-    url = "https://github.com/azabelmena/Wallpapers/blob/main/cat-10-e1573844975155.jpg?raw=true";
-    hash = "sha256-nXJSDjjKfcDNio8c/PB2767swiGHzK/mlurmr6J6tHI=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/tokyo-night/tokyo-night2.jpg?raw=true";
+    hash = "sha256-O6EC785GMUw6rTU2V4VxuZ7Th7lMIOQZqT1zidT1cf8=";
   };
 
 in
