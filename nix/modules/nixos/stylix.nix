@@ -2,8 +2,8 @@
 let
 
   wallpaper = pkgs.fetchurl {
-    url = "https://github.com/azabelmena/Wallpapers/blob/main/tokyo-night/tokyo-night1.jpg?raw=true";
-    hash = "sha256-oTOOQq3dzJwdKPIehJtCrDDqQFivyq/mVq70HU+Nnls=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/everforest/everforest-nix.png?raw=true";
+    hash = "sha256-kqnftHPhtSnLcJzAB1ksGivVkOiNf5uGXcEkr7UTgTM=";
   };
 in
 {
@@ -13,7 +13,7 @@ in
 
   image = "${wallpaper}";
 
-  base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-terminal-storm.yaml";
+  base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
 
   fonts = with pkgs; {
 
