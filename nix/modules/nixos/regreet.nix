@@ -12,16 +12,15 @@ in
   enable = true;
   package = pkgs.greetd.regreet;
 
-  theme = {
-    name = lib.mkForce "Everforest-Dark-BL";
-    package = lib.mkForce pkgs.everforest-gtk-theme;
+  theme = lib.mkForce {
+    name = "Everforest-Dark-BL";
+    package = pkgs.everforest-gtk-theme;
   };
 
   settings = {
-    background = {
-      path = lib.mkForce "${image}";
+    background = lib.mkForce {
+      path = "${image}";
       fit = "Fill";
     };
   };
-
 }
