@@ -43,7 +43,7 @@
   mynixos = "https://mynixos.com/";
   nixos = "https://nixos.org/";
   nixpkgs = "https://search.nixos.org/packages";
-  nixvim = "https://github.com/nix-community/nixvim";
+  nixvim = "https://nix-community.github.io/nixvim/";
   nlab = "https://ncatlab.org/nlab/show/HomePage";
   noip = "https://www.noip.com/login";
   nts="https://www.nts.live/";
