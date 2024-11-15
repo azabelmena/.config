@@ -22,7 +22,6 @@
     eza
     fortune
     gamemode
-    grimblast
     home-manager
     htop-vim
     hyprland

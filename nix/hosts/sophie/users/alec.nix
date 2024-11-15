@@ -23,7 +23,6 @@
     fortune
     framework-tool
     gamemode
-    grimblast
     home-manager
     htop-vim
     hyprland
