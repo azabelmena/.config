@@ -112,11 +112,6 @@
   }
 
   {
-    key = "<leader>s";
-    action = ":sort<CR>";
-  }
-
-  {
     key = "<ESC>";
     action = "<ESC>";
     mode = [ "n" "i" "v" ];
