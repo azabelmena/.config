@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   floaterm = ( import ./plugins/floaterm.nix { inherit pkgs; } );
   lualine = ( import ./plugins/lualine.nix { inherit pkgs; } );
