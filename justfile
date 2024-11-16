@@ -8,4 +8,4 @@ build-fermat:
   nix build .#nixosConfigurations.fermat.config.system.build.isoImage --show-trace --option eval-cache false
 
 clean-nix:
-  (sudo nix-collect-garbage -d) && (nix store optimise) && (fastfetch)
+  (sudo nix-collect-garbage -d) && (nix store optimise) && (clear) && (fastfetch)
