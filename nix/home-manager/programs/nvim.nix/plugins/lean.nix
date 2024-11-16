@@ -5,8 +5,10 @@
   package = pkgs.vimPlugins.lean-nvim;
   leanPackage = pkgs.lean4;
 
+  lsp.enable = false;
+
   infoview = {
-    autoopen = false;
+    autoopen = true;
     height = 10;
     horizontalPosition = "bottom";
   };
