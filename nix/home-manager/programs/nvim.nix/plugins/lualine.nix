@@ -1,6 +1,8 @@
+{ pkgs, ... }:
 {
 
   enable = true;
+  package = pkgs.vimPlugins.lualin-nvim;
 
   settings = {
     options = {
