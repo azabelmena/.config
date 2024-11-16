@@ -2,7 +2,7 @@
 {
 
   enable = true;
-  package = pkgs.vimPlugins.lualin-nvim;
+  package = pkgs.vimPlugins.lualine-nvim;
 
   settings = {
     options = {
