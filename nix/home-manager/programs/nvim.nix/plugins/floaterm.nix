@@ -1,9 +1,6 @@
-{ pkgs, ... }:
 {
 
   enable = true;
-
-  package = pkgs.vimPlugins.vim-floaterm;
 
   autoclose = 2;
   autohide = 0;

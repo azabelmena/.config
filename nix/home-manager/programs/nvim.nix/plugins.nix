@@ -1,11 +1,11 @@
-{ pkgs, ... }:
 {
 
-  floaterm = ( import ./plugins/floaterm.nix { inherit pkgs; } );
-  lean = ( import ./plugins/lean.nix { inherit pkgs; } );
-  lualine = ( import ./plugins/lualine.nix { inherit pkgs; } );
-  telescope = ( import ./plugins/telescope.nix { inherit pkgs; } );
-  treesitter = ( import ./plugins/treesitter.nix { inherit pkgs; } );
+  floaterm = ( import ./plugins/floaterm.nix );
+  image = ( import ./plugins/image.nix );
+  lualine = ( import ./plugins/lualine.nix );
+  telescope = ( import ./plugins/telescope.nix );
+  treesitter = ( import ./plugins/treesitter.nix );
+  typst-vim = ( import ./plugins/typst.nix );
 
   web-devicons.enable = true;
 
