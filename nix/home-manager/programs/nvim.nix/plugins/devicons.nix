@@ -4,7 +4,7 @@
 
   package = pkgs.vimPlugins.nvim-web-devicons;
 
-  settins = {
+  settings = {
     color_icons = true;
     strict = true;
   };
