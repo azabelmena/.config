@@ -17,7 +17,7 @@
   conceallevel = 1;
 
   backup = false;
-  textwidth = 80;
+  textwidth = 70;
   undodir = "${config.home.homeDirectory}/.vim/undodir";
   undofile = true;
   wrap = false;
