@@ -142,7 +142,5 @@
 
     bindm = $mod_main, mouse:272, movewindow
     bindm = $mod_main, mouse:273, resizewindow
-
-    monitor = eDP-1, 2560x1600@165, 0x0, 2
   '';
 }

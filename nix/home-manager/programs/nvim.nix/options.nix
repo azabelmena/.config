@@ -10,14 +10,14 @@
   softtabstop = 2;
   tabstop = 2;
 
-  colorcolumn = "70";
+  colorcolumn = "0";
   cursorcolumn = false;
   cursorline = true;
 
   conceallevel = 1;
 
   backup = false;
-  textwidth = 70;
+  textwidth = 80;
   undodir = "${config.home.homeDirectory}/.vim/undodir";
   undofile = true;
   wrap = false;
