@@ -1,5 +1,6 @@
 {
   amazon = "https://www.amazon.com/";
+  teams = "https://teams.microsoft.com/v2";
   amsbulletin = "https://www.ams.org/publications/journals/journalsframework/bull";
   amsmath = "https://www.ams.org/home/page";
   apple = "https://www.apple.com/";
