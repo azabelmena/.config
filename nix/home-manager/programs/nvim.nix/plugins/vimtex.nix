@@ -53,7 +53,7 @@
 
     view_method = "zathura";
 
-    fold_enabled = 1;
+    fold_enabled = 0;
     fold_bib_enabled = 1;
 
     doc_enabled = 1;
