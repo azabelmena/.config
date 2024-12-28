@@ -6,4 +6,6 @@
   telescope = ( import ./plugins/telescope.nix { inherit pkgs; } );
   treesitter = ( import ./plugins/treesitter.nix { inherit pkgs; } );
   web-devicons = ( import ./plugins/devicons.nix { inherit pkgs; } );
+
+  vimtex = ( import ./plugins/vimtex.nix { inherit pkgs; } );
 }

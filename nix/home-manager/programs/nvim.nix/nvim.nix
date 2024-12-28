@@ -21,7 +21,7 @@
   extraPlugins = with pkgs.vimPlugins; [
     nerdcommenter
     ultisnips
-    vimtex
+    #vimtex
   ];
 
   enableMan = true;

@@ -44,8 +44,6 @@
     sops
     system76-keyboard-configurator
     tailscale
-    texlive.combined.scheme-full
-    typst
     wl-clipboard
     xdg-desktop-portal-gtk
   ];
