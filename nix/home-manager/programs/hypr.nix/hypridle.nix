@@ -11,16 +11,16 @@
       lock_cmd = "pidof hyprlock || hyprlock";
     };
 
-    listener = [
-      {
-        timeout = 256;
-        on-timeout = "pidof hyprlock || hyprlock";
-      }
-      {
-        timeout = 512;
-        on-timeout = "systemctl suspend";
-      }
-    ];
+    #listener = [
+      #{
+        #timeout = 256;
+        #on-timeout = "pidof hyprlock || hyprlock";
+      #}
+      #{
+        #timeout = 512;
+        #on-timeout = "systemctl suspend";
+      #}
+    #];
   };
 
 }
