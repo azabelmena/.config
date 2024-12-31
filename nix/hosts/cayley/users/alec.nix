@@ -43,6 +43,7 @@
     ripgrep
     sops
     system76-keyboard-configurator
+    texliveFull
     tailscale
     wl-clipboard
     xdg-desktop-portal-gtk

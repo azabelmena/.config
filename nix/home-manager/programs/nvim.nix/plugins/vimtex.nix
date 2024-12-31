@@ -2,7 +2,7 @@
 {
   enable = true;
   package = pkgs.vimPlugins.vimtex;
-  texlivePackage = pkgs.texlive.combined.scheme-full;
+  texlivePackage = pkgs.texliveFull;
 
   settings = {
     cache_persistent = 0;
