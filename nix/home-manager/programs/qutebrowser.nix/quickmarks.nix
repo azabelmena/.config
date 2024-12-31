@@ -1,8 +1,8 @@
 {
   amazon = "https://www.amazon.com/";
-  teams = "https://teams.microsoft.com/v2";
   amsbulletin = "https://www.ams.org/publications/journals/journalsframework/bull";
   amsmath = "https://www.ams.org/home/page";
+  annasarchive = "https://pcm.annas-archive.org/";
   apple = "https://www.apple.com/";
   archiv = "https://arxiv.org/archive/math";
   azabelmena = "https://azabelmena.github.io/";
@@ -64,6 +64,7 @@
   reddit = "https://www.reddit.com/";
   remarkable = "http://10.11.99.1";
   sagemath = "https://www.sagemath.org/";
+  scihub = "https://sci-hub.st/";
   sidim = "http://sidim.org/index.html";
   springerverlag = "https://www.springer.com/gp/mathematics";
   stackexchange = "https://stackexchange.com/";
@@ -71,6 +72,7 @@
   system76 = "https://system76.com/";
   system76-docs = "https://tech-docs.system76.com/README.html";
   tailscale = "https://login.tailscale.com/admin/machines";
+  teams = "https://teams.microsoft.com/v2";
   tendawifi = "http://192.168.0.1/";
   tor = "https://www.torproject.org/";
   twitter = "https://twitter.com/home";
