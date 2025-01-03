@@ -117,6 +117,11 @@
     mode = [ "n" "i" "v" ];
   }
   {
+    key = "<ESC>";
+    action = "<C-\\><C-n>";
+    mode = [ "t" ];
+  }
+  {
     key = "<Bksp>";
     action = "<Bksp>";
     mode = [ "n" "i" "v" ];
