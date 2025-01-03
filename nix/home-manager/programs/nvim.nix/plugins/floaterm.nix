@@ -17,14 +17,14 @@
 
     shell = "zsh";
 
-    keymaps_toggle = "<leader>tt";
-    keymaps_new = "<leader>tn";
-    keymaps_kill = "<leader>tk";
+    keymap_toggle = "<leader>tt";
+    keymap_new = "<leader>tn";
+    keymap_kill = "<leader>tk";
 
-    keymaps_prev = "<leader>th";
-    keymaps_last = "<leader>tj";
-    keymaps_first = "<leader>tk";
-    keymaps_next = "<leader>tl";
+    keymap_prev = "<leader>th";
+    keymap_last = "<leader>tj";
+    keymap_first = "<leader>tk";
+    keymap_next = "<leader>tl";
 
   };
 
