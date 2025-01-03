@@ -117,7 +117,7 @@
     mode = [ "n" "i" "v" ];
   }
   {
-    key = "<ESC>";
+    key = "<leader><ESC>";
     action = "<C-\\><C-n>";
     mode = [ "t" ];
   }
