@@ -2,8 +2,8 @@
 let
 
   image = pkgs.fetchurl {
-    url = "https://github.com/azabelmena/Wallpapers/blob/main/everforest/forest.jpg?raw=true";
-    hash = "sha256-0qsX/k30zv3UmLuK2sQWKeSjH84klLtCj3M0FWJ+udk=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
+    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
   };
 
 in
@@ -13,8 +13,8 @@ in
   package = pkgs.greetd.regreet;
 
   theme = lib.mkForce {
-    name = "Everforest-Dark-BL";
-    package = pkgs.everforest-gtk-theme;
+    name = "Gruvbox-Dark";
+    package = pkgs.gruvbox-gtk-theme;
   };
 
   settings = {

@@ -2,8 +2,8 @@
 let
 
   image = pkgs.fetchurl {
-    url = "https://github.com/azabelmena/Wallpapers/blob/main/everforest/everforest-stairs.jpg?raw=true";
-    hash = "sha256-qmGcKVLd5ntWVfQWzwMXC3PPYjC+pUYe4Qp1PDxHNfE=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
+    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
   };
 
 in

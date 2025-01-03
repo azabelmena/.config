@@ -2,8 +2,8 @@
 let
 
   wallpaper = pkgs.fetchurl {
-    url = "https://github.com/azabelmena/Wallpapers/blob/main/everforest/everforest-nix.png?raw=true";
-    hash = "sha256-kqnftHPhtSnLcJzAB1ksGivVkOiNf5uGXcEkr7UTgTM=";
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
+    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
   };
 in
 {
@@ -13,7 +13,7 @@ in
 
   image = "${wallpaper}";
 
-  base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+  base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
 
   fonts = with pkgs; {
 
