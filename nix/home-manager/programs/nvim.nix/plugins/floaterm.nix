@@ -4,27 +4,28 @@
   enable = true;
   package = pkgs.vimPlugins.vim-floaterm;
 
-  autoclose = 2;
-  autohide = 0;
-  autoinsert = true;
+  settings = {
+    autoclose = 2;
+    autohide = 0;
+    autoinsert = true;
 
-  wintype = "split";
-  position = "botright";
+    wintype = "split";
+    position = "botright";
 
-  height = 0.5;
-  width = 0.5;
+    height = 0.5;
+    width = 0.5;
 
-  shell = "zsh";
+    shell = "zsh";
 
-  keymaps = {
-    toggle = "<leader>tt";
-    new = "<leader>tn";
-    kill = "<leader>tk";
+    keymaps_toggle = "<leader>tt";
+    keymaps_new = "<leader>tn";
+    keymaps_kill = "<leader>tk";
 
-    prev = "<leader>th";
-    last = "<leader>tj";
-    first = "<leader>tk";
-    next = "<leader>tl";
+    keymaps_prev = "<leader>th";
+    keymaps_last = "<leader>tj";
+    keymaps_first = "<leader>tk";
+    keymaps_next = "<leader>tl";
+
   };
 
 }

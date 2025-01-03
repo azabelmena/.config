@@ -43,10 +43,14 @@
       active_opacity = 1;
       inactive_opacity = 0.75;
 
+      shadow = {
+        enabled = true;
+        range = 4;
+        render_power = 3;
+      };
+
       rounding = 0;
-      drop_shadow = true;
-      shadow_range = 4;
-      shadow_render_power = 3;
+
 
       blur = {
         enabled = true;

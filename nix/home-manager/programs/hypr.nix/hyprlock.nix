@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
 
   image = pkgs.fetchurl {
@@ -12,7 +12,7 @@ in
   enable = true;
   package = pkgs.hyprlock;
 
-  settings = {
+  settings = lib.mkDefault {
     general = {
       disable_loading_bar = false;
       grace = 5;
