@@ -8,7 +8,7 @@
   fastfetch = ( import ../../programs/fastfetch.nix );
   foot = (import ../../programs/foot.nix { inherit pkgs; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
-  hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs; } );
+  hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
   fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });

@@ -12,8 +12,8 @@
     "/home/alec/scripts/"
   ];
 
-  packages = [
-    (pkgs.nerdfonts.override { fonts = ["IBMPlexMono"]; })
+  packages = with  pkgs.nerd-fonts; [
+    blex-mono
   ];
 
   file = ( import ../../../modules/nixos/misc/files.nix { inherit pkgs config lib; });
