@@ -5,7 +5,7 @@
   package = pkgs.ghostty;
 
   settings = {
-    title = "";
+    title = "I Love being Ghostted";
     gtk-titlebar = false;
     gtk-adwaita = false;
   };
