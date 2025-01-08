@@ -10,7 +10,6 @@
   ghostty = ( import ../../programs/ghostty.nix { inherit pkgs; } );
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
-  nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
   ssh = ( import ../../programs/ssh.nix { inherit config; } );
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
