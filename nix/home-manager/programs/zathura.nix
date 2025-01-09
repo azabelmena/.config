@@ -14,6 +14,8 @@
  options = {
     guioptions = "none";
 
+    database = "sqlite";
+
     recolor-keephue = true;
     recolor-reverse-video = true;
 
