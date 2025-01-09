@@ -62,7 +62,7 @@
   quiver = "https://q.uiver.app/";
   radicaldefenc = "https://radicaldefence.keybase.pub/";
   reddit = "https://www.reddit.com/";
-  remarkable = "http://10.11.99.1";
+  remarkable = "https://my.remarkable.com/myfiles";
   sagemath = "https://www.sagemath.org/";
   scihub = "https://sci-hub.st/";
   sidim = "http://sidim.org/index.html";
