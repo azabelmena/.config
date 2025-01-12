@@ -20,8 +20,7 @@
   plugins = ( import ./plugins.nix { inherit pkgs config; } );
   extraPlugins = with pkgs.vimPlugins; [
     nerdcommenter
-    ultisnips
-    #vimtex
+    vim-snipmate
   ];
 
   enableMan = true;

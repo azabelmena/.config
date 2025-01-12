@@ -4,7 +4,6 @@ snippet \newcommand \newcommand
 snippet \usepackage \usepackage
 	\\usepackage[${1:options}]{${2:package}} ${0}
 
-#DeclareMathOperator
 snippet \declaremath \DeclareMathOperator
 	\\DeclareMathOperator{${1}}{${2}} ${0}
 
@@ -17,45 +16,60 @@ snippet tabular tabular (or arbitrary) environment
 		${0:${VISUAL}}
 	\\end{$1}
 
-#Formating text: italic, bold, underline, small capital, emphase ..
 snippet italic italic text
 	\\textit{${1:${VISUAL:text}}}${0}
+
 snippet bold bold face text
 	\\textbf{${1:${VISUAL:text}}}${0}
+
 snippet underline underline text
 	\\underline{${1:${VISUAL:text}}}${0}
+
 snippet overline overline text
 	\\overline{${1:${VISUAL:text}}}${0}
+
 snippet emphasize emphasize text
 	\\emph{${1:${VISUAL:text}}}${0}
+
 snippet smallcaps small caps text
 	\\textsc{${1:${VISUAL:text}}}${0}
 
 #math
 snippet \frac \frac{}{}
 	\\frac{${1:num}}{${2:denom}} ${0}
+
 snippet \sum \sum^{}_{}
 	\\sum^{${1:n}}_{${2:i=1}} ${0}
+
 snippet \lim limit
 	\\lim_{{$1}} {{$2}} {$0}
 
 #delimiter
-snippet \{ \{ \}
-	\\{ ${0} \\}
+
+snippet { {}
+	{$0}
+
 snippet ( ()
-	(${0:${VISUAL}})
+	($0)
+
 snippet $ $$
-	$${0}$
+  \$$0\$
+
+snippet [ []
+	[$0]
+
+snippet ... dots
+	\\dots
+snippet v... vdots
+	\\vdots
+snippet d... ddots
+	\\ddots
 
 snippet xx cross product
 	\\times {$0}
-# Dot product
 snippet . dot product
 	\\cdot {$0}
-# Integral
 snippet int integral
 	\\int_{$1}^{$2}{$3 \\  d{$4}}
-# Right arrow
-
 snippet -> rightarrow
 	\\xrightarrow{$0}
