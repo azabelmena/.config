@@ -12,6 +12,8 @@ in
     {
       paths = "${home}/.config/nvim/snippets";
       include = [
+        "c"
+        "cpp"
         "tex"
       ];
     }
