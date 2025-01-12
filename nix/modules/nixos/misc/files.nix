@@ -1,9 +1,12 @@
 { pkgs, config, lib, ... }:
+let
+home = config.home.homeDirectory;
+in
 {
-  "ultisnips" = {
+  "snippets" = {
     recursive = true;
     source = config.lib.file.mkOutOfStoreSymlink
-    "${config.home.homeDirectory}/.config/nix/home-manager/programs/nvim.nix/UltiSnips";
-    target = "${config.home.homeDirectory}/.config/nvim/UltiSnips";
+    "${home}/.config/nix/home-manager/programs/nvim.nix/snippets";
+    target = "${home}/.config/nvim/snippets";
   };
 }

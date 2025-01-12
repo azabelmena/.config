@@ -17,7 +17,7 @@
 
   keymaps = ( import ./keymaps.nix );
 
-  plugins = ( import ./plugins.nix { inherit pkgs; } );
+  plugins = ( import ./plugins.nix { inherit pkgs config; } );
   extraPlugins = with pkgs.vimPlugins; [
     nerdcommenter
     ultisnips
