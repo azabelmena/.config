@@ -1,5 +1,6 @@
 {
   amazon = "https://www.amazon.com/";
+  weil = "http://192.168.8.1";
   amsbulletin = "https://www.ams.org/publications/journals/journalsframework/bull";
   amsmath = "https://www.ams.org/home/page";
   annasarchive = "https://pcm.annas-archive.org/";
