@@ -21,6 +21,7 @@
     discord
     eza
     fortune
+    prismlauncher
     gamemode
     home-manager
     htop-vim

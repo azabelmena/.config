@@ -32,6 +32,9 @@
       python3
       qemu
       vim-full
+      glxinfo
+      mesa-demos
+      nvtop
       virt-manager
   ];
 
