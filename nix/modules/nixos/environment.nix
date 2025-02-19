@@ -34,7 +34,6 @@
       vim-full
       glxinfo
       mesa-demos
-      nvtop
       virt-manager
   ];
 
