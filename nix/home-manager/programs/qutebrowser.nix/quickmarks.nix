@@ -1,6 +1,5 @@
 {
   amazon = "https://www.amazon.com/";
-  weil = "http://192.168.8.1";
   amsbulletin = "https://www.ams.org/publications/journals/journalsframework/bull";
   amsmath = "https://www.ams.org/home/page";
   annasarchive = "https://pcm.annas-archive.org/";
@@ -80,6 +79,8 @@
   uprrp = "https://www.uprrp.edu/";
   uprrpcompsci = "https://natsci.uprrp.edu/ccom/";
   uprrpmath = "https://math.uprrp.edu/";
+  weil = "http://192.168.8.1";
+  weyl = "http://linksyssmartwifi.com";
   whatsapp = "https://web.whatsapp.com/";
   wikipedia = "https://www.wikipedia.org/";
   wiles = "http://192.168.50.1/";
