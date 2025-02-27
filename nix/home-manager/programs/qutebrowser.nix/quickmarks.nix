@@ -79,8 +79,8 @@
   uprrp = "https://www.uprrp.edu/";
   uprrpcompsci = "https://natsci.uprrp.edu/ccom/";
   uprrpmath = "https://math.uprrp.edu/";
-  weil = "http://192.168.8.1";
-  weyl = "http://linksyssmartwifi.com";
+  weil = "http://weil.angora-hammerhead.ts.net";
+  weyl = "http://weyl.angora-hammerhead.ts.net";
   whatsapp = "https://web.whatsapp.com/";
   wikipedia = "https://www.wikipedia.org/";
   wiles = "http://192.168.50.1/";
