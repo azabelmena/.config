@@ -33,18 +33,20 @@
     mako
     mpv
     neo-cowsay
+    nvtop
     obs-studio
     papirus-icon-theme
     passage
     pavucontrol
+    prismlauncher
     protontricks
     protonup-ng
     qbittorrent
     ripgrep
     sops
     system76-keyboard-configurator
-    texliveFull
     tailscale
+    texliveFull
     wl-clipboard
     xdg-desktop-portal-gtk
   ];

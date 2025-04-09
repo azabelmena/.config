@@ -4,6 +4,8 @@
 
   avahi = ( import ./services/avahi.nix );
 
+  minecraft = ( import ./services/minecraft.nix );
+
   acpid = ( import ./services/acpid.nix );
 
   xserver = ( import ./services/xserver.nix );

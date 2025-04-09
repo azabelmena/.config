@@ -38,6 +38,7 @@
     papirus-icon-theme
     passage
     pavucontrol
+    prismlauncher
     protontricks
     protonup-ng
     qbittorrent
