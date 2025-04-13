@@ -37,6 +37,7 @@
   lmfdb = "https://www.lmfdb.org/";
   mathstack = "https://math.stackexchange.com/";
   mibanco = "https://www.bancopopular.com/cibp-web/actions/login";
+  minecraft = "https://minecraft.wiki/";
   mitreattack = "https://attack.mitre.org/";
   miupi = "https://miupi.uprrp.edu/";
   monkeytype = "https://monkeytype.com/";
