@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 
-  enable = false;
+  enable = true;
   package = pkgs.hypridle;
 
   settings = {
