@@ -33,7 +33,7 @@
     mako
     mpv
     neo-cowsay
-    nvtop
+    nvtopPackages.full
     obs-studio
     papirus-icon-theme
     passage
