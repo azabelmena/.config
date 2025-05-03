@@ -33,7 +33,7 @@
   intercept = "https://theintercept.com/";
   ise = "ise.uprrp.edu";
   journalmathny = "http://nyjm.albany.edu/nyjm.html";
-  libgen = "http://libgen.li/";
+  libgen = "http://libgen.is/";
   lmfdb = "https://www.lmfdb.org/";
   mathstack = "https://math.stackexchange.com/";
   mibanco = "https://www.bancopopular.com/cibp-web/actions/login";
