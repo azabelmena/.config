@@ -16,11 +16,13 @@
 
   conceallevel = 1;
 
-  backup = false;
   textwidth = 70;
+  wrap = true;
+  linebreak = true;
+
+  backup = false;
   undodir = "${config.home.homeDirectory}/.vim/undodir";
   undofile = true;
-  wrap = false;
 
   completeopt = "menuone,noselect";
 
