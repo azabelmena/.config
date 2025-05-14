@@ -4,7 +4,6 @@
   enable = true;
 
   package = pkgs.vimPlugins.telescope-nvim;
-  batPackage = pkgs.bat;
 
   highlightTheme = "gruvbox";
 

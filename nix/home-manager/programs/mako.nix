@@ -4,24 +4,29 @@
   package = pkgs.mako;
 
   enable = true;
-  actions = true;
 
-  defaultTimeout = 5000;
-  sort = "+time";
-  maxVisible = 10;
+  settings = {
 
-  icons = true;
+    actions = true;
 
-  anchor = "top-right";
-  layer = "overlay";
-  margin = "10,,10,";
+    default-timeout = 5000;
+    sort = "+time";
+    max-visible = 10;
 
-  padding = "5,5,5,5";
+    icons = true;
 
-  borderRadius = 0;
-  borderSize = 3;
+    anchor = "top-right";
+    layer = "overlay";
+    margin = "10,,10,";
 
-  width = 200;
-  height = 100;
+    padding = "5,5,5,5";
+
+    border-radius = 0;
+    border-size = 3;
+
+    width = 200;
+    height = 100;
+
+  };
 
 }

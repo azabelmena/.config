@@ -3,11 +3,12 @@
   enable = true;
 
   package = pkgs.vimPlugins.lean-nvim;
-  leanPackage = pkgs.lean4;
 
-  infoview = {
-    autoopen = false;
-    height = 10;
-    horizontalPosition = "bottom";
+  settings = {
+    infoview = {
+      autoopen = false;
+      height = 10;
+      horizontal_position = "bottom";
+    };
   };
 }

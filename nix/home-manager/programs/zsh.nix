@@ -15,7 +15,7 @@ in
     historySubstringSearch.enable = true;
     syntaxHighlighting.enable = true;
 
-    initExtra = ''
+    initContent = ''
         cd ~
         sleep 0.1
         ${pkgs.fortune}/bin/fortune | ${pkgs.neo-cowsay}/bin/cowsay --random
