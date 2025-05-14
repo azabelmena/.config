@@ -49,7 +49,7 @@
 
   documentation = ( import ../../modules/nixos/documentation.nix  );
 
-  system.stateVersion = "unstable";
+  system.stateVersion = "25.05";
 
   stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
 
