@@ -25,7 +25,7 @@
 
     parser_bib_backed = "bibtex";
 
-    log_verbose = 1;
+    log_verbose = 0;
 
     quickfix_enabled = 0;
     quickfix_mode = 0;
