@@ -7,7 +7,6 @@
   settings = {
     cache_persistent = 0;
     compiler_method = "latexmk";
-    compiler_silent = false;
     compiler_clean_paths = [
       "*.aux"
       "*.fdb_latexmk"
@@ -25,11 +24,7 @@
 
     parser_bib_backed = "bibtex";
 
-    log_verbose = 0;
-
-    quickfix_enabled = 0;
     quickfix_mode = 0;
-    quickfix_open_on_warning = 0;
 
     syntax_conceal = {
       accents =  1;
