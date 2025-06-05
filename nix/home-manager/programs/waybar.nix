@@ -67,9 +67,8 @@
       };
 
       "network"= {
-        "format"= "{ifname}";
         "format-wifi"= "󰤨  {essid}  ";
-        "format-ethernet"= "󰈁 {ipaddr}/{cidr} ";
+        "format-ethernet"= "󰈁 {ifname} ";
         "format-disconnected"= "󰤭   ";
         "max-length"= 50;
       };
