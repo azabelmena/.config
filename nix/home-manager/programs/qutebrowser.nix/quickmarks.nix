@@ -75,19 +75,14 @@
   system76-docs = "https://tech-docs.system76.com/README.html";
   tailscale = "https://login.tailscale.com/admin/machines";
   teams = "https://teams.microsoft.com/v2";
-  tendawifi = "http://192.168.0.1/";
   tor = "https://www.torproject.org/";
   twitter = "https://twitter.com/home";
   uprrp = "https://www.uprrp.edu/";
   uprrpcompsci = "https://natsci.uprrp.edu/ccom/";
   uprrpmath = "https://math.uprrp.edu/";
-  weil = "http://weil.angora-hammerhead.ts.net";
-  weyl = "http://weyl.angora-hammerhead.ts.net";
   whatsapp = "https://web.whatsapp.com/";
   wikipedia = "https://www.wikipedia.org/";
-  wiles = "http://192.168.50.1/";
   wired = "https://www.wired.com/";
   wolfram = "https://www.wolframalpha.com/";
   youtube = "https://www.youtube.com/";
-  zhone = "http://192.168.1.1/";
 }
