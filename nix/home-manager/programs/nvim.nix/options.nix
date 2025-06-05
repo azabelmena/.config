@@ -16,7 +16,7 @@
 
   conceallevel = 1;
 
-  textwidth = 70;
+  textwidth = 68;
   wrap = true;
   linebreak = true;
 
