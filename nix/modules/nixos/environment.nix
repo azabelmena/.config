@@ -17,7 +17,9 @@
       file
       gcc
       git
+      glxinfo
       gnumake
+      gparted
       iptables-legacy
       just
       libsForQt5.qt5.qtgraphicaleffects
@@ -26,14 +28,13 @@
       lshw
       man-pages
       man-pages-posix
+      mesa-demos
       openssh
       openvpn
       polkit_gnome
       python3
       qemu
       vim-full
-      glxinfo
-      mesa-demos
       virt-manager
   ];
 
