@@ -10,8 +10,8 @@
   settings = {
 
     exec-once = [
-      "${pkgs.waybar}/bin/waybar"
-      "${pkgs.mako}/bin/mako"
+      "waybar"
+      "mako"
       "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
     ];
@@ -93,14 +93,14 @@
     $mod_shift = SUPER SHIFT
     $mod_exit = CTRL_L ALT_L
 
-    bind = $mod_main, RETURN, exec, ${pkgs.ghostty}/bin/ghostty
-    bind = $mod_main, B, exec, ${pkgs.qutebrowser}/bin/qutebrowser
-    bind = $mod_main, Z, exec, ${pkgs.zathura}/bin/zathura
-    bind = $mod_main, SPACE, exec, ${pkgs.fuzzel}/bin/fuzzel
+    bind = $mod_main, RETURN, exec, ghostty
+    bind = $mod_main, B, exec, qutebrowser
+    bind = $mod_main, Z, exec, zathura
+    bind = $mod_main, SPACE, exec, fuzzel
 
-    bind = $mod_main, R, exec, ${pkgs.hyprlock}/bin/hyprlock reload
+    bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
-    bind = $mod_main, ESCAPE, exec, ${pkgs.hyprlock}/bin/hyprlock --immediate --immediate-render
+    bind = $mod_main, ESCAPE, exec, hyprlock --immediate --immediate-render
     bind = $mod_exit, DELETE, exit,
 
     bind = $mod_main, T, togglefloating,
