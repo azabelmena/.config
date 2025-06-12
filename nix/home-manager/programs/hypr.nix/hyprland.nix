@@ -26,7 +26,7 @@
    general = {
       gaps_in = 5;
       gaps_out = 10;
-      border_size = 0;
+      border_size = 1;
       layout = "dwindle";
     };
 
@@ -41,7 +41,7 @@
     decoration = {
 
       active_opacity = 1;
-      inactive_opacity = 0.75;
+      inactive_opacity = 1.00;
 
       shadow = {
         enabled = true;
@@ -53,7 +53,7 @@
 
 
       blur = {
-        enabled = true;
+        enabled = false;
         size = 8;
         passes = 1;
         ignore_opacity = true;
