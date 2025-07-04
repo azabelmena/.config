@@ -14,6 +14,7 @@
  options = {
     guioptions = "none";
 
+    show-recent = 0;
     database = "sqlite";
 
     recolor-keephue = true;
