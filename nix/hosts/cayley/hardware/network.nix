@@ -2,7 +2,15 @@
 {
 
   interfaces = {
-    enp3s0.useDHCP = true;
+    enp3s0 = {
+      useDHCP = true;
+      wakeOnLan = {
+        enable = true;
+        policy = [
+          "magic" "broadcast"
+        ];
+      };
+    };
     wlo1.useDHCP = false;
   };
 
