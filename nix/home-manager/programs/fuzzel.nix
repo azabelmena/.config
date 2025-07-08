@@ -6,7 +6,7 @@
 
   settings = {
     main = {
-      terminal = "${pkgs.foot}/bin/foot";
+      terminal = "ghostty";
       layer = "overlay";
 
       dpi-aware = lib.mkDefault "yes";

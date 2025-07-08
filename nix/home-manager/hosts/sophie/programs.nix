@@ -7,7 +7,7 @@
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
   fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
-  foot = ( import ../../programs/foot.nix { inherit pkgs; } );
+  ghostty = ( import ../../programs/ghostty.nix { inherit pkgs; } );
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
