@@ -7,7 +7,7 @@
       wakeOnLan = {
         enable = true;
         policy = [
-          "magic" "broadcast"
+          "magic"
         ];
       };
     };
