@@ -62,6 +62,7 @@
   proton = "https://account.proton.me/login";
   protondb = "https://www.protondb.com/";
   quiver = "https://q.uiver.app/";
+  racknerd = "https://my.racknerd.com/index.php?rp=/login";
   radicaldefenc = "https://radicaldefence.keybase.pub/";
   reddit = "https://www.reddit.com/";
   remarkable = "https://my.remarkable.com/myfiles";
