@@ -5,7 +5,7 @@
   annasarchive = "https://pcm.annas-archive.org/";
   apple = "https://www.apple.com/";
   archiv = "https://arxiv.org/archive/math";
-  azabelmena = "https://azabelmena.github.io/";
+  azabelmena = "https://azabelmena.xyz/";
   azabelmena_testing = "http://127.0.0.1:1313/";
   bitwarden = "https://vault.bitwarden.com/#/login";
   boqueron = "https://www.hpcf.upr.edu/documentation/boqueron/";
@@ -33,6 +33,7 @@
   intercept = "https://theintercept.com/";
   ise = "ise.uprrp.edu";
   journalmathny = "http://nyjm.albany.edu/nyjm.html";
+  lalaue = "https://www.lalaue.com/";
   libgen = "http://libgen.li/";
   lmfdb = "https://www.lmfdb.org/";
   mathstack = "https://math.stackexchange.com/";

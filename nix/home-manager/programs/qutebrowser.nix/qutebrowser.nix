@@ -16,7 +16,7 @@
 
     url = {
       default_page = "https://www.duckduckgo.com/";
-      start_pages = "https://azabelmena.github.io/";
+      start_pages = "https://azabelmena.xyz/";
     };
 
     tabs = {
