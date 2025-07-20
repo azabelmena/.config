@@ -58,6 +58,7 @@
   papoeira = "https://papoeira.com/en/home/";
   picoctf = "https://www.picoctf.org/";
   piratebay = "https://thepiratebay.org/index.html";
+  porkbun = "https://porkbun.com/account/login";
   portal = "https://portal.upr.edu/uprrp/portal.php?a=rea_login";
   projecteuclid = "https://projecteuclid.org/";
   proton = "https://account.proton.me/login";
