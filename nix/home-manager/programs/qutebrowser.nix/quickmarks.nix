@@ -6,7 +6,7 @@
   apple = "https://www.apple.com/";
   archiv = "https://arxiv.org/archive/math";
   azabelmena = "https://azabelmena.xyz/";
-  azabelmena_testing = "http://127.0.0.1:1313/";
+  site_testing = "http://127.0.0.1:1313/";
   bitwarden = "https://vault.bitwarden.com/#/login";
   boqueron = "https://www.hpcf.upr.edu/documentation/boqueron/";
   chalkdustmag = "https://chalkdustmagazine.com/";
