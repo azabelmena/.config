@@ -6,9 +6,9 @@
   apple = "https://www.apple.com/";
   archiv = "https://arxiv.org/archive/math";
   azabelmena = "https://azabelmena.xyz/";
-  site_testing = "http://127.0.0.1:1313/";
   bitwarden = "https://vault.bitwarden.com/#/login";
   boqueron = "https://www.hpcf.upr.edu/documentation/boqueron/";
+  cayleyfin = "http://cayley.angora-hammerhead.ts.net:8096";
   chalkdustmag = "https://chalkdustmagazine.com/";
   cienciasnaturalesuprrp = "https://natsci.uprrp.edu/";
   cuda = "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html";
@@ -71,6 +71,7 @@
   sagemath = "https://www.sagemath.org/";
   scihub = "https://sci-hub.st/";
   sidim = "http://sidim.org/index.html";
+  site_testing = "http://127.0.0.1:1313/";
   springerverlag = "https://www.springer.com/gp/mathematics";
   stackexchange = "https://stackexchange.com/";
   submittable= "https://manager.submittable.com/login";
