@@ -28,14 +28,24 @@ in
     desktop = "${home}/Desktop/";
     documents = "${home}/Documents/";
     download = "${home}/Downloads/";
-    music = "${home}/Music/";
     pictures = "${home}/Pictures/";
     templates = "${home}/Templates/";
-    videos = "${home}/Videos/";
+
+    music = "${home}/Audio/Music/";
+    videos = "${home}/Video/";
 
     extraConfig = {
       XDG_DEVNIX_DIR = "${home}/devnix/";
-      XDG_GAMES_DIR = "${home}/games/";
+
+      XDG_AUDIO_DIR = "${home}/Audio/";
+      XDG_AUDIOBOOKS_DIR = "${home}/Audio/Audiobooks/";
+      XDG_PODCASTS_DIR = "${home}/Audio/Podcasts/";
+
+      XDG_MOVIES_DIR = "${home}/Video/Movies/";
+      XDG_SHOWS_DIR = "${home}/Video/Shows/";
+
+      XDG_GAMES_DIR = "${home}/Games/";
+
       XDG_MATHEMATICS_DIR = "${home}/mathematics/";
       XDG_MISC_DIR = "${home}/Misc/";
       XDG_MOUNT0_DIR = "${home}/mount/mount0/";
