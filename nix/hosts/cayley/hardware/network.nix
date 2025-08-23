@@ -3,7 +3,7 @@
 
   interfaces = {
     enp3s0.useDHCP = true;
-    wlo1.useDHCP = false;
+    wlo1.useDHCP = true;
   };
 
   hostName = "cayley";
@@ -14,7 +14,7 @@
   };
   firewall = {
     package = pkgs.iptables-legacy;
-    enable = true;
+    enable = false;
     allowPing = true;
     pingLimit = "--limit 1/minute --limit-burst 5";
 
