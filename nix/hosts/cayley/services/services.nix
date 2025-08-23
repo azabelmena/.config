@@ -4,6 +4,8 @@
 
   avahi = ( import ../../../modules/nixos/services/avahi.nix );
 
+  jellyfin = ( import ./jellyfin.nix { inherit pkgs; } );
+
   logind = ( import ../../../modules/nixos/services/logind.nix );
 
   openssh = ( import ./ssh.nix );

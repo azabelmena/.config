@@ -21,6 +21,9 @@
       gnumake
       gparted
       iptables-legacy
+      jellyfin
+      jellyfin-ffmpeg
+      jellyfin-web
       just
       libsForQt5.qt5.qtgraphicaleffects
       libsForQt5.qt5.qtquickcontrols2
