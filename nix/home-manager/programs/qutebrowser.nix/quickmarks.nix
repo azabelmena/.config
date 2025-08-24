@@ -6,6 +6,7 @@
   apple = "https://www.apple.com/";
   archiv = "https://arxiv.org/archive/math";
   azabelmena = "https://azabelmena.xyz/";
+  bandcamp = "https://bandcamp.com/";
   bitwarden = "https://vault.bitwarden.com/#/login";
   boqueron = "https://www.hpcf.upr.edu/documentation/boqueron/";
   cayleyfin = "http://cayley.angora-hammerhead.ts.net:8096";
