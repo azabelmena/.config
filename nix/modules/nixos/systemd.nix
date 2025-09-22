@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
 
   sleep.extraConfig = ''
@@ -11,6 +11,7 @@
     SuspendState=mem
   '';
 
+  services.navidrome.serviceConfig.ProtectHome = lib.mkForce "read-only";
   services.fprintd = {
     wantedBy = [ "multi-user.target" ];
     serviceConfig.Type = "simple";

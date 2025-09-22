@@ -4,6 +4,7 @@
   home-manager.enable = true;
 
   bash = ( import ../../programs/bash.nix { inherit pkgs config; } );
+  beets = ( import ../../programs/beets.nix { inherit pkgs; } );
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
   fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
