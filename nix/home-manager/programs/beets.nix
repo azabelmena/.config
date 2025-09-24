@@ -18,9 +18,8 @@
       copy = true;
       move = false;
       resume = "ask";
-      incremental = "yes";
-      quite_fallback = "skip";
-      timid = "no";
+      incremental = true;
+      timid = false;
       log = "~/.config/beets/beets.log";
     };
 
