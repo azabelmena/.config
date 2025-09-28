@@ -14,6 +14,7 @@
       btop
       cmake
       coreutils
+      feishin
       file
       gcc
       git
