@@ -5,7 +5,8 @@
   package = pkgs.beets;
 
   settings = {
-    plugins = "fetchart embedart convert scrub replaygain lastgenre chroma web";
+    plugins = "edit fetchart embedart convert scrub replaygain lastgenre chroma web smartplaylist";
+
     directory = "~/Audio/Music";
     library = "~/Audio/Music/musiclibrary.db";
     art_filename = "albumart";
@@ -35,6 +36,19 @@
     fetchart = {
       auto = true;
       cover_format = "JPEG";
+    };
+
+    smartplaylist = {
+      relative_to = "~/Audio/Music";
+      playlist_dir = "~/.local/share/navidrome";
+      forward_slash = false;
+
+      playlists = [
+        {
+          name = "literally everythin!.m3u";
+          query = "";
+        }
+      ];
     };
 
   };
