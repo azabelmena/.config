@@ -32,7 +32,7 @@
 
   virtualisation = ( import ../../modules/nixos/virtualisation.nix { inherit pkgs; });
 
-  systemd = ( import ../../modules/nixos/systemd.nix { inherit pkgs; } );
+  systemd = ( import ../../modules/nixos/systemd.nix { inherit pkgs lib; } );
 
   services = ( import ./services/services.nix { inherit pkgs; } );
 
