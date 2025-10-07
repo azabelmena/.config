@@ -40,7 +40,6 @@
       qemu
       vim-full
       virt-manager
-      zoom-us
   ];
 
 }
