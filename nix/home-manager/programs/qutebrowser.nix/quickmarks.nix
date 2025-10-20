@@ -44,6 +44,7 @@
   miupi = "https://miupi.uprrp.edu/";
   monkeytype = "https://monkeytype.com/";
   moodle = "https://online.uprrp.edu/";
+  musicbrainz = "https://musicbrainz.org/";
   mynixos = "https://mynixos.com/";
   navicayley = "http://cayley.angora-hammerhead.ts.net:4533";
   nixos = "https://nixos.org/";
