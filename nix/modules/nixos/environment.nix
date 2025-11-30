@@ -8,6 +8,7 @@
 
   systemPackages = with pkgs; [
       OVMFFull
+      aonsoku
       autoconf
       automake
       bc
@@ -18,7 +19,6 @@
       file
       gcc
       git
-      glxinfo
       gnumake
       gparted
       iptables-legacy
@@ -32,6 +32,7 @@
       lshw
       man-pages
       man-pages-posix
+      mesa-demos
       mesa-demos
       openssh
       openvpn

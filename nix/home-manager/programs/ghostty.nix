@@ -10,7 +10,6 @@
     confirm-close-surface = false;
 
     gtk-titlebar = false;
-    gtk-adwaita = false;
 
     mouse-hide-while-typing = true;
 

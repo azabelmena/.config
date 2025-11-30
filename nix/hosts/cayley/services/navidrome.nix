@@ -15,7 +15,6 @@
     Port = 4533;
     Scanner = {
       Enabled = true;
-      PurgeMissing = "always";
       ScanOnStartup = true;
       GroupAlbumReleases = true;
     };
