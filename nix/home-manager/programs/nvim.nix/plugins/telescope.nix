@@ -11,6 +11,8 @@
     pickers ={
       find_files = {
         hidden = true;
+        fd = true;
+        no_ignore = true;
       };
 
       man_pages = {
