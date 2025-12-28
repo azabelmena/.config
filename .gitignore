@@ -1,6 +1,6 @@
 **/*
 !nix
-!nix/*
+!nix/**
 !.gitignore
 !LICENSE
 !README.md
