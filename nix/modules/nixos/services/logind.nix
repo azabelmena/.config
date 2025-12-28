@@ -1,9 +1,13 @@
 {
 
-  powerKey = "suspend-then-hibernate";
-  powerKeyLongPress = "poweroff";
+  settings = {
+    Login = {
+      HandlePowerKey = "suspend-then-hibernate";
+      HandlePowerKeyLongPress = "poweroff";
 
-  lidSwitch = "suspend-then-hibernate";
-  lidSwitchExternalPower = "lock";
+      HandleLidSwitch = "suspend-then-hibernate";
+      HandleLidSwitchExternalPower = "lock";
 
+    };
+  };
 }

@@ -10,7 +10,7 @@ in
     autosuggestion.enable = true;
     enableCompletion = true;
     autocd = false;
-    dotDir = ".config";
+    dotDir = "${config.xdg.configHome}/zsh";
     defaultKeymap = "viins";
     historySubstringSearch.enable = true;
     syntaxHighlighting.enable = true;

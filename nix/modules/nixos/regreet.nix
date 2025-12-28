@@ -10,7 +10,7 @@ in
 {
 
   enable = true;
-  package = pkgs.greetd.regreet;
+  package = pkgs.regreet;
 
   theme = lib.mkForce {
     name = "Gruvbox-Dark";

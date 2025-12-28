@@ -5,9 +5,7 @@ in
 {
   enable = true;
 
-  addKeysToAgent = "yes";
-  hashKnownHosts = true;
-  serverAliveInterval = 512;
+  enableDefaultConfig = false;
 
   matchBlocks = {
     "git" = {
@@ -16,6 +14,10 @@ in
       identityFile = [
         "${home}/.ssh/id_github"
       ];
+      addKeysToAgent = "yes";
+      hashKnownHosts = true;
+      serverAliveInterval = 512;
+
     };
 
     "boqueron" = {
@@ -30,6 +32,10 @@ in
         ConnectTimeout = "10";
         PasswordAuthentication = "no";
       };
+      addKeysToAgent = "yes";
+      hashKnownHosts = true;
+      serverAliveInterval = 512;
+
     };
 
     "cayley" = {
@@ -46,6 +52,10 @@ in
         ConnectTimeout = "10";
         PasswordAuthentication = "no";
       };
+      addKeysToAgent = "yes";
+      hashKnownHosts = true;
+      serverAliveInterval = 512;
+
     };
 
     "matricula" = {
@@ -59,6 +69,10 @@ in
         ConnectTimeout = "10";
         PasswordAuthentication = "yes";
       };
+      addKeysToAgent = "yes";
+      hashKnownHosts = true;
+      serverAliveInterval = 512;
+
     };
 
     "tartaglia" = {
@@ -73,6 +87,9 @@ in
         ConnectTimeout = "10";
         PasswordAuthentication = "no";
       };
+      addKeysToAgent = "yes";
+      hashKnownHosts = true;
+      serverAliveInterval = 512;
     };
 
   };

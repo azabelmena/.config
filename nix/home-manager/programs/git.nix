@@ -4,15 +4,14 @@
 
   enable = true;
 
-  userName = "Alec S. Zabel-Mena";
-  userEmail = "alec.zabel@upr.edu";
-
   signing = {
     key = "~/.ssh/sig_github";
     signByDefault = true;
   };
 
-  extraConfig = {
+  settings = {
+    user.name = "Alec S. Zabel-Mena";
+    user.email = "alec.zabel@upr.edu";
     init.defaultBranch = "main";
     commit.gpgsign = true;
     gpg.format = "ssh";
