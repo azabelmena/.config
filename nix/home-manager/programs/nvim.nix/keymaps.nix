@@ -2,17 +2,8 @@
 
   {
     key = "<Tab>";
-    action = ":Ex!<CR>";
+    action = ":Oil --float<CR>";
   }
-  {
-    key = "<C-s>";
-    action = ":Sex!<CR>";
-  }
-  {
-    key = "<C-b>";
-    action = ":Sex?<CR>";
-  }
-
   {
     key = "J";
     action = "<C-d>zz";
