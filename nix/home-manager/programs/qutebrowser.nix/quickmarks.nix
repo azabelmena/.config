@@ -31,6 +31,7 @@
   gmeets = "https://meet.google.com/";
   google = "https://www.google.com/";
   huhcat = "https://www.youtube.com/watch?v=igO9SmiY4hs";
+  impa = "https://impa.br/";
   intercept = "https://theintercept.com/";
   ise = "ise.uprrp.edu";
   journalmathny = "http://nyjm.albany.edu/nyjm.html";
