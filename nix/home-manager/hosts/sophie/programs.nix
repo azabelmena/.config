@@ -6,6 +6,7 @@
   bash = ( import ../../programs/bash.nix { inherit pkgs config; } );
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
+  firefox = ( import ../../programs/firefox.nix { inherit pkgs config; } );
   fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   ghostty = ( import ../../programs/ghostty.nix { inherit pkgs; } );
   git = ( import ../../programs/git.nix { inherit pkgs; } );
