@@ -9,13 +9,15 @@
     compiler_method = "latexmk";
     compiler_clean_paths = [
       "*.aux"
-      "*.fdb_latexmk"
-      "*.log"
-      "*.pdf"
       "*.bbl"
+      "*.fdb_latexmk"
       "*.fls"
+      "*.log"
+      "*.nlo"
+      "*.nls"
       "*.out"
-      "*.synctex.gz"
+      "*.pdf"
+      "*.synctex.gz*"
       "*.toc"
     ];
     compiler_latexmk_engines = {
