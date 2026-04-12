@@ -84,7 +84,7 @@
 
     misc = {
       enable_swallow = true;
-      swallow_regex="^(ghostty)$";
+      swallow_regex="^(foot)$";
     };
   };
 
@@ -93,7 +93,7 @@
     $mod_shift = SUPER SHIFT
     $mod_exit = CTRL_L ALT_L
 
-    bind = $mod_main, RETURN, exec, ghostty
+    bind = $mod_main, RETURN, exec, foot
     bind = $mod_main, B, exec, qutebrowser
     bind = $mod_main, Z, exec, zathura
     bind = $mod_main, SPACE, exec, fuzzel
