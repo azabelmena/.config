@@ -6,7 +6,7 @@
 
   settings = {
     main = {
-      terminal = "ghostty";
+      terminal = "foot";
       layer = "overlay";
 
       dpi-aware = lib.mkDefault "yes";
