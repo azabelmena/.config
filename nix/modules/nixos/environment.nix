@@ -39,6 +39,7 @@
       polkit_gnome
       python3
       qemu
+      sqlite
       vim-full
       virt-manager
   ];
