@@ -50,7 +50,7 @@
 
   documentation = ( import ../../modules/nixos/documentation.nix  );
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "26.05";
 
   stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
 
