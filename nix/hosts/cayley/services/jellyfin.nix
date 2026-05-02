@@ -6,5 +6,7 @@
 
   user = "alec";
 
+  configDir = "/home/alec/.config/jellyfin";
+
   openFirewall = true;
 }
