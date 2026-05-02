@@ -15,8 +15,8 @@
     Port = 4533;
     Scanner = {
       Enabled = true;
+      fullScan = true;
       ScanOnStartup = true;
-      GroupAlbumReleases = true;
     };
     PID = {
       Track = "musicbrainz_trackid|albumid,discnumber,tracknumber,title";
