@@ -103,7 +103,7 @@
         {
           name = "JazzBOP.m3u";
           query = [
-            "artist: Dahlak Band, ጌታቸው፡መኩሪያ, Hailu Mergia, Santana, "
+            "artist: Dahlak Band, ጌታቸው፡መኩሪያ, Hailu Mergia, Santana"
 
             "album: Habibi Funk: An Eclectic Selection of Music From the Arab World"
             "album: Blues Down Deep: Songs of Janis Joplin"
