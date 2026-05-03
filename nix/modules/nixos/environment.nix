@@ -8,14 +8,12 @@
 
   systemPackages = with pkgs; [
       OVMFFull
-      aonsoku
       autoconf
       automake
       bc
       btop
       cmake
       coreutils
-      feishin
       file
       gcc
       git

@@ -40,12 +40,12 @@
 
     smartplaylist = {
       relative_to = "~/Audio/Music";
-      playlist_dir = "~/.local/share/navidrome";
+      playlist_dir = "/var/lib/navidrome/playlists";
       forward_slash = false;
 
       playlists = [
         {
-          name = "literally everythin!.m3u";
+          name = "Literally Everything";
           query = "";
         }
       ];
