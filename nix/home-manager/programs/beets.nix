@@ -38,19 +38,6 @@
       cover_format = "JPEG";
     };
 
-    smartplaylist = {
-      relative_to = "~/Audio/Music";
-      playlist_dir = "/var/lib/navidrome/playlists";
-      forward_slash = false;
-
-      playlists = [
-        {
-          name = "Literally Everything";
-          query = "";
-        }
-      ];
-    };
-
   };
 
 }
