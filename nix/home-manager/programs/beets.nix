@@ -78,9 +78,6 @@
             "artist:They Might Be Giants, Trinix, Trotsky Icepick, TV Girl"
             "artist:Twenty One Pilots, Ween, Weezer, The White Stripes, The Who"
             "artist:Yes, Zoe Ko, ΑΝΤΙ…, 高橋洋子"
-            "artist: Dahlak Band, ጌታቸው፡መኩሪያ, Hailu Mergia"
-
-            "album: Habibi Funk: An Eclectic Selection of Music From the Arab World"
 
             "title:One More Cup of Coffee"
             "title:21st Century Schizoid Man (including Mirrors)"
