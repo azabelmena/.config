@@ -29,6 +29,14 @@
       url = "git+ssh://git@github.com/azabelmena/secrets.git?ref=main&shallow=1";
       flake = false;
     };
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
   };
 
   outputs = {self, nixos, nixpkgs, ...}@inputs:
