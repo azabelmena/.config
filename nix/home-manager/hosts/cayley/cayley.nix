@@ -2,6 +2,7 @@
 
 {
   imports = [
+    inputs.zen-browser.homeModules.beta
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeModules.nixvim
   ];
