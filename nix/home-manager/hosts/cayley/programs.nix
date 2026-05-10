@@ -3,11 +3,15 @@
 
   home-manager.enable = true;
 
+  zen-browser = {
+    enable = true;
+    setAsDefaultBrowser = false;
+  };
+
   bash = ( import ../../programs/bash.nix { inherit pkgs config; } );
   beets = ( import ../../programs/beets.nix { inherit pkgs; } );
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
-  firefox = ( import ../../programs/firefox.nix { inherit pkgs ; } );
   fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   foot = (import ../../programs/foot.nix { inherit pkgs; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
