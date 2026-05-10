@@ -7,6 +7,8 @@
   user = "alec";
 
   settings = {
+    TLSCert = "cayley.angora-hammerhead.ts.net.crt";
+    TLSKey = "cayley.angora-hammerhead.ts.net.key";
     AutoImportPlaylists = true;
     MusicFolder = "/home/alec/Audio/Music";
     Address = "100.125.95.69";
