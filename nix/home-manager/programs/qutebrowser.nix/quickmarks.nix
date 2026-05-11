@@ -47,7 +47,7 @@
   moodle = "https://online.uprrp.edu/";
   musicbrainz = "https://musicbrainz.org/";
   mynixos = "https://mynixos.com/";
-  navicayley = "http://cayley.angora-hammerhead.ts.net:4533";
+  navicayley = "https://cayley.angora-hammerhead.ts.net:4533";
   nixos = "https://nixos.org/";
   nixpkgs = "https://search.nixos.org/packages";
   nixvim = "https://nix-community.github.io/nixvim/";
