@@ -7,6 +7,7 @@
   user = "alec";
 
   settings = {
+    DefaultTheme = "Gruvbox Dark";
     TLSCert = "cayley.angora-hammerhead.ts.net.crt";
     TLSKey = "cayley.angora-hammerhead.ts.net.key";
     AutoImportPlaylists = true;
