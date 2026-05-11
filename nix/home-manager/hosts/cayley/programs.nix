@@ -3,17 +3,12 @@
 
   home-manager.enable = true;
 
-  zen-browser = {
-    enable = true;
-    setAsDefaultBrowser = false;
-  };
-
   bash = ( import ../../programs/bash.nix { inherit pkgs config; } );
   beets = ( import ../../programs/beets.nix { inherit pkgs; } );
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
-  fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   foot = (import ../../programs/foot.nix { inherit pkgs; });
+  fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
@@ -23,6 +18,7 @@
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });
   waybar = (import ../../programs/waybar.nix { inherit pkgs config; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });
+  zen-browser = (import ../../programs/zen-browser.nix { inherit pkgs; });
   zsh = (import ../../programs/zsh.nix { inherit pkgs config; });
 
 }
