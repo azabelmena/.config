@@ -82,7 +82,7 @@
             "title:One More Cup of Coffee"
             "title:21st Century Schizoid Man (including Mirrors)"
             "title:The Court of the Crimson King (including The Return of the Fire Witch and The Dance of the Puppets)"
-            "titlle:Melissa, THE DAY, Bam Bam"
+            "title:Melissa, THE DAY, Bam Bam"
             ];
         }
         {
