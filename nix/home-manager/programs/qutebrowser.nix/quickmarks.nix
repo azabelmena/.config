@@ -47,6 +47,7 @@
   moodle = "https://online.uprrp.edu/";
   musicbrainz = "https://musicbrainz.org/";
   mynixos = "https://mynixos.com/";
+  myremarkable = "https://my.remarkable.com/";
   navicayley = "https://cayley.angora-hammerhead.ts.net:4533";
   nixos = "https://nixos.org/";
   nixpkgs = "https://search.nixos.org/packages";
@@ -72,7 +73,7 @@
   racknerd = "https://my.racknerd.com/index.php?rp=/login";
   radicaldefenc = "https://radicaldefence.keybase.pub/";
   reddit = "https://www.reddit.com/";
-  remarkable = "https://my.remarkable.com/myfiles";
+  remarkable = "https://app.remarkable.com/";
   sagemath = "https://www.sagemath.org/";
   scihub = "https://sci-hub.st/";
   sidim = "http://sidim.org/index.html";
