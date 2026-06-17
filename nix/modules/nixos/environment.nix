@@ -35,6 +35,7 @@
       openssh
       openvpn
       polkit_gnome
+      proton-authenticator
       python3
       qemu
       sqlite
