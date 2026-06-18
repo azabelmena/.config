@@ -18,7 +18,6 @@
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });
   waybar = (import ../../programs/waybar.nix { inherit pkgs config; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });
-  zen-browser = (import ../../programs/zen-browser.nix { inherit pkgs; });
   zsh = (import ../../programs/zsh.nix { inherit pkgs config; });
 
 }
