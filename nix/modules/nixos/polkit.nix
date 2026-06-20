@@ -1,9 +1,12 @@
 {
 
- enable = true;
- debug = true;
- adminIdentities = [
-   "unix-group:wheel"
- ];
+  enable = true;
+  extraArgs = [
+    "--no-debug"
+    "--log-level=notice"
+  ];
+  adminIdentities = [
+    "unix-group:wheel"
+  ];
 
 }
