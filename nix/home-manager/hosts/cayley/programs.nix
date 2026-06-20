@@ -8,6 +8,7 @@
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
   foot = (import ../../programs/foot.nix { inherit pkgs; });
+  fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
@@ -18,4 +19,5 @@
   waybar = (import ../../programs/waybar.nix { inherit pkgs config; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });
   zsh = (import ../../programs/zsh.nix { inherit pkgs config; });
+
 }
