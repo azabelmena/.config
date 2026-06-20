@@ -9,7 +9,7 @@
       layer = "top";
       modules-left = ["custom/logo" "disk" "cpu" "memory" "temperature"];
       modules-center = ["clock"];
-      modules-right = [ "hyprland/workspaces" "backlight" "pulseaudio" "bluetooth" "battery" "network"];
+      modules-right = [ "backlight" "pulseaudio" "bluetooth" "battery" "network"];
 
       "pulseaudio" = {
         tooltip = false;
