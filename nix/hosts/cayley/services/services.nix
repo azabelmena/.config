@@ -4,8 +4,6 @@
 
   avahi = ( import ../../../modules/nixos/services/avahi.nix );
 
-  displayManager.ly = ( import ../../../modules/nixos/services/ly.nix { inherit pkgs; } );
-
   jellyfin = ( import ./jellyfin.nix { inherit pkgs; } );
 
   logind = ( import ../../../modules/nixos/services/logind.nix );
