@@ -17,7 +17,7 @@
   packages = with pkgs; [
     age
     bat
-    blueberry
+    blueman
     discord
     eza
     fortune
