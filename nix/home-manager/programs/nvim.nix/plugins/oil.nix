@@ -8,7 +8,7 @@
   autoLoad = true;
 
   settings = {
-    open_float = true;
+    open_float = false;
     default_file_explorer = true;
 
     delete_to_trash = false;

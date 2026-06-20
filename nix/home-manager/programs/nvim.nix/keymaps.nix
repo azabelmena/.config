@@ -2,7 +2,7 @@
 
   {
     key = "<Tab>";
-    action = ":Oil --float<CR>";
+    action = ":Oil<CR>";
   }
   {
     key = "J";
