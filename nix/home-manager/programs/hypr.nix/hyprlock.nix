@@ -20,15 +20,16 @@ in
       no_fade_in = false;
       no_fade_out = false;
       ignore_empty_input = false;
-#pam_module = "hyprlock";
+      #pam_module = "hyprlock";
       fractional_scaling = 1;
     };
 
     background = [
     {
       path = "${image}";
-      blur_passes = 3;
-      blur_size = 8;
+      blur_passes = 2;
+      blur_size = 7;
+      noise = 1;
     }
     ];
 
