@@ -8,7 +8,7 @@
 
   virt-manager.enable = true;
 
-  regreet = ( import ../../modules/nixos/regreet.nix { inherit pkgs lib; } );
+  #regreet = ( import ../../modules/nixos/regreet.nix { inherit pkgs lib; } );
 
   zsh.enable = true;
   hyprland.enable = true;
