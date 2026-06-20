@@ -14,9 +14,9 @@ in
   package = pkgs.hyprpaper;
 
   settings = {
-    ipc = "on";
+    ipc = true;
     splash = false;
-    splash_offset = 0.0;
+    splash_offset = 0;
 
     preload = [
       "${image}"
@@ -24,7 +24,7 @@ in
 
     wallpaper = [
       "HDMI-A-1,${image}"
-        "eDP-1,${image}"
+      "eDP-1,${image}"
     ];
 
   };

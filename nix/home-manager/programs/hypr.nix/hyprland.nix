@@ -7,6 +7,8 @@
   xwayland.enable = true;
   systemd.enable = true;
 
+  configType = "hyprlang";
+
   settings = {
 
     exec-once = [
@@ -78,7 +80,6 @@
     };
 
     dwindle = {
-      pseudotile = true;
       preserve_split = true;
     };
 
@@ -96,7 +97,7 @@
     bind = $mod_main, RETURN, exec, foot
     bind = $mod_main, B, exec, qutebrowser
     bind = $mod_main, Z, exec, zathura
-    bind = $mod_main, SPACE, exec, fuzzel
+    bind = $mod_main, SPACE, exec, hyprlauncher
 
     bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
