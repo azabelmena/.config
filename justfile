@@ -1,8 +1,8 @@
 upgrade:
-  sudo nixos-rebuild --flake github:azabelmena/.config/main switch --show-trace --option eval-cache false
+  sudo nixos-rebuild --upgrade --flake github:azabelmena/.config/main switch --show-trace --option eval-cache false
 
 rebuild:
-  sudo nixos-rebuild --flake ~/.config switch --show-trace --option eval-cache false
+  sudo nixos-rebuild --upgrade --flake ~/.config switch --show-trace --option eval-cache false
 
 build-fermat:
   nix build .#nixosConfigurations.fermat.config.system.build.isoImage --show-trace --option eval-cache false
