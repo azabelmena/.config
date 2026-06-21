@@ -104,7 +104,7 @@
     bind = $mod_main, RETURN, exec, foot
     bind = $mod_main, B, exec, qutebrowser
     bind = $mod_main, Z, exec, zathura
-    bind = $mod_main, SPACE, exec, fuzzel
+    bind = $mod_main, SPACE, exec, noctalia msg panel-toggle launcher
 
     bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
