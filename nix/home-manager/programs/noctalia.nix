@@ -1,4 +1,12 @@
 { pkgs, ... }:
+let
+
+  image = pkgs.fetchurl {
+    url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
+    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
+  };
+
+in
 {
   enable = true;
 
@@ -45,6 +53,7 @@
       clipboard_history_max_entries = 20;
       font_family = "BlexMono Nerd Font Mono";
       polkit_agent = true;
+      password_style = "random";
       screen_time_enabled = true;
       settings_show_advanced = true;
       panel = {
@@ -55,19 +64,19 @@
         actions = [
           {
             action = "lock";
-            enabled = false;
+            enabled = true;
             shortcut = "1";
             variant = "default";
           }
           {
-            action = "logout";
+            action = "lock_and_suspend";
             enabled = true;
             shortcut = "2";
             variant = "default";
           }
           {
-            action = "lock_and_suspend";
-            enabled = false;
+            action = "logout";
+            enabled = true;
             shortcut = "3";
             variant = "default";
           }
@@ -85,8 +94,26 @@
           }
         ];
       };
+
+      wallpaper = {
+        enabled = true;
+        fill_mode = "fit";
+        default = {
+          path = "${image}";
+        };
+      };
+
+      lockscreen = {
+        enabled = true;
+        fingerprint = true;
+        allow_empty_password = false;
+        blurred_desktop = true;
+        blur_intensity = 0.5;
+        tint_intensity = 0;
+        wallpaper = "${image}";
+        monitors = [];
+      };
     };
-    wallpaper.enabled = false;
 
     widget = {
       cat = {

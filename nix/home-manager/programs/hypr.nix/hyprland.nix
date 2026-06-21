@@ -107,7 +107,7 @@
 
     bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
-    bind = $mod_main, DELETE, exec, hyprlock --grace 3 --immediate-render
+    bind = $mod_main, DELETE, exec, noctalia msg session lock
     bind = $mod_exit, DELETE, exit
 
     bind = $mod_main, T, togglefloating,

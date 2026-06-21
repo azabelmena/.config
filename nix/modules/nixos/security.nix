@@ -13,7 +13,7 @@ audit = {
 
   polkit = ( import ./polkit.nix );
 
-  pam = ( import ./pam.nix { inherit pkgs; } );
+  #pam = ( import ./pam.nix { inherit pkgs; } );
 
   sudo = {
     enable = true;
