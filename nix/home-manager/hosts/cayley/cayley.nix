@@ -13,8 +13,6 @@
 
   wayland = ( import ../../programs/wayland.nix { inherit pkgs config; } );
 
-  services = ( import ./services.nix { inherit pkgs config; } );
-
   programs = ( import ./programs.nix { inherit pkgs config lib; } );
 
   xdg = ( import ../../../modules/nixos/misc/xdg.nix { inherit pkgs config; });
