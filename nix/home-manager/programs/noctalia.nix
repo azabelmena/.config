@@ -1,10 +1,10 @@
 { pkgs, ... }:
 let
 
-  image = pkgs.fetchurl {
-    url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
-    hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
-  };
+image = pkgs.fetchurl {
+  url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
+  hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
+};
 
 in
 {
@@ -20,15 +20,17 @@ in
     bar = {
       widgets = {
         start = [
-          "nixOS_logo" "cpu" "temp"
+          "nixOS_logo" "cpu" "ram" "cpu_temp"
+            "disk0" "disk1" "disk2" "disk3"
         ];
         center = [
           "cat" "clock" "cat_2"
         ];
         end = [
-          "screenshot" "notifications" "clipboard" "network"
-          "bluetooth" "audio_visualizer" "volume" "brightness"
-          "battery" "session"
+          "notifications" "clipboard"
+            "net_up" "net_down" "network"
+            "bluetooth" "audio_visualizer" "volume" "brightness"
+            "battery" "session"
         ];
         font_family = "BlexMono Nerd Font";
         font_weight = 400;
@@ -41,8 +43,40 @@ in
         widget_spacing = 10;
       };
     };
+
+    system.monitor = {
+      enabled = true;
+      cpu_poll_seconds = 2.0;
+      gpu_poll_seconds = 2.0;
+      memory_poll_seconds = 2.0;
+      network_poll_seconds = 3.0;
+      disk_poll_seconds = 60.0;
+    };
+
     calendar = {
       enabled = true;
+    };
+
+    location = {
+      auto_locate = false;
+      address = "Carolina, PR";
+      longitude = 18.3814441;
+      latitude = 65.9560489;
+    };
+
+    weather = {
+      enabled = true;
+      refresh_minutes = 30;
+      unit = "metric";
+      effects = true;
+    };
+
+    nightlight = {
+      enabled = true;
+      force = false;
+
+      temperature_day = "6500";
+      temperature_night = "4000";
     };
 
     plugins = {
@@ -56,42 +90,42 @@ in
       password_style = "random";
       screen_time_enabled = true;
       settings_show_advanced = true;
+      time_format = "%H.%M.%s";
+      date_format = "%d.%m.%Y";
+
+      avatar_path = "~/Pictures/Wallpapers/cat-10-e1573844975155.jpg";
+
       panel = {
         clipboard_placement = "attached";
         launcher_session_search = true;
       };
       session = {
         actions = [
-          {
-            action = "lock";
-            enabled = true;
-            shortcut = "1";
-            variant = "default";
-          }
-          {
-            action = "lock_and_suspend";
-            enabled = true;
-            shortcut = "2";
-            variant = "default";
-          }
-          {
-            action = "logout";
-            enabled = true;
-            shortcut = "3";
-            variant = "default";
-          }
-          {
-            action = "reboot";
-            enabled = true;
-            shortcut = "4";
-            variant = "default";
-          }
-          {
-            action = "shutdown";
-            enabled = true;
-            shortcut = "5";
-            variant = "destructive";
-          }
+        {
+          action = "lock";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "lock_and_suspend";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "logout";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "reboot";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "shutdown";
+          enabled = true;
+          variant = "destructive";
+        }
         ];
       };
 
@@ -123,6 +157,9 @@ in
         type = "noctalia/bongocat:cat";
         use_mpris_filter = true;
       };
+      clock = {
+        format = "{:%H.%M.%S}";
+      };
       cat_2 = {
         audio_spectrum = true;
         rave_mode = true;
@@ -130,9 +167,7 @@ in
         type = "noctalia/bongocat:cat";
         use_mpris_filter = true;
       };
-      clock = {
-        format = "{:%H.%M.%S}";
-      };
+
       nixOS_logo = {
         color = "primary";
         glyph = "";
@@ -140,11 +175,59 @@ in
         label = "";
         type = "custom_button";
       };
-      recorder = {
-        type = "noctalia/screen_recorder:recorder";
+      cpu= {
+        type = "sysmon";
+        stat = "cpu_usage";
       };
-      screenshot = {
-        primary_click = "fullscreen";
+      gpu = {
+        type = "sysmon";
+        stat = "gpu_usage";
+      };
+      ram = {
+        type = "sysmon";
+        stat = "ram_used";
+      };
+      cpu_temp = {
+        type = "sysmon";
+        stat = "cpu_temp";
+      };
+      gpu_temp = {
+        type = "sysmon";
+        stat = "gpu_temp";
+      };
+
+      disk0 = {
+        type = "sysmon";
+        glyph = "device-floppy";
+        stat = "disk_pct";
+        path = "/";
+      };
+      disk1 = {
+        type = "sysmon";
+        glyph = "disc";
+        stat = "disk_pct";
+        path = "/home/alec/Audio";
+      };
+      disk2 = {
+        type = "sysmon";
+        glyph = "player-track-next";
+        stat = "disk_pct";
+        path = "/home/alec/Video";
+      };
+      disk3 = {
+        type = "sysmon";
+        glyph = "bluetooth-device-gampad";
+        stat = "disk_pct";
+        path = "/home/alec/Games";
+      };
+
+      net_up = {
+        type = "sysmon";
+        stat = "net_tx";
+      };
+      net_down = {
+        type = "sysmon";
+        stat = "net_rx";
       };
     };
   };
