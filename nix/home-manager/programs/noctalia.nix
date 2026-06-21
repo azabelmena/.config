@@ -135,6 +135,18 @@ in
         default = {
           path = "${image}";
         };
+        last = {
+          path = "${image}";
+        };
+        monitors.HDMI-A-1 = {
+          path = "${image}";
+        };
+      };
+
+      backdrop = {
+        enabled = true;
+        blur_intensity = 0.5;
+        tint_intensity = 0.5;
       };
 
       lockscreen = {
@@ -144,7 +156,6 @@ in
         blurred_desktop = true;
         blur_intensity = 0.5;
         tint_intensity = 0;
-        wallpaper = "${image}";
         monitors = [];
       };
     };
@@ -216,7 +227,7 @@ in
       };
       disk3 = {
         type = "sysmon";
-        glyph = "bluetooth-device-gampad";
+        glyph = "brand-steam";
         stat = "disk_pct";
         path = "/home/alec/Games";
       };
