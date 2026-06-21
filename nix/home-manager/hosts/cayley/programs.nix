@@ -11,12 +11,13 @@
   fuzzel = (import ../../programs/fuzzel.nix { inherit pkgs lib; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
+  niri = ( import ../../programs/niri.nix { inherit pkgs; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
+  noctalia = ( import ../../programs/noctalia.nix { inherit pkgs; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
   ssh = ( import ../../programs/ssh.nix { inherit config; } );
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });
-  waybar = (import ../../programs/waybar.nix { inherit pkgs config; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });
   zsh = (import ../../programs/zsh.nix { inherit pkgs config; });
 

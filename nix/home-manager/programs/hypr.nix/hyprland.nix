@@ -12,7 +12,7 @@
   settings = {
 
     exec-once = [
-      "waybar"
+      "noctalia"
       "mako"
       "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
@@ -108,8 +108,8 @@
 
     bind = $mod_main, R, exec, hyprlock reload
     bind = $mod_main, Q, killactive,
-    bind = $mod_main, ESCAPE, exec, hyprlock --grace 3 --immediate-render
-    bind = $mod_exit, DELETE, exit,
+    bind = $mod_main, DELETE, exec, hyprlock --grace 3 --immediate-render
+    bind = $mod_exit, DELETE, exit
 
     bind = $mod_main, T, togglefloating,
     bind = $mod_main, P, pseudo, # dwindle

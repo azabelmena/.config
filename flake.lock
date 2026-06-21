@@ -373,6 +373,46 @@
         "type": "github"
       }
     },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1782012416,
+        "narHash": "sha256-SZ4zAF2UH3WS8J0QGhJVMsYIUe8j0QPGrSU/2p5+BJU=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "rev": "744a63b263246051d763d452f1c47e7d004a9759",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "type": "github"
+      }
+    },
+    "noctalia-greeter": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1782009699,
+        "narHash": "sha256-n0QTabSkeCzp1jvardUKN6Y2HkmJ7ZE9LNOsGdMJaeI=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia-greeter",
+        "rev": "28e26c0bd96c18fb707381ae98c6cf2910bb580b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia-greeter",
+        "type": "github"
+      }
+    },
     "nur": {
       "inputs": {
         "flake-parts": [
@@ -406,6 +446,8 @@
         "nixos": "nixos",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
+        "noctalia": "noctalia",
+        "noctalia-greeter": "noctalia-greeter",
         "secrets": "secrets",
         "sops-nix": "sops-nix",
         "stylix": "stylix"
