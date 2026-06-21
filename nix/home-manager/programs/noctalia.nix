@@ -138,9 +138,6 @@ in
         last = {
           path = "${image}";
         };
-        monitors.HDMI-A-1 = {
-          path = "${image}";
-        };
       };
 
       backdrop = {
