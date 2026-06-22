@@ -3,11 +3,10 @@
 {
 
   imports = [
-    inputs.nix-colors.homeManagerModules.default
     inputs.stylix.nixosModules.stylix
   ];
 
-  nix = ( import ../../modules/nixos/nix.nix { inherit pkgs config; } );
+  #nix = ( import ../../modules/nixos/nix.nix { inherit pkgs config; } );
 
   nixpkgs = ( import ../../modules/nixos/nixpkgs.nix{ inherit pkgs lib; } );
 
@@ -27,7 +26,7 @@
 
   documentation = ( import ../../modules/nixos/documentation.nix  );
 
-  system.stateVersion = "unstable";
+  system.stateVersion = "26.11";
 
   stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
 
