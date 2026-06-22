@@ -24,19 +24,18 @@
       jellyfin-ffmpeg
       jellyfin-web
       just
-      qt5.qtgraphicaleffects
-      qt5.qtquickcontrols2
       libvirt
       lshw
       man-pages
       man-pages-posix
-      mesa-demos
       mesa-demos
       openssh
       openvpn
       proton-authenticator
       python3
       qemu
+      qt5.qtgraphicaleffects
+      qt5.qtquickcontrols2
       sqlite
       vim-full
       virt-manager

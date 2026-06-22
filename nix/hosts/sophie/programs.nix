@@ -8,7 +8,7 @@
 
   virt-manager.enable = false;
 
-  regreet = ( import ../../modules/nixos/regreet.nix { inherit pkgs lib; } );
+  noctalia-greeter = ( import ../../modules/nixos/noctalia-greeter.nix { inherit pkgs; } );
 
   zsh.enable = true;
   hyprland.enable = true;

@@ -1,9 +1,14 @@
 { pkgs, ... }:
 let
 
-image = pkgs.fetchurl {
+background = pkgs.fetchurl {
   url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-mountain-village.png?raw=true";
   hash = "sha256-JNzIzoF6JWSofgIpgs47tj7GUl8sCJrwLmd91EGc0Po=";
+};
+
+avatar = pkgs.fetchurl {
+  url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/cat-10-e1573844975155.jpg?raw=true";
+  hash = "sha256-nXJSDjjKfcDNio8c/PB2767swiGHzK/mlurmr6J6tHI=";
 };
 
 in
@@ -93,7 +98,7 @@ in
       time_format = "%H.%M.%s";
       date_format = "%d.%m.%Y";
 
-      avatar_path = "~/Pictures/Wallpapers/cat-10-e1573844975155.jpg";
+      avatar_path = "${avatar}";
 
       panel = {
         clipboard_placement = "attached";
@@ -133,10 +138,17 @@ in
         enabled = true;
         fill_mode = "fit";
         default = {
-          path = "${image}";
+          path = "${background}";
         };
-        last = {
-          path = "${image}";
+
+        monitor = {
+          "HDMI-A-1" = {
+            path = "${background}";
+          };
+          "eDP-1" = {
+            path = "${background}";
+          };
+
         };
       };
 
@@ -153,7 +165,11 @@ in
         blurred_desktop = true;
         blur_intensity = 0.5;
         tint_intensity = 0;
-        monitors = [];
+        wallpaper = "${background}";
+        monitors = [
+          "HDMI-A-1"
+          "eDP-1"
+        ];
       };
     };
 
@@ -236,6 +252,11 @@ in
       net_down = {
         type = "sysmon";
         stat = "net_rx";
+      };
+
+      battery = {
+        type = "battery";
+        device = "BAT1";
       };
     };
   };

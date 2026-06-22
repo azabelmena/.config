@@ -26,5 +26,8 @@
     touchpad = ( import ../../../modules/nixos/touchpad.nix );
   };
 
+
+  upower = ( import ../../../modules/nixos/services/upower.nix { inherit pkgs; } );
+
   xserver = ( import ./xserver.nix );
 }
