@@ -52,20 +52,18 @@ keeping with DNS hostname conventions
 
 Here you will find:
 
-- My NixOS and Nix-Darwin configuration files, as well as the flake.nix and the
+- My NixOS configuration files, as well as the flake.nix and the
 flake.lock files used to build them on different machines.
     - NixOS for machines with generic hardware.
-        - i.e. `cayley`, `cauchy`, etc...
+        - i.e. `cayley`, `sophie`, etc...
 - Various home-manager `.nix` files for programs which include:
     - Vim
     - Neovim
+    - Noctalia (This is the most recent addition and a complete overhaul of old configurations).
     - Zsh and Bash
-    - Kitty (a terminal emulator)
+    - Foot (a terminal emulator)
     - Hyprland
-    - Waybar
     - Zathura
-    - Rofi
-    - homebrew for OSX as well as other OSX specific software.
     - Many other programs (look through `nix/home-manager/<nix-darwin/nixos>/programs`)
 - A .gitignore and this README.
     - These are just boilerplate and should also not be considered a part of the
