@@ -5,8 +5,9 @@
   imports = [
     inputs.home-manager.nixosModules.home-manager
     inputs.nix-colors.homeManagerModules.default
-    inputs.stylix.nixosModules.stylix
+    inputs.noctalia-greeter.nixosModules.default
     inputs.sops-nix.nixosModules.sops
+    inputs.stylix.nixosModules.stylix
   ];
 
   nix = ( import ../../modules/nixos/nix.nix { inherit pkgs config; } );
