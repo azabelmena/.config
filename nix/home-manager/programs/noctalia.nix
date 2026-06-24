@@ -23,18 +23,46 @@ in
     };
 
     bar = {
+      order = [
+        "side_left" "side_right" "widgets" "bottom"
+      ];
+
+      "side_left" = {
+        enabled = true;
+        position = "left";
+        start = [];
+        center = [];
+        end = [];
+        margin_edge = 0;
+        margin_ends = 0;
+        radius = 0;
+        thickness = 10;
+      };
+
+      "side_right" = {
+        enabled = true;
+        position = "right";
+        start = [];
+        center = [];
+        end = [];
+        margin_edge = 0;
+        margin_ends = 0;
+        radius = 0;
+        thickness = 10;
+      };
+
       widgets = {
+        enabled = true;
+        position = "top";
         start = [
-          "nixOS_logo" "cpu" "ram" "cpu_temp"
-            "disk0" "disk1" "disk2" "disk3"
+          "nixOS_logo" "workspaces"
         ];
         center = [
           "cat" "clock" "cat_2"
         ];
         end = [
-          "notifications" "clipboard"
-            "net_up" "net_down" "network"
-            "bluetooth" "audio_visualizer" "volume" "brightness"
+          "notifications" "clipboard" "network"
+            "bluetooth" "volume" "brightness"
             "battery" "session"
         ];
         font_family = "BlexMono Nerd Font";
@@ -42,8 +70,45 @@ in
         margin_edge = 0;
         margin_ends = 0;
         radius = 0;
+        radius_bottom_left = -80;
+        radius_bottom_right = -80;
+        scale = 1.25;
+        thickness = 25;
+        widget_spacing = 10;
+      };
+      "bottom" = {
+        enabled = true;
+        position = "bottom";
+
+        monitor = {
+          "HDMI-A-1" = {
+            match = "HDMI-A-1";
+            start = [
+              "cpu" "ram" "cpu_temp"
+                "disk0" "disk1" "disk2" "disk3"
+            ];
+            center = [ "audio_visualizer" ];
+            end = [ "net_up" "net_down" ];
+          };
+          "eDP-1" = {
+            match = "eDP-1";
+            start = [
+              "cpu" "ram" "cpu_temp"
+                "disk0"
+            ];
+            center = [ "audio_visualizer" ];
+            end = [ "net_up" "net_down" ];
+          };
+        };
+
+        font_family = "BlexMono Nerd Font";
+        font_weight = 400;
+        margin_edge = 0;
+        margin_ends = 0;
+        radius = 0;
         radius_top_left = -80;
-        scale = 1.250000011175871;
+        radius_top_right = -80;
+        scale = 1.25;
         thickness = 25;
         widget_spacing = 10;
       };
@@ -174,6 +239,13 @@ in
     };
 
     widget = {
+      audio_visualizer = {
+        bands = 128;
+        color_1 = "primary";
+        color_2 = "secondary";
+        show_when_idle = true;
+        width = 400;
+      };
       cat = {
         audio_spectrum = true;
         rave_mode = true;
@@ -243,6 +315,12 @@ in
         glyph = "brand-steam";
         stat = "disk_pct";
         path = "/home/alec/Games";
+      };
+      disk4 = {
+        type = "sysmon";
+        glyph = "device-floppy";
+        stat = "disk_pct";
+        path = "/home/alec/storage";
       };
 
       net_up = {
