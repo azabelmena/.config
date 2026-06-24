@@ -62,9 +62,9 @@ in
         ];
         end = [
           "screenshot"
-          "notifications" "clipboard" "network"
-          "bluetooth" "volume" "brightness"
-          "battery" "session"
+            "notifications" "clipboard" "network"
+            "bluetooth" "volume" "brightness"
+            "battery" "session"
         ];
         font_family = "BlexMono Nerd Font";
         font_weight = 400;
@@ -168,7 +168,12 @@ in
 
       panel = {
         clipboard_placement = "attached";
+
         launcher_session_search = true;
+        launcher_categories = false;
+        launcher_show_icons = true;
+
+        control_center_placement = true;
       };
       session = {
         actions = [
@@ -200,30 +205,6 @@ in
         ];
       };
 
-      wallpaper = {
-        enabled = true;
-        fill_mode = "fit";
-        default = {
-          path = "${background}";
-        };
-
-        monitor = {
-          "HDMI-A-1" = {
-            path = "${background}";
-          };
-          "eDP-1" = {
-            path = "${background}";
-          };
-
-        };
-      };
-
-      backdrop = {
-        enabled = true;
-        blur_intensity = 0.5;
-        tint_intensity = 0.5;
-      };
-
       lockscreen = {
         enabled = true;
         fingerprint = true;
@@ -232,10 +213,14 @@ in
         blur_intensity = 0.5;
         tint_intensity = 0;
         wallpaper = "${background}";
-        monitors = [
-          "HDMI-A-1"
-          "eDP-1"
-        ];
+      };
+    };
+
+    wallpaper = {
+      enabled = true;
+      fill_mode = "center";
+      default = {
+        path = "${background}";
       };
     };
 
