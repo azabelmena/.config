@@ -40,6 +40,9 @@
 
     decoration = {
 
+      rounding = 10;
+      rounding_power = 2.0;
+
       active_opacity = 1;
       inactive_opacity = 1.00;
 
@@ -48,9 +51,6 @@
         range = 4;
         render_power = 3;
       };
-
-      rounding = 0;
-
 
       blur = {
         enabled = false;
