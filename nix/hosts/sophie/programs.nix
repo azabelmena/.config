@@ -14,7 +14,13 @@
   hyprland.enable = true;
   steam = {
     enable = true;
+    package = pkgs.steam;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+  };
+
+  gpu-screen-recorder = {
+    enable = true;
+    package = pkgs.gpu-screen-recorder;
   };
 }
