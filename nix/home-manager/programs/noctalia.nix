@@ -94,7 +94,7 @@ in
             match = "eDP-1";
             start = [
               "cpu" "ram" "cpu_temp"
-                "disk0"
+                "disk0" "disk4"
             ];
             center = [ "audio_visualizer" ];
             end = [ "net_up" "net_down" ];
@@ -318,7 +318,7 @@ in
       };
       disk4 = {
         type = "sysmon";
-        glyph = "device-floppy";
+        glyph = "database";
         stat = "disk_pct";
         path = "/home/alec/storage";
       };
