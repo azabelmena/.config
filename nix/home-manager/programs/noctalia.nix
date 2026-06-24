@@ -55,15 +55,16 @@ in
         enabled = true;
         position = "top";
         start = [
-          "nixOS_logo" "workspaces"
+          "nixOS_logo" "workspaces" "active_window"
         ];
         center = [
           "cat" "clock" "cat_2"
         ];
         end = [
+          "screenshot"
           "notifications" "clipboard" "network"
-            "bluetooth" "volume" "brightness"
-            "battery" "session"
+          "bluetooth" "volume" "brightness"
+          "battery" "session"
         ];
         font_family = "BlexMono Nerd Font";
         font_weight = 400;
@@ -239,6 +240,16 @@ in
     };
 
     widget = {
+
+      active_window = {
+        min_length = 80;
+        max_length = 260;
+        icon_size = 14;
+        title_scroll = true;
+        display = "icon_and_text";
+        show_empty_label = false;
+      };
+
       audio_visualizer = {
         bands = 128;
         color_1 = "primary";
@@ -246,6 +257,12 @@ in
         show_when_idle = true;
         width = 400;
       };
+
+      screenshot = {
+        glyph = "camera";
+        primary_click = "fullscreen";
+      };
+
       cat = {
         audio_spectrum = true;
         rave_mode = true;
