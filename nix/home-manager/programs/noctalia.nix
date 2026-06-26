@@ -11,6 +11,11 @@ avatar = pkgs.fetchurl {
   hash = "sha256-nXJSDjjKfcDNio8c/PB2767swiGHzK/mlurmr6J6tHI=";
 };
 
+lock = pkgs.fetchurl {
+  url = "https://github.com/azabelmena/Wallpapers/blob/main/gruvbox/gruvbox-dark-lockscreen-scalable.png?raw=true";
+  hash = "sha256-05u9+1/Vq8e7MfW8IhZJtBs6SWoQMZpjW7lcJ40+0qE=";
+};
+
 in
 {
   enable = true;
@@ -93,15 +98,54 @@ in
         enabled = true;
         fingerprint = true;
         allow_empty_password = false;
-        blurred_desktop = true;
+        blurred_desktop = false;
         blur_intensity = 0.5;
         tint_intensity = 0;
-        wallpaper = "${background}";
+        wallpaper = "${lock}";
     };
 
-    #notification = {};
+    notification = {
+      enable_daemon = true;
+      show_app_name = true;
+      show_actions = true;
+      layer = "top";
+      scale = 1;
+      background_opacity = 1;
+      offset_x = 20;
+      offset_y = 8;
 
-    #osd = {};
+      filter.rythmbox = {
+        enabled = true;
+        match = "rythmbox";
+        show_toast = true;
+        play_sound = true;
+        allowed_urgencies = [
+          "normal"
+          "critical"
+        ];
+      };
+    };
+
+    osd = {
+      position = "top_right";
+      scale = 1;
+      background_opacity = 1;
+      offset_x = 20;
+      offset_y = 8;
+
+      kinds = {
+        volume = true;
+        volume_output = true;
+        volume_input = true;
+        brightness = true;
+        wifi = true;
+        bluetooth = true;
+        powerprofile = true;
+        caffeine = true;
+        nightlight = true;
+        dnd = true;
+      };
+    };
 
     system = {
       monitor = {
@@ -141,10 +185,27 @@ in
 
     };
 
-    #audio = {
-    #};
+    audio = {
+      enable_overdrive = false;
+    };
 
-    #idle = {};
+    idle = {
+      pre_action_fade_Second = 2;
+
+      behavior = {
+        lock = {
+          enabled = true;
+          timeout = 600;
+          command = "noctalia:session lock";
+        };
+        screen-off = {
+          enabled = true;
+          timeout = 660;
+          command = "noctalia:dpms-off";
+          resume_command = "noctalia:dpms-on";
+        };
+      };
+    };
 
     bar = {
       order = [ "side_left" "side_right" "top" "bottom" ];
