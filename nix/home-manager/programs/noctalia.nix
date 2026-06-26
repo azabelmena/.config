@@ -299,7 +299,67 @@ in
       };
     };
 
-    widgets = {
+    widget = {
+
+      active_window = {
+        min_length = 80;
+        max_length = 260;
+        icon_size = 14;
+        title_scroll = true;
+        display = "icon_and_text";
+        show_empty_label = false;
+      };
+
+      audio_visualizer = {
+        bands = 128;
+        color_1 = "primary";
+        color_2 = "secondary";
+        show_when_idle = true;
+        width = 400;
+      };
+
+      screenshot = {
+        glyph = "camera";
+        primary_click = "fullscreen";
+      };
+
+      cat = {
+        audio_spectrum = true;
+        rave_mode = true;
+        tappy_mode = true;
+        type = "noctalia/bongocat:cat";
+        use_mpris_filter = true;
+      };
+      clock = {
+        format = "{:%H.%M.%S}";
+      };
+      cat_2 = {
+        audio_spectrum = true;
+        rave_mode = true;
+        tappy_mode = true;
+        type = "noctalia/bongocat:cat";
+        use_mpris_filter = true;
+      };
+
+      nixOS_logo = {
+        type = "custom_button";
+        color = "primary";
+        glyph = "";
+        icon_color = "primary";
+        label = "";
+      };
+      cpu= {
+        type = "sysmon";
+        stat = "cpu_usage";
+      };
+      gpu = {
+        type = "sysmon";
+        stat = "gpu_usage";
+      };
+      ram = {
+        type = "sysmon";
+        stat = "ram_used";
+      };
       cpu_temp = {
         type = "sysmon";
         stat = "cpu_temp";
@@ -338,7 +398,7 @@ in
         glyph = "database";
         stat = "disk_pct";
         path = "/home/alec/storage";
-            };
+      };
 
       net_up = {
         type = "sysmon";
