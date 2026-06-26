@@ -28,7 +28,6 @@ in
       builtin = "Gruvbox";
     };
 
-
     shell = {
       clipboard_history_max_entries = 20;
       font_family = "BlexMono Nerd Font Mono";
@@ -52,34 +51,41 @@ in
       };
       session = {
         actions = [
-        {
-          action = "lock";
-          enabled = true;
-          variant = "default";
-        }
-        {
-          action = "lock_and_suspend";
-          enabled = true;
-          variant = "default";
-        }
-        {
-          action = "logout";
-          enabled = true;
-          variant = "default";
-        }
-        {
-          action = "reboot";
-          enabled = true;
-          variant = "default";
-        }
-        {
-          action = "shutdown";
-          enabled = true;
-          variant = "destructive";
-        }
+          {
+            action = "lock";
+            enabled = true;
+            variant = "default";
+          }
+          {
+            action = "lock_and_suspend";
+            enabled = true;
+            variant = "default";
+          }
+          {
+            action = "logout";
+            enabled = true;
+            variant = "default";
+          }
+          {
+            action = "reboot";
+            enabled = true;
+            variant = "default";
+          }
+          {
+            action = "shutdown";
+            enabled = true;
+            variant = "destructive";
+          }
         ];
       };
     };
+
+    control_center = {
+      sidebar = "full";
+      sidebar_section = "full";
+      width = 1200;
+    };
+
 
     wallpaper = {
       enabled = true;
@@ -95,13 +101,13 @@ in
     };
 
     lockscreen = {
-        enabled = true;
-        fingerprint = true;
-        allow_empty_password = false;
-        blurred_desktop = false;
-        blur_intensity = 0.5;
-        tint_intensity = 0;
-        wallpaper = "${lock}";
+      enabled = true;
+      fingerprint = true;
+      allow_empty_password = false;
+      blurred_desktop = false;
+      blur_intensity = 0.5;
+      tint_intensity = 0;
+      wallpaper = "${lock}";
     };
 
     notification = {
@@ -237,18 +243,41 @@ in
       top = {
         enabled = true;
         position = "top";
-        start = [
-          "nixOS_logo" "workspaces" "active_window"
-        ];
-        center = [
-          "cat" "clock" "cat_2"
-        ];
-        end = [
-          "screenshot"
-            "notifications" "clipboard" "network"
-            "bluetooth" "volume" "brightness"
-            "battery" "session"
-        ];
+
+        monitor = {
+          "HDMI-A-1" = {
+            match = "HDMI-A-1";
+            start = [
+              "nixOS_logo" "workspaces" "active_window"
+            ];
+            center = [
+              "cat" "clock" "cat_2"
+            ];
+            end = [
+              "screenshot"
+              "notifications" "clipboard" "network"
+              "bluetooth" "volume" "brightness"
+              "battery" "session"
+            ];
+
+          };
+          "eDP-1" = {
+            match = "eDP-1";
+            start = [
+              "nixOS_logo" "workspaces" "active_window"
+            ];
+            center = [
+              "cat" "clock" "cat_2"
+            ];
+            end = [
+              "screenshot"
+              "caffeine" "notifications" "clipboard" "network"
+              "bluetooth" "volume" "brightness"
+              "battery" "session"
+            ];
+          };
+        };
+
         font_family = "BlexMono Nerd Font";
         font_weight = 400;
         margin_edge = 0;
@@ -259,6 +288,7 @@ in
         scale = 1.25;
         thickness = 25;
         widget_spacing = 10;
+
       };
 
       bottom = {
@@ -270,7 +300,7 @@ in
             match = "HDMI-A-1";
             start = [
               "cpu" "ram" "cpu_temp"
-                "disk0" "disk1" "disk2" "disk3"
+              "disk0" "disk1" "disk2" "disk3"
             ];
             center = [ "audio_visualizer" ];
             end = [ "net_up" "net_down" ];
@@ -279,7 +309,7 @@ in
             match = "eDP-1";
             start = [
               "cpu" "ram" "cpu_temp"
-                "disk0" "disk4"
+              "disk0" "disk4"
             ];
             center = [ "audio_visualizer" ];
             end = [ "net_up" "net_down" ];
@@ -297,6 +327,7 @@ in
         thickness = 25;
         widget_spacing = 10;
       };
+
     };
 
     widget = {
@@ -419,9 +450,9 @@ in
     plugins = {
       enabled = [
         "noctalia/bongocat"
-          "noctalia/screen_recorder"
-          "noctalia/timer"
-          "noctalia/translator"
+        "noctalia/screen_recorder"
+        "noctalia/timer"
+        "noctalia/translator"
       ];
     };
 
