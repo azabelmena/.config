@@ -201,12 +201,12 @@ in
       behavior = {
         lock = {
           enabled = true;
-          timeout = 600;
+          timeout = 300;
           command = "noctalia:session lock";
         };
         screen-off = {
           enabled = true;
-          timeout = 660;
+          timeout = 360;
           command = "noctalia:dpms-off";
           resume_command = "noctalia:dpms-on";
         };
