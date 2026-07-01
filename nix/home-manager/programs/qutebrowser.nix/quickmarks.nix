@@ -46,7 +46,6 @@
   monkeytype = "https://monkeytype.com/";
   moodle = "https://online.uprrp.edu/";
   musicbrainz = "https://musicbrainz.org/";
-  myremarkable = "https://my.remarkable.com/";
   navicayley = "https://cayley.angora-hammerhead.ts.net:4533";
   nixos = "https://nixos.org/";
   nixpkgs = "https://search.nixos.org/packages";
