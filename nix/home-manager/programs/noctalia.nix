@@ -51,31 +51,31 @@ in
       };
       session = {
         actions = [
-          {
-            action = "lock";
-            enabled = true;
-            variant = "default";
-          }
-          {
-            action = "lock_and_suspend";
-            enabled = true;
-            variant = "default";
-          }
-          {
-            action = "logout";
-            enabled = true;
-            variant = "default";
-          }
-          {
-            action = "reboot";
-            enabled = true;
-            variant = "default";
-          }
-          {
-            action = "shutdown";
-            enabled = true;
-            variant = "destructive";
-          }
+        {
+          action = "lock";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "lock_and_suspend";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "logout";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "reboot";
+          enabled = true;
+          variant = "default";
+        }
+        {
+          action = "shutdown";
+          enabled = true;
+          variant = "destructive";
+        }
         ];
       };
     };
@@ -127,7 +127,7 @@ in
         play_sound = true;
         allowed_urgencies = [
           "normal"
-          "critical"
+            "critical"
         ];
       };
     };
@@ -244,40 +244,18 @@ in
         enabled = true;
         position = "top";
 
-        monitor = {
-          "HDMI-A-1" = {
-            match = "HDMI-A-1";
-            start = [
-              "nixOS_logo" "workspaces" "active_window"
-            ];
-            center = [
-              "cat" "clock" "cat_2"
-            ];
-            end = [
-              "screenshot"
-              "notifications" "clipboard" "network"
-              "bluetooth" "volume" "brightness"
-              "battery" "session"
-            ];
-
-          };
-          "eDP-1" = {
-            match = "eDP-1";
-            start = [
-              "nixOS_logo" "workspaces" "active_window"
-            ];
-            center = [
-              "cat" "clock" "cat_2"
-            ];
-            end = [
-              "screenshot"
-              "caffeine" "notifications" "clipboard" "network"
-              "bluetooth" "volume" "brightness"
-              "battery" "session"
-            ];
-          };
-        };
-
+        start = [
+          "nixOS_logo" "workspaces" "active_window"
+        ];
+        center = [
+          "cat" "clock" "cat_2"
+        ];
+        end = [
+          "screenshot"
+            "caffeine" "notifications" "clipboard" "network"
+            "bluetooth" "volume" "brightness"
+            "battery" "session"
+        ];
         font_family = "BlexMono Nerd Font";
         font_weight = 400;
         margin_edge = 0;
@@ -300,7 +278,7 @@ in
             match = "HDMI-A-1";
             start = [
               "cpu" "ram" "cpu_temp"
-              "disk0" "disk1" "disk2" "disk3"
+                "disk0" "disk1" "disk2" "disk3"
             ];
             center = [ "audio_visualizer" ];
             end = [ "net_up" "net_down" ];
@@ -309,7 +287,7 @@ in
             match = "eDP-1";
             start = [
               "cpu" "ram" "cpu_temp"
-              "disk0" "disk4"
+                "disk0" "disk4"
             ];
             center = [ "audio_visualizer" ];
             end = [ "net_up" "net_down" ];
@@ -450,9 +428,9 @@ in
     plugins = {
       enabled = [
         "noctalia/bongocat"
-        "noctalia/screen_recorder"
-        "noctalia/timer"
-        "noctalia/translator"
+          "noctalia/screen_recorder"
+          "noctalia/timer"
+          "noctalia/translator"
       ];
     };
 
