@@ -248,13 +248,13 @@ in
           "nixOS_logo" "workspaces" "active_window"
         ];
         center = [
-          "cat" "clock" "cat_2"
+          "clock"
         ];
         end = [
           "screenshot"
-            "caffeine" "notifications" "clipboard" "network"
-            "bluetooth" "volume" "brightness"
-            "battery" "session"
+          "caffeine" "notifications" "clipboard" "network"
+          "bluetooth" "volume" "brightness"
+          "battery" "session"
         ];
         font_family = "BlexMono Nerd Font";
         font_weight = 400;
@@ -331,25 +331,9 @@ in
         glyph = "camera";
         primary_click = "fullscreen";
       };
-
-      cat = {
-        audio_spectrum = true;
-        rave_mode = true;
-        tappy_mode = true;
-        type = "noctalia/bongocat:cat";
-        use_mpris_filter = true;
-      };
       clock = {
         format = "{:%H.%M.%S}";
       };
-      cat_2 = {
-        audio_spectrum = true;
-        rave_mode = true;
-        tappy_mode = true;
-        type = "noctalia/bongocat:cat";
-        use_mpris_filter = true;
-      };
-
       nixOS_logo = {
         type = "custom_button";
         color = "primary";
@@ -427,10 +411,9 @@ in
 
     plugins = {
       enabled = [
-        "noctalia/bongocat"
-          "noctalia/screen_recorder"
-          "noctalia/timer"
-          "noctalia/translator"
+        "noctalia/screen_recorder"
+        "noctalia/timer"
+        "noctalia/translator"
       ];
     };
 
