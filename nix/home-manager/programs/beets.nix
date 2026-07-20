@@ -5,7 +5,7 @@
   package = pkgs.beets;
 
   settings = {
-    plugins = "edit fetchart embedart convert scrub replaygain lastgenre chroma web smartplaylist";
+    plugins = "edit fetchart embedart convert scrub lastgenre chroma web smartplaylist";
 
     directory = "~/Audio/Music";
     library = "~/Audio/Music/musiclibrary.db";
