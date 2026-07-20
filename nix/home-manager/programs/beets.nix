@@ -76,7 +76,7 @@
             "artist:Sam Gellaitry, Santana, Shinsei Kamattechan, Sidney Gish"
             "artist:Sorority Noise, Sports, St. Vincent, Tame Impala"
             "artist:They Might Be Giants, Trinix, Trotsky Icepick, TV Girl"
-            "artist:Twenty One Pilots, Ween, Weezer, The White Stripes, The Who"
+            "artist:Twenty One Pilots, Ween, Weezer, Wolf Parade, The White Stripes, The Who"
             "artist:Yes, Zoe Ko, ΑΝΤΙ…, 高橋洋子"
 
             "title:One More Cup of Coffee"
