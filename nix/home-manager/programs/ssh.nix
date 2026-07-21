@@ -8,8 +8,7 @@ in
   enableDefaultConfig = false;
 
   settings = {
-    "git" = {
-      host = "github.com";
+    "github.com" = {
       identitiesOnly = true;
       identityFile = [
         "${home}/.ssh/id_github"
@@ -20,8 +19,7 @@ in
 
     };
 
-    "boqueron" = {
-      host = "boqueron.hpcf.upr.edu";
+    "boqueron.hpcf.upr.edu" = {
       port = 22;
       identitiesOnly = true;
       identityFile = [
@@ -36,8 +34,7 @@ in
 
     };
 
-    "cayley" = {
-      host = "cayley.angora-hammerhead.ts.net";
+    "cayley.angora-hammerhead.ts.net" = {
       port = 16384;
       identitiesOnly = true;
       identityFile = [
@@ -69,8 +66,7 @@ in
 
     };
 
-    "tartaglia" = {
-      host = "tartaglia.angora-hammerhead.ts.net";
+    "tartaglia.angora-hammerhead.ts.net" = {
       port = 22;
       identitiesOnly = true;
       identityFile = [
