@@ -5,6 +5,10 @@
     action = ":Oil<CR>";
   }
   {
+    key = "<C-b>";
+    action = ":split<CR>";
+  }
+  {
     key = "J";
     action = "<C-d>zz";
     mode = [ "n" "v" ];
