@@ -51,19 +51,18 @@ in
 
     };
 
-    "matricula" = {
-      host = "136.145.180.92";
-      user = "matricula";
-      port = 2046;
-      KexAlgorithms = "=+diffie-hellman-group14-sha1";
+    "weyl.angora-hammerhead.ts.net" = {
+      port = 22;
+      identitiesOnly = true;
+      identityFile = [
+        "${home}/.ssh/id_weyl"
+      ];
       HostKeyAlgorithms = "=+ssh-rsa";
-      Ciphers = "=+aes128-cbc";
       ConnectTimeout = "10";
-      PasswordAuthentication = "yes";
+      PasswordAuthentication = "no";
       addKeysToAgent = "yes";
       hashKnownHosts = true;
       serverAliveInterval = 512;
-
     };
 
     "tartaglia.angora-hammerhead.ts.net" = {
@@ -78,6 +77,21 @@ in
       addKeysToAgent = "yes";
       hashKnownHosts = true;
       serverAliveInterval = 512;
+    };
+
+    "matricula" = {
+      host = "136.145.180.92";
+      user = "matricula";
+      port = 2046;
+      KexAlgorithms = "=+diffie-hellman-group14-sha1";
+      HostKeyAlgorithms = "=+ssh-rsa";
+      Ciphers = "=+aes128-cbc";
+      ConnectTimeout = "10";
+      PasswordAuthentication = "yes";
+      addKeysToAgent = "yes";
+      hashKnownHosts = true;
+      serverAliveInterval = 512;
+
     };
 
   };
