@@ -78,22 +78,6 @@ in
       hashKnownHosts = true;
       serverAliveInterval = 512;
     };
-
-    "matricula" = {
-      host = "136.145.180.92";
-      user = "matricula";
-      port = 2046;
-      KexAlgorithms = "=+diffie-hellman-group14-sha1";
-      HostKeyAlgorithms = "=+ssh-rsa";
-      Ciphers = "=+aes128-cbc";
-      ConnectTimeout = "10";
-      PasswordAuthentication = "yes";
-      addKeysToAgent = "yes";
-      hashKnownHosts = true;
-      serverAliveInterval = 512;
-
-    };
-
   };
 
 }
