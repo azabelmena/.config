@@ -18,7 +18,7 @@ in
     initContent = ''
         cd ~
         sleep 0.1
-        ${pkgs.fortune}/bin/fortune | ${pkgs.neo-cowsay}/bin/cowsay --random
+        ${pkgs.bat}/bin/bat --theme gruvbox-dark --plain ~/logo.txt
 
         bindkey -v
 
