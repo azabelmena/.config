@@ -17,6 +17,7 @@
   ssh = ( import ../../programs/ssh.nix { inherit config; } );
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });
+  vifm = (import ../../programs/vifm.nix { inherit pkgs; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });
   zsh = (import ../../programs/zsh.nix { inherit pkgs config; });
 
