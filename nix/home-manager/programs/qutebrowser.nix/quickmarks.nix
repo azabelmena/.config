@@ -36,7 +36,7 @@
   ise = "ise.uprrp.edu";
   journalmathny = "http://nyjm.albany.edu/nyjm.html";
   lalaue = "https://www.lalaue.com/";
-  libgen = "http://libgen.li/";
+  libgen = "https://libgen.gl/";
   lmfdb = "https://www.lmfdb.org/";
   mathstack = "https://math.stackexchange.com/";
   mibanco = "https://www.bancopopular.com/cibp-web/actions/login";
