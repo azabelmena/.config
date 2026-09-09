@@ -12,6 +12,7 @@
   cayleyfin = "http://cayley.angora-hammerhead.ts.net:8096";
   chalkdustmag = "https://chalkdustmagazine.com/";
   cienciasnaturalesuprrp = "https://natsci.uprrp.edu/";
+  cryptpad = "https://cryptpad.fr/login/";
   cuda = "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html";
   cvemitre = "https://cve.mitre.org/";
   degi = "http://graduados.uprrp.edu/index.php?lang=es";
