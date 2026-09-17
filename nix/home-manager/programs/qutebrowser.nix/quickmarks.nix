@@ -40,6 +40,7 @@
   leaflet = "https://leaflet.pub/";
   libgen = "https://libgen.gl/";
   lmfdb = "https://www.lmfdb.org/";
+  localsite = "http://127.0.0.1:1313/";
   mathstack = "https://math.stackexchange.com/";
   mibanco = "https://www.bancopopular.com/cibp-web/actions/login";
   minecraft = "https://minecraft.wiki/";
@@ -77,7 +78,6 @@
   sagemath = "https://www.sagemath.org/";
   scihub = "https://sci-hub.st/";
   sidim = "http://sidim.org/index.html";
-  site_testing = "http://127.0.0.1:1313/";
   springerverlag = "https://www.springer.com/gp/mathematics";
   stackexchange = "https://stackexchange.com/";
   submittable= "https://manager.submittable.com/login";
