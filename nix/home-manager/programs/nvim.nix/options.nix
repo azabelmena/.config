@@ -10,6 +10,12 @@
   softtabstop = 2;
   tabstop = 2;
 
+  spell = true;
+  spelllang = [
+    "en_us"
+    "es_es"
+  ];
+
   colorcolumn = "0";
   cursorcolumn = false;
   cursorline = true;
