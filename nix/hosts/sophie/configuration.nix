@@ -45,8 +45,9 @@
 
   programs = ( import ./programs.nix { inherit pkgs lib; } );
 
-  fonts.packages = with pkgs.nerd-fonts; [
-    blex-mono
+  fonts.packages = with pkgs; [
+    nerd-fonts.blex-mono
+    google-fonts
   ];
 
   documentation = ( import ../../modules/nixos/documentation.nix  );
