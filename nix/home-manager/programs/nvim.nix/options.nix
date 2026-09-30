@@ -10,7 +10,7 @@
   softtabstop = 2;
   tabstop = 2;
 
-  spell = true;
+  spell = false;
   spelllang = [
     "en_us"
     "es_es"
