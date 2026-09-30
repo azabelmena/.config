@@ -18,18 +18,12 @@ in
   fonts = with pkgs; {
 
     serif = {
-      package = ibm-plex;
-      name = "IBMPlexMono-Regular";
+      package = google-fonts;
+      name = "Spectral";
     };
-
     sansSerif = {
-      package = ibm-plex;
-      name = "IBMPlexMono-Regular";
-    };
-
-    monospace = {
-      package = ibm-plex;
-      name = "IBMPlexMono-Regular";
+      package = google-fonts;
+      name = "Spectral";
     };
 
     emoji = {

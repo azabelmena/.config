@@ -30,7 +30,7 @@ in
 
     shell = {
       clipboard_history_max_entries = 20;
-      font_family = "BlexMono Nerd Font Mono";
+      font_family = "Spectral";
       polkit_agent = true;
       password_style = "random";
       screen_time_enabled = true;

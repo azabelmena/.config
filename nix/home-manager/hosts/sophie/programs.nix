@@ -7,7 +7,7 @@
   beets = ( import ../../programs/beets.nix { inherit pkgs; } );
   btop = ( import ../../programs/btop.nix { inherit pkgs; } );
   fastfetch = ( import ../../programs/fastfetch.nix );
-  foot = (import ../../programs/foot.nix { inherit pkgs; });
+  foot = (import ../../programs/foot.nix { inherit pkgs lib; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
   hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
   niri = ( import ../../programs/niri.nix { inherit pkgs; } );
