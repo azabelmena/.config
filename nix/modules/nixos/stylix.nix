@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 let
 
   wallpaper = pkgs.fetchurl {
@@ -21,10 +21,7 @@ in
       package = google-fonts;
       name = "Spectral";
     };
-    sansSerif = {
-      package = google-fonts;
-      name = "Spectral";
-    };
+    sansSerif = config.stylix.fonts.serif;
     monospace = {
       package = google-fonts;
       name = "IBMPlexMono-Regular";
