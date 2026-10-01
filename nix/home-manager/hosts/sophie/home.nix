@@ -12,10 +12,6 @@
     "/home/alec/scripts/"
   ];
 
-  packages = with  pkgs.nerd-fonts; [
-    blex-mono
-  ];
-
   file = ( import ../../../modules/nixos/misc/files.nix { inherit pkgs config lib; });
 
   enableNixpkgsReleaseCheck = true;
