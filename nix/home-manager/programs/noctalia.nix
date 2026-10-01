@@ -256,7 +256,7 @@ in
           "bluetooth" "volume" "brightness"
           "battery" "session"
         ];
-        font_family = "BlexMono Nerd Font";
+        font_family = "Spectral";
         font_weight = 400;
         margin_edge = 0;
         margin_ends = 0;
@@ -294,7 +294,7 @@ in
           };
         };
 
-        font_family = "BlexMono Nerd Font";
+        font_family = "Spectral";
         font_weight = 400;
         margin_edge = 0;
         margin_ends = 0;

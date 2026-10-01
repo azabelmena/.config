@@ -25,10 +25,14 @@ in
       package = google-fonts;
       name = "Spectral";
     };
+    monospace = {
+      package = google-fonts;
+      name = "IBMPlexMono-Regular";
+    };
 
     emoji = {
-      package = noto-fonts-color-emoji;
-      name = "Noto Color Emoji";
+      package = nerd-fonts.noto;
+      name = "NotoSerifNerdFont-Regular";
     };
 
     sizes = {
