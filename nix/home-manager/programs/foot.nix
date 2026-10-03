@@ -12,7 +12,6 @@
       locked-title = "yes";
       bold-text-in-bright = "palette-based";
       workers = 4;
-      font = lib.mkDefault "IBMPlexMono-Regular:size=12";
     };
 
     environment = {

@@ -30,7 +30,6 @@ in
 
     shell = {
       clipboard_history_max_entries = 20;
-      font_family = "Spectral";
       polkit_agent = true;
       password_style = "random";
       screen_time_enabled = true;
@@ -256,8 +255,6 @@ in
           "bluetooth" "volume" "brightness"
           "battery" "session"
         ];
-        font_family = "Spectral";
-        font_weight = 400;
         margin_edge = 0;
         margin_ends = 0;
         radius = 0;
@@ -294,8 +291,6 @@ in
           };
         };
 
-        font_family = "Spectral";
-        font_weight = 400;
         margin_edge = 0;
         margin_ends = 0;
         radius = 0;
