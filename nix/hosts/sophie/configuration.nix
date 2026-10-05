@@ -49,7 +49,7 @@
 
   system.stateVersion = "26.11";
 
-  stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs; } );
+  stylix = ( import ../../modules/nixos/stylix.nix { inherit pkgs config; } );
 
   sops = ( import ../../modules/nixos/sops.nix { inherit inputs config; } );
 
