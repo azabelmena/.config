@@ -87,6 +87,7 @@
   teams = "https://teams.microsoft.com/v2";
   tor = "https://www.torproject.org/";
   twitter = "https://twitter.com/home";
+  typst = "https://typst.app/";
   uprrp = "https://www.uprrp.edu/";
   uprrpcompsci = "https://natsci.uprrp.edu/ccom/";
   uprrpmath = "https://math.uprrp.edu/";
