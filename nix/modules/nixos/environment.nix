@@ -37,6 +37,7 @@
       qt5.qtgraphicaleffects
       qt5.qtquickcontrols2
       sqlite
+      typst
       vim-full
       virt-manager
   ];
