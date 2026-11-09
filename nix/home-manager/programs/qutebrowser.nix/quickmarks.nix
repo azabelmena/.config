@@ -56,6 +56,7 @@
   nixwiki = "https://wiki.nixos.org/wiki/NixOS_Wiki";
   nlab = "https://ncatlab.org/nlab/show/HomePage";
   noip = "https://www.noip.com/login";
+  nsf-edocs = "https://edocs.epscor.nsf.gov/"
   nts="https://www.nts.live/";
   ogs = "https://online-go.com/";
   osdev = "https://wiki.osdev.org/Main_Page";
