@@ -92,6 +92,7 @@
   uprrp = "https://www.uprrp.edu/";
   uprrpcompsci = "https://natsci.uprrp.edu/ccom/";
   uprrpmath = "https://math.uprrp.edu/";
+  weil = "https://weil.angora-hammerhead.ts.net";
   weyl = "https://weyl.angora-hammerhead.ts.net";
   whatsapp = "https://web.whatsapp.com/";
   wikipedia = "https://www.wikipedia.org/";
