@@ -35,22 +35,31 @@
 
     output = {
       "HDMI-A-1" = {
+        mode = "1920x1080@60";
+        position = [0 0];
+        scale = 1.5;
+
         workspaces = "dynamic";
       };
 
       "eDP-1" = {
+        mode = "2560x1600@165";
+        position = [0 0];
+        scale = 1.5;
+
         workspaces = "dynamic";
       };
-
     };
 
     keybinds = {
       "Mod+Q" = "window-close";
       "Mod+Space" = "spawn noctalia msg panel-toggle launcher";
+      "Mod+Delete" = "spawn noctalia msg session lock";
       "Ctrl+Alt+Delete" = "session-quit";
 
       "Mod+Return" = "spawn foot";
       "Mod+B" = "spawn qutebrowser";
+      "Mod+Z" = "spawn zathura";
 
       "Mod+H" = "window-focus-left";
       "Mod+J" = "window-focus-down";
@@ -62,7 +71,6 @@
       "Mod+Shift+K" = "window-move-up";
       "Mod+Shift+L" = "column-move-right";
 
-      "Mod+R" = "window-cycle-primary-extent";
       "Mod+F" = "window-toggle-fullscreen";
 
       "Mod+Tab" = "window-focus-next";

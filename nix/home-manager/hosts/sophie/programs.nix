@@ -9,16 +9,14 @@
   fastfetch = ( import ../../programs/fastfetch.nix );
   foot = (import ../../programs/foot.nix { inherit pkgs lib; });
   git = ( import ../../programs/git.nix { inherit pkgs; } );
-  hyprlock = ( import ../../programs/hypr.nix/hyprlock.nix { inherit pkgs lib; } );
-  niri = ( import ../../programs/niri.nix { inherit pkgs; } );
   nixvim = ( import ../../programs/nvim.nix/nvim.nix { inherit pkgs config; } );
   noctalia = ( import ../../programs/noctalia.nix { inherit pkgs; } );
   qutebrowser = (import ../../programs/qutebrowser.nix/qutebrowser.nix { inherit pkgs config; });
   ssh = ( import ../../programs/ssh.nix { inherit config; } );
   starship = ( import ../../programs/starship.nix { inherit pkgs config; });
   tmux = (import ../../programs/tmux.nix { inherit pkgs; });
+  umbriel = (import ../../programs/umbriel.nix { inherit pkgs; });
   vifm = (import ../../programs/vifm.nix { inherit pkgs; });
   zathura = (import ../../programs/zathura.nix { inherit pkgs config; });
   zsh = (import ../../programs/zsh.nix { inherit pkgs config; });
-
 }
