@@ -8,8 +8,6 @@
 
   virt-manager.enable = false;
 
-  noctalia-greeter = ( import ../../modules/nixos/noctalia-greeter.nix { inherit pkgs; } );
-
   zsh.enable = true;
   umbriel.enable = true;
   steam = {

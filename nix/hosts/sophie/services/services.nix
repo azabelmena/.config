@@ -4,6 +4,8 @@
 
   avahi = ( import ../../../modules/nixos/services/avahi.nix );
 
+  displayManager.noctalia-greeter = ( import ../../../modules/nixos/noctalia-greeter.nix { inherit pkgs; } );
+
   fprintd = ( import ../../../modules/nixos/services/fprintd.nix { inherit pkgs; } );
 
   fwupd = ( import ../../../modules/nixos/services/fwupd.nix { inherit pkgs; } );
