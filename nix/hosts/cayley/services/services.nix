@@ -4,7 +4,7 @@
 
   avahi = ( import ../../../modules/nixos/services/avahi.nix );
 
-  displayManager.noctalia-greeter = ( import ../../modules/nixos/noctalia-greeter.nix { inherit pkgs; } );
+  displayManager.noctalia-greeter = ( import ../../../modules/nixos/noctalia-greeter.nix { inherit pkgs; } );
 
   jellyfin = ( import ./jellyfin.nix { inherit pkgs; } );
 
