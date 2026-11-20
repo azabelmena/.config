@@ -55,7 +55,7 @@
       "Mod+Q" = "window-close";
       "Mod+Space" = "spawn noctalia msg panel-toggle launcher";
       "Mod+Delete" = "spawn noctalia msg session lock";
-      "Ctrl+Alt+Delete" = "session-quit";
+      "Ctrl+Alt+Delete" = "umbriel msg session-quit skip-confirmation";
 
       "Mod+Return" = "spawn foot";
       "Mod+B" = "spawn qutebrowser";
