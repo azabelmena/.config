@@ -34,7 +34,7 @@ in
       password_style = "random";
       screen_time_enabled = true;
       settings_show_advanced = true;
-      time_format = "%H.%M.%s";
+      time_format = "%H:%M:%S";
       date_format = "%d.%m.%Y";
 
       avatar_path = "${avatar}";
@@ -327,7 +327,7 @@ in
         primary_click = "fullscreen";
       };
       clock = {
-        format = "{:%H.%M.%S}";
+        format = "{:%H:%M:%S}";
       };
       nixOS_logo = {
         type = "custom_button";
