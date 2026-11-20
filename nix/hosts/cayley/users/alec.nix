@@ -24,8 +24,6 @@
     gamemode
     home-manager
     htop-vim
-    hyprland
-    hyprpaper
     inkscape-with-extensions
     just
     libnotify
@@ -48,6 +46,5 @@
     tailscale
     texliveFull
     wl-clipboard
-    xdg-desktop-portal-gtk
   ];
 }

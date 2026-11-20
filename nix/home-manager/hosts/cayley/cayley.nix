@@ -12,8 +12,6 @@
 
   home = ( import ./home.nix { inherit pkgs config lib; } );
 
-  wayland = ( import ../../programs/wayland.nix { inherit pkgs config; } );
-
   programs = ( import ./programs.nix { inherit pkgs config lib; } );
 
   xdg = ( import ../../../modules/nixos/misc/xdg.nix { inherit pkgs config; });

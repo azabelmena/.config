@@ -11,7 +11,6 @@
   noctalia-greeter = ( import ../../modules/nixos/noctalia-greeter.nix { inherit pkgs; } );
 
   zsh.enable = true;
-  hyprland.enable = true;
   umbriel.enable = true;
   steam = {
     enable = true;

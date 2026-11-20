@@ -25,8 +25,6 @@
     gamemode
     home-manager
     htop-vim
-    hyprland
-    hyprpaper
     inkscape-with-extensions
     just
     libnotify

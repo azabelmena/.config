@@ -13,14 +13,6 @@
 
       logFailures = true;
     };
-
-    hyprlock = {
-      fprintAuth = true;
-
-      logFailures = true;
-
-
-    };
   };
 
 }

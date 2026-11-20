@@ -36,8 +36,6 @@
 
   services = ( import ./services/services.nix { inherit pkgs; } );
 
-  xdg = ( import ../../modules/nixos/xdg.nix { inherit pkgs; } );
-
   security = ( import ../../modules/nixos/security.nix { inherit pkgs; } );
 
   powerManagement = ( import ./hardware/power-management.nix );
