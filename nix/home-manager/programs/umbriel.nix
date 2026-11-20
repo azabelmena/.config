@@ -40,6 +40,7 @@
         scale = 1.5;
 
         workspaces = "dynamic";
+        workspace_axis = "horizontal";
       };
 
       "eDP-1" = {
@@ -48,6 +49,7 @@
         scale = 1.5;
 
         workspaces = "dynamic";
+        workspace_axis = "horizontal";
       };
     };
 
