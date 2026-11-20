@@ -11,7 +11,7 @@
     };
 
     session = {
-      default = "Hyprland";
+      default = "Umbriel";
     };
 
     user = {

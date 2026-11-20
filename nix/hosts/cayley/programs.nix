@@ -12,6 +12,7 @@
 
   zsh.enable = true;
   hyprland.enable = true;
+  umbriel.enable = true;
   steam = {
     enable = true;
     remotePlay.openFirewall = true;

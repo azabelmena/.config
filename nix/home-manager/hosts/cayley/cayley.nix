@@ -6,6 +6,7 @@
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeModules.nixvim
     inputs.noctalia.homeModules.default
+    inputs.umbriel.homeModules.default
   ];
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-soft;
 

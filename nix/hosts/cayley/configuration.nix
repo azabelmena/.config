@@ -5,6 +5,7 @@
     inputs.home-manager.nixosModules.home-manager
     inputs.nix-colors.homeManagerModules.default
     inputs.noctalia-greeter.nixosModules.default
+    inputs.umbriel.nixosModules.default
     inputs.sops-nix.nixosModules.sops
     inputs.stylix.nixosModules.stylix
   ];
