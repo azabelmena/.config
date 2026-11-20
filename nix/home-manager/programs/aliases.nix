@@ -4,7 +4,8 @@
   clear = "(clear) && (${pkgs.fortune}/bin/fortune | ${pkgs.neo-cowsay}/bin/cowsay --random)";
   #clear="(clear) && (cat ${config.home.homeDirectory}/logo.txt)"; # sfw version of clear alias
   ls="${pkgs.eza}/bin/eza";
-  cat="${pkgs.bat}/bin/bat --theme gruvbox-dark";    # Add bat alternative to less.
+  cat="${pkgs.bat}/bin/bat --paging=never --theme gruvbox-dark";    # Add bat alternative to less.
+  less="${pkgs.bat}/bin/bat --theme gruvbox-dark";    # Add bat alternative to less.
 
   vi = "nvim -u ${config.home.homeDirectory}/.config/nvim/init.lua";
   vim = "nvim -u ${config.home.homeDirectory}/.config/nvim/init.lua";
