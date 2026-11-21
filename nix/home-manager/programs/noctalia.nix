@@ -37,12 +37,22 @@ in
       time_format = "%H:%M:%S";
       date_format = "%d.%m.%Y";
 
+      screenshot = {
+        save_to_file = true;
+        directory = "~/Pictures/Screenshots/";
+        format = "png";
+        freeze_screen = true;
+        show_cursor = false;
+        annotate = true;
+      };
+
+
       avatar_path = "${avatar}";
 
       panel = {
         clipboard_placement = "attached";
 
-        control_center_placement = "attatched";
+        control_center_placement = "attached";
       };
       session = {
         actions = [
@@ -190,13 +200,13 @@ in
     };
 
     idle = {
-      idle_dim = 2;
+      pre_action_fade_seconds = 2.0;
 
       behavior = {
         lock = {
           enabled = true;
           timeout = 300;
-          command = "noctalia:session lock";
+          action = "lock";
         };
         screen-off = {
           enabled = true;
@@ -306,7 +316,7 @@ in
         min_length = 80;
         max_length = 260;
         icon_size = 14;
-        title_scroll = "yes";
+        title_scroll = "always";
         display = "icon_and_text";
         show_empty_label = false;
       };
@@ -321,8 +331,13 @@ in
 
       screenshot = {
         glyph = "camera";
-        left_click = "fullscreen";
-        middle_click = "disabled";
+
+        actions = {
+          left = "screenshot-region";
+          middle = "screenshot-fullscreen";
+          right = "screenshot-window";
+        };
+
       };
       clock = {
         format = "{:%H:%M:%S}";
