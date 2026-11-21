@@ -333,9 +333,8 @@ in
         glyph = "camera";
 
         actions = {
-          left = "screenshot-region";
+          left = "screenshot-window";
           middle = "screenshot-fullscreen";
-          right = "screenshot-window";
         };
 
       };
