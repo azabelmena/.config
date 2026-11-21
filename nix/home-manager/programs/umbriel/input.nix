@@ -1,7 +1,7 @@
 {
 
   middle_click_paste = true;
-  client_window_drage = true;
+  client_window_drag = true;
 
   cursor = {
     theme = "GoogleDot-Black";
