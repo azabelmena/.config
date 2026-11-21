@@ -3,6 +3,7 @@
   "Mod+Space" = "spawn noctalia msg panel-toggle launcher";
   "Mod+Delete" = "spawn noctalia msg session lock";
   "Ctrl+Alt+Delete" = "session-quit skip-confirmation";
+  "Mod+I" = "spawn noctalia msg panel-open control-center";
 
   "Mod+Return" = "spawn foot";
   "Mod+B" = "spawn qutebrowser";
