@@ -200,8 +200,6 @@ in
     };
 
     idle = {
-      pre_action_fade_seconds = 2.0;
-
       behavior = {
         lock = {
           enabled = true;
@@ -211,8 +209,7 @@ in
         screen-off = {
           enabled = true;
           timeout = 360;
-          command = "noctalia:dpms-off";
-          resume_command = "noctalia:dpms-on";
+          action = "screen_off";
         };
       };
     };
