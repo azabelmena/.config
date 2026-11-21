@@ -4,7 +4,7 @@
   client_window_drage = true;
 
   cursor = {
-    theme = "GoogleDot-Black"
+    theme = "GoogleDot-Black";
     hardware_cursor = true;
     follows_focus = true;
     hide_when_typing = true;
