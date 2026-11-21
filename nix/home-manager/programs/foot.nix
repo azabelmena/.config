@@ -8,7 +8,7 @@
   settings = {
     main = {
       term = "xterm-256color";
-      title = "I Love ";
+      title = "I Love 󰽒";
       locked-title = "yes";
       bold-text-in-bright = "palette-based";
       workers = 4;
