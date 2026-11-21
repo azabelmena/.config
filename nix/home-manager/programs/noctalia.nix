@@ -42,11 +42,7 @@ in
       panel = {
         clipboard_placement = "attached";
 
-        launcher_session_search = true;
-        launcher_categories = false;
-        launcher_show_icons = true;
-
-        control_center_placement = true;
+        control_center_placement = "attatched";
       };
       session = {
         actions = [
@@ -145,7 +141,6 @@ in
         brightness = true;
         wifi = true;
         bluetooth = true;
-        powerprofile = true;
         caffeine = true;
         nightlight = true;
         dnd = true;
@@ -178,8 +173,8 @@ in
       enabled = true;
       force = false;
 
-      temperature_day = "6500";
-      temperature_night = "4000";
+      temperature_day = 6500;
+      temperature_night = 4000;
     };
 
     weather = {
@@ -195,7 +190,7 @@ in
     };
 
     idle = {
-      pre_action_fade_Second = 2;
+      idle_dim = 2;
 
       behavior = {
         lock = {
@@ -258,8 +253,9 @@ in
         margin_edge = 0;
         margin_ends = 0;
         radius = 0;
-        radius_bottom_left = -80;
-        radius_bottom_right = -80;
+        radius_bottom_left = 80;
+        radius_bottom_right = 80;
+        concave_edge_corners = true;
         scale = 1.25;
         thickness = 25;
         widget_spacing = 10;
@@ -294,8 +290,9 @@ in
         margin_edge = 0;
         margin_ends = 0;
         radius = 0;
-        radius_top_left = -80;
-        radius_top_right = -80;
+        radius_top_left = 80;
+        radius_top_right = 80;
+        concave_edge_corners = true;
         scale = 1.25;
         thickness = 25;
         widget_spacing = 10;
@@ -309,7 +306,7 @@ in
         min_length = 80;
         max_length = 260;
         icon_size = 14;
-        title_scroll = true;
+        title_scroll = "yes";
         display = "icon_and_text";
         show_empty_label = false;
       };
@@ -324,7 +321,8 @@ in
 
       screenshot = {
         glyph = "camera";
-        primary_click = "fullscreen";
+        left_click = "fullscreen";
+        middle_click = "disabled";
       };
       clock = {
         format = "{:%H:%M:%S}";
@@ -360,31 +358,31 @@ in
       disk0 = {
         type = "sysmon";
         glyph = "device-floppy";
-        stat = "disk_pct";
+        stat = "disk_used_pct";
         path = "/";
       };
       disk1 = {
         type = "sysmon";
         glyph = "disc";
-        stat = "disk_pct";
+        stat = "disk_used_pct";
         path = "/home/alec/Audio";
       };
       disk2 = {
         type = "sysmon";
         glyph = "player-track-next";
-        stat = "disk_pct";
+        stat = "disk_used_pct";
         path = "/home/alec/Video";
       };
       disk3 = {
         type = "sysmon";
         glyph = "brand-steam";
-        stat = "disk_pct";
+        stat = "disk_used_pct";
         path = "/home/alec/Games";
       };
       disk4 = {
         type = "sysmon";
         glyph = "database";
-        stat = "disk_pct";
+        stat = "disk_used_pct";
         path = "/home/alec/storage";
       };
 
